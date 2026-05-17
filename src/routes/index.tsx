@@ -116,7 +116,7 @@ function Index() {
                 PROBLEMET — N°00 / I DAG
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
-                Kritisk information om dyret ligger{" "}
+                Kritisk information om dit kæledyr ligger{" "}
                 <span className="italic text-accent">spredt overalt.</span>
               </h2>
             </div>
