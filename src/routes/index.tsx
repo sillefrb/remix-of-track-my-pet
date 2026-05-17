@@ -49,7 +49,7 @@ const sections: {
     no: "II",
     label: "VISION",
     title: "Det interessante er ikke chippen.",
-    body: "Det er digital infrastructure ovenpå. Vi forventer at branding, trust og ecosystem-partnerskaber bliver vigtigere end teknologien selv.",
+    body: "Det er det digitale infrastrukturlag ovenpå. Vi forventer, at branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien selv.",
     img: documentImg,
   },
   {
@@ -57,7 +57,7 @@ const sections: {
     no: "III",
     label: "MARKED",
     title: "198 millioner relationer venter på at blive forbundet.",
-    body: "108M katte og 90M hunde i Europa. En international referencemodel har allerede valideret arkitektur, prismodel og målgruppesegmentering.",
+    body: "108 mio. katte og 90 mio. hunde i Europa. En international referencemodel har allerede valideret arkitektur, prismodel og målgruppesegmentering.",
     img: catImg,
   },
   {
@@ -65,7 +65,7 @@ const sections: {
     no: "IV",
     label: "PRICING",
     title: "Free → Plus → Pro → Lifetime.",
-    body: "Tre tiers af klinik. To tiers af partner-API. Markedet betaler allerede — det er ikke en hypotese, det er en prismatrix.",
+    body: "Tre tiers af klinik. To tiers af partner-API. Markedet betaler allerede — det er ikke en hypotese, det er en prisstruktur.",
   },
 ];
 
@@ -102,7 +102,7 @@ function Index() {
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
             Et simpelt fysisk NFC/QR-tag forbundet til en sikker digital profil
             med alt om dyret — sundhed, vaccination, forsikring, pas,
-            nødkontakter, rejse og familieadgang. Scan → aktivér → alt forbundet.
+            nødkontakter, rejse og familieadgang. Scan → aktivér → forbundet.
           </p>
         </div>
       </section>
@@ -141,13 +141,13 @@ function Index() {
               },
               {
                 tag: "EU-REGULERING",
-                title: "Et nyt fælles lag på vej",
+                title: "Et nyt fælles lag er på vej",
                 body: "EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, sporbarhed og digital registrering på tværs af medlemslande. Det markerer begyndelsen på en fælles europæisk infrastruktur for digital kæledyrsidentitet.",
               },
               {
                 tag: "ÅBNINGEN",
-                title: "Ingen forbruger-vendt løsning",
-                body: "Trods alt det her findes der stadig intet enkelt lag, der samler det hele i ét — for ejeren, ikke for systemet.",
+                title: "Ingen forbrugervendt løsning",
+                body: "Alligevel findes der stadig intet samlet lag, der samler det hele i ét — for ejeren, ikke for systemet.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -347,10 +347,10 @@ function Index() {
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi ønsker at bygge modsat af de fleste startups. I stedet for at lancere hele økosystemet på dag ét, ønsker vi at starte med ét fysisk objekt, der forklarer sig selv på 3 sekunder — og lade resten vokse ud af relationen bagefter.
+                Vi ønsker at bygge anderledes end de fleste startups. I stedet for at lancere hele økosystemet på dag ét, ønsker vi at starte med ét fysisk objekt, der forklarer sig selv på 3 sekunder — og lade resten vokse ud af relationen bagefter.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Vi ønsker ingen super-app, ingen AI og ingen marketplace fra dag ét. Vi ønsker ét simpelt fysisk produkt, som folk intuitivt forstår, og som åbner døren til et abonnement, et datalag, og på sigt det forbruger-vendte lag ovenpå EU's pet-infrastruktur.
+                Vi ønsker ingen super-app, ingen AI og ingen markedsplads fra dag ét. Vi ønsker ét simpelt fysisk produkt, som folk intuitivt forstår, og som åbner døren til et abonnement, et datalag og på sigt det forbrugervendte lag ovenpå EU's pet-infrastruktur.
               </p>
             </div>
 
@@ -360,7 +360,7 @@ function Index() {
                   { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et produkt — ikke en tjeneste. Kunden forstår det med det samme." },
                   { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, reminders, family sharing. Subscription begynder her." },
                   { step: "03", tag: "DATALAG", title: "Aggregeret indsigt", body: "Sundhed, adfærd, geografi og forbrug — anonymiseret og samtykke-baseret. Værdi for forsikring, foder, farma og forskning." },
-                  { step: "04", tag: "INFRASTRUKTUR", title: "Forbrugerlaget ovenpå EU", body: "Når EU-chip-pligten ruller ud, ligger vi som det forbruger-vendte lag mellem ejer, dyrlæge, myndigheder og services." },
+                  { step: "04", tag: "INFRASTRUKTUR", title: "Forbrugerlaget ovenpå EU", body: "Når EU's chipkrav ruller ud, ligger vi som det forbrugervendte lag mellem ejer, dyrlæge, myndigheder og services." },
                 ].map((s) => (
                   <li key={s.step} className="bg-background p-8 md:p-10">
                     <div className="flex items-baseline justify-between">

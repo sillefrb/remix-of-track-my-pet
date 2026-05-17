@@ -183,7 +183,7 @@ function MarketPage() {
         <div className="mx-auto max-w-5xl px-6 py-24 md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PARALLELLER</p>
           <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-            Hver gang regulering standardiserer identitet, opstår der et nyt forbruger-vendt lag.
+            Hver gang regulering standardiserer identitet, opstår der et nyt forbrugervendt lag.
           </h2>
           <ul className="mt-16 border-t border-border">
             {analogies.map((a) => (
@@ -277,7 +277,7 @@ function MarketPage() {
           </div>
           <div className="mx-auto mt-20 max-w-2xl text-center">
             <p className="text-base font-light leading-relaxed text-foreground/80">
-              Tre produkter. Hver simpel nok til hurtig lancering. Tilsammen fundamentet for et europæisk consumer-lag ovenpå pet-infrastrukturen.
+              Tre produkter. Hver simpel nok til hurtig lancering. Tilsammen fundamentet for et europæisk forbrugerlag ovenpå pet-infrastrukturen.
             </p>
           </div>
         </div>

@@ -9,10 +9,10 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Det interessante er ikke chippen — det er digital infrastructure ovenpå. EU's tailwind, chipvirkeligheden, principper og rækkefølgen.",
+          "Det interessante er ikke chippen — det er det digitale infrastrukturlag ovenpå. EU's medvind, chipvirkeligheden, principper og rækkefølgen.",
       },
       { property: "og:title", content: "Vision — Track My Pet" },
-      { property: "og:description", content: "Branding, trust og ecosystem-partnerskaber bliver vigtigere end teknologien." },
+      { property: "og:description", content: "Branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien." },
     ],
   }),
   component: VisionPage,
@@ -37,26 +37,26 @@ const chipReality = [
 const chipFuture = ["Adresse og ejerhistorik", "Forsikring og dyrlæge", "Vaccinationer og medicin", "EU rejseinformation", "Allergier og advarsler", "Stjålet- eller bortløbet-status"];
 const chipRisks = ["GDPR og dataejerskab", "Veterinær- og biologisk godkendelse", "Hacking og spoofing af RFID", "Hvem må ændre oplysningerne?"];
 
-const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj perceived value", "Let at forklare i video", "Globalt problem", "Ikke afhængig af tung software", "Kan blive vane og adfærd"];
+const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Ikke afhængig af tung software", "Kan blive vane og adfærd"];
 
 const phases = [
-  { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Premium tag og kort koblet til chip-ID. En enkel digital profil. Lav friktion i onboarding, høj perceived value." },
-  { no: "Fase 02", title: "Subscription og digital relation", body: "Dokumenter, vaccination, reminders, family sharing og emergency mode. Begyndelsen på recurring revenue." },
-  { no: "Fase 03", title: "Insurance, travel og verified transfer", body: "Partnerships ovenpå data og identitet. Compliance i grænsekrydsning. Verified ownership transfer." },
-  { no: "Fase 04", title: "EU-wide pet identity infrastructure layer", body: "Det forbruger-vendte lag ovenpå EU's traceability-infrastruktur." },
+  { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Premium tag og kort koblet til chip-ID. En enkel digital profil. Lav friktion i opsætningen, høj oplevet værdi." },
+  { no: "Fase 02", title: "Abonnement og digital relation", body: "Dokumenter, vaccination, påmindelser, familieadgang og nødprofil. Begyndelsen på løbende indtægter." },
+  { no: "Fase 03", title: "Forsikring, rejse og verificeret ejerskabsoverdragelse", body: "Partnerskaber ovenpå data og identitet. Compliance i grænsekrydsning. Verificeret ejerskabsoverdragelse." },
+  { no: "Fase 04", title: "Europæisk infrastrukturlag for kæledyrsidentitet", body: "Det forbrugervendte lag ovenpå EU's sporbarhedsinfrastruktur." },
 ];
 
 const risks = [
   { title: "For lille", body: "Hvis det bare bliver ”scan min hund”, bliver casen aldrig stor nok. Vi skal eje hele relationen." },
-  { title: "Feature-risiko", body: "Apple og Google kan kopiere simple QR-løsninger. Vi skal eje workflow, relation og data." },
-  { title: "Svag retention", body: "Hvis produktet kun bruges, når hunden er væk, dør subscriptionen. Vi skal skabe løbende relevans." },
-  { title: "Regulatorisk afhængighed", body: "Produktet må fungere uanset hvilken vej EU's regulering går." },
-  { title: "For bred vision for tidligt", body: "Ingen super-app, ingen AI, ingen marketplace fra dag ét. Ét fysisk produkt først." },
+  { title: "Feature-risiko", body: "Apple og Google kan kopiere simple QR-løsninger. Vi skal eje arbejdsgangen, relationen og dataene." },
+  { title: "Svag fastholdelse", body: "Hvis produktet kun bruges, når hunden er væk, dør abonnementet. Vi skal skabe løbende relevans." },
+  { title: "Regulatorisk afhængighed", body: "Produktet skal fungere, uanset hvilken vej EU's regulering går." },
+  { title: "For bred vision for tidligt", body: "Ingen super-app, ingen AI, ingen markedsplads fra dag ét. Ét fysisk produkt først." },
 ];
 
 const operatingModel = [
   { title: "Et marked med friktion", body: "Pet-sektoren er fragmenteret, analog og emotionel. EU's nye krav skaber en åbning." },
-  { title: "Stærk conviction internt", body: "Vi tror selv på, at det forbruger-vendte lag ovenpå pet-infrastrukturen bliver et reelt selskab." },
+  { title: "Stærk intern overbevisning", body: "Vi tror selv på, at det forbrugervendte lag ovenpå pet-infrastrukturen bliver et reelt selskab." },
   { title: "Dygtige folk, der ikke vil starte alene", body: "Vi samler folk med ekspertise i hardware, design, vet-tech og forsikring — og giver dem en platform." },
   { title: "Reelt ejerskab og reel magt", body: "Reel equity og reel beslutningsret fra dag ét — det eneste der tiltrækker A-spillere." },
   { title: "Erfaring, talent og distribution", body: "Erfarne operatører + ungt produkttalent + eksisterende distributionskanaler." },
@@ -85,14 +85,14 @@ function VisionPage() {
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II — KERNETESEN</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
           Det interessante er ikke chippen.<br />
-          Det er <span className="text-accent not-italic">digital infrastructure</span> ovenpå.
+          Det er det <span className="text-accent not-italic">digitale infrastrukturlag</span> ovenpå.
         </h1>
         <div className="mx-auto mt-12 h-px w-12 bg-border" />
         <p className="mt-12 text-base font-light leading-relaxed text-foreground/80">
-          Chippen er commodity. Det interessante er dataejerskab, verificering, interoperabilitet, onboarding, realtime-opdateringer, trust layer, EU-kompatibilitet, emergency access, forsikringsintegration og AI-understøttet dokumentation. Når regulering standardiserer identitet, opstår der altid et nyt software- og infrastrukturlag ovenpå.
+          Chippen er en råvare. Det interessante er dataejerskab, verificering, interoperabilitet, opsætning, realtidsopdateringer, tillidslag, EU-kompatibilitet, akutadgang, forsikringsintegration og AI-understøttet dokumentation. Når regulering standardiserer identitet, opstår der altid et nyt software- og infrastrukturlag ovenpå.
         </p>
         <p className="mt-8 font-serif text-lg font-light italic leading-relaxed text-foreground/90 md:text-xl">
-          Vi forventer, at branding, trust og ecosystem-partnerskaber sandsynligvis bliver vigtigere end selve teknologien.
+          Vi forventer, at branding, tillid og økosystempartnerskaber sandsynligvis bliver vigtigere end selve teknologien.
         </p>
       </section>
 
@@ -102,10 +102,10 @@ function VisionPage() {
           <div className="md:col-span-5">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DET EGENTLIGE VÆRDILAG</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Chippen er commodity.<br /><span className="italic text-accent">Laget ovenpå</span> er forretningen.
+              Chippen er en råvare.<br /><span className="italic text-accent">Laget ovenpå</span> er forretningen.
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Værdien ligger ikke i hardware. Den ligger i at operationalisere kompleks regulering, eje den digitale identitet og reducere informationsasymmetri mellem ejer, klinik, forsikring og stat.
+              Værdien ligger ikke i hardware. Den ligger i at operationalisere kompleks regulering, eje den digitale identitet og reducere informationsasymmetri mellem ejer, klinik, forsikring og myndigheder.
             </p>
           </div>
           <div className="md:col-span-7">
@@ -115,10 +115,10 @@ function VisionPage() {
                 ["Verificering", "Realtime trust mellem parter"],
                 ["Interoperabilitet", "På tværs af EU-databaser"],
                 ["Onboarding", "Fra papir til profil på sekunder"],
-                ["Realtime opdatering", "Vaccination, ID, status — live"],
-                ["Trust layer", "Klinik, forsikring, told, ejer"],
+                ["Realtidsopdatering", "Vaccination, ID, status — live"],
+                ["Tillidslag", "Klinik, forsikring, told, ejer"],
                 ["EU-kompatibilitet", "Bygget til fælles regelsæt"],
-                ["Emergency access", "Når sekunder afgør udfaldet"],
+                ["Akutadgang", "Når sekunder afgør udfaldet"],
                 ["Forsikringsintegration", "Distribution og data — ikke risiko"],
                 ["AI-dokumentation", "Verificering på tværs af formater"],
               ].map(([k, v]) => (
@@ -142,7 +142,7 @@ function VisionPage() {
                 Et fælles europæisk datalag er på vej.
               </h2>
               <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-                EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, digital sporbarhed og fælles pas-systemer. Det er ikke bare ”nye regler om chip” — det er et nyt infrastrukturlag.
+                EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, digital sporbarhed og fælles passystemer. Det er ikke bare ”nye regler om chip” — det er et nyt infrastrukturlag.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -169,7 +169,7 @@ function VisionPage() {
               Hvad chippen <span className="italic text-accent">faktisk</span> kan i dag.
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Markedet domineres af et lille antal aktører. Stort set alle bygger på samme teknologi: passiv RFID under huden. Lille hukommelse. Ingen sporing. Ingen opdatering.
+              Markedet domineres af et lille antal aktører. Stort set alle bygger på samme teknologi: passiv RFID under huden. Lille hukommelse, ingen sporing, ingen opdatering.
             </p>
             <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3">
               {chipPlayers.map((p) => (
@@ -195,7 +195,7 @@ function VisionPage() {
             <p className="text-[10px] tracking-[0.4em] text-accent">HVIS CHIPPEN UDVIKLER SIG</p>
             <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">En hybrid identitet</h3>
             <p className="mt-4 text-sm font-light leading-relaxed text-foreground/75">
-              ISO 14223 og advanced transponders peger mod chips med flere datafelter, opdaterbar info og kobling til cloud, app, vet- og forsikringsdata.
+              ISO 14223 og avancerede transpondere peger mod chips med flere datafelter, opdaterbar info og kobling til cloud, app, dyrlæge- og forsikringsdata.
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-2 sm:grid-cols-2">
               {chipFuture.map((f) => (
