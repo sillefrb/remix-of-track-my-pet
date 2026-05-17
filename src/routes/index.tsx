@@ -142,7 +142,7 @@ function Index() {
               {
                 tag: "EU-REGULERING",
                 title: "Et nyt fælles lag på vej",
-                body: "EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, sporbarhed og digital registrering på tværs af medlemslande.",
+                body: "EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, sporbarhed og digital registrering på tværs af medlemslande. Det markerer begyndelsen på en fælles europæisk infrastruktur for digital kæledyrsidentitet.",
               },
               {
                 tag: "ÅBNINGEN",
