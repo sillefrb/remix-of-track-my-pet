@@ -366,7 +366,7 @@ function PricingPage() {
 
       <WaitlistCTA
         eyebrow="VENTELISTE — TIDLIG ADGANG"
-        title="Skriv dig op til prelaunch-prisen."
+        title="Skriv dig op til førlanceringsprisen."
         body="Tidlige ejere får adgang før alle andre — og en reduceret pris på Starter Kit og første års abonnement."
       />
 

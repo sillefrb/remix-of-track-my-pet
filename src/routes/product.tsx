@@ -18,7 +18,7 @@ export const Route = createFileRoute("/product")({
       {
         name: "description",
         content:
-          "Premium tag, kort og folder koblet til en verificeret digital profil. Onboarding på under et minut. Pas, vaccination, rejse og emergency i ét.",
+          "Premium tag, kort og folder koblet til en verificeret digital profil. Opsætning på under et minut. Pas, vaccination, rejse og nødprofil i ét.",
       },
       { property: "og:title", content: "Produktet — Track My Pet" },
       { property: "og:description", content: "Det premium fysisk-digitale lag for ejer og dyr." },
@@ -34,7 +34,7 @@ const concepts = [
   { no: "03", name: "Emergency Pet Card", tagline: "Hvis der sker dig noget", body: "Et kort til pung eller bil. Hvis ejer kommer ud for en ulykke, ved redningsfolk straks, at der er et dyr alene hjemme." },
   { no: "04", name: "Lost Mode for Dogs", tagline: "NFC bygget til bortløbne hunde", body: "Ren UX omkring NFC og QR: midlertidig tracking, lokal alarm og community-notifikation når hunden er væk fra hjemmet." },
   { no: "05", name: "Pet Vault", tagline: "Den digitale boks for hundens liv", body: "Sundhed, dokumenter, pasning, forsikring, billeder, medicin og vaccinationer — med et fysisk on-ramp." },
-  { no: "06", name: "Travel Compliance", tagline: "Krydsning af grænser uden friktion", body: "Det forbruger-vendte lag, der gør grænsekrydsning enkel — vaccination, ID og dokumenter verificeret på sekunder." },
+  { no: "06", name: "Travel Compliance", tagline: "Krydsning af grænser uden friktion", body: "Det forbrugervendte lag, der gør grænsekrydsning enkel — vaccination, ID og dokumenter verificeret på sekunder." },
   { no: "07", name: "Trusted Dog Transfer", tagline: "CarVertical for hunde", body: "Et register over sundhed, vaccination, adfærd, ejerskab, skader og forsikring — beskytter både køber og dyr." },
   { no: "08", name: "Insurance Layer", tagline: "Forsikring bygget på verified data", body: "Når sundhed, identitet og historik allerede er digitaliseret, bliver forsikring billigere, hurtigere og mere præcis." },
 ];
@@ -58,7 +58,7 @@ function ProductPage() {
             Et fysisk produkt med <span className="italic text-accent">en relation</span> bagved.
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Premium tag, kort og folder koblet til en verificeret digital profil. Lav friktion i onboarding, høj perceived value, ét konkret produkt at sælge.
+            Premium tag, kort og folder koblet til en verificeret digital profil. Lav friktion i opsætningen, høj oplevet værdi, ét konkret produkt at sælge.
           </p>
         </div>
       </section>
@@ -127,9 +127,9 @@ function ProductPage() {
           </h2>
           <div className="mt-20 grid gap-px bg-border md:grid-cols-3">
             {[
-              ["Ejere", "Premium tag og digital profil. Ét sted til vaccination, dokumenter, rejse og emergency."],
-              ["Klinikker & dyrlæger", "Verificerede profiler, mindre papirarbejde, hurtigere onboarding."],
-              ["Services & rejse", "Forsikring, grænse, pension, groomer. Permission-based deling via QR."],
+              ["Ejere", "Premium tag og digital profil. Ét sted til vaccination, dokumenter, rejse og nødprofil."],
+              ["Klinikker & dyrlæger", "Verificerede profiler, mindre papirarbejde, hurtigere opsætning."],
+              ["Services & rejse", "Forsikring, grænse, pension, groomer. Samtykkebaseret deling via QR."],
             ].map(([k, v], i) => (
               <div key={k} className="bg-card p-10">
                 <p className="text-[10px] tracking-[0.35em] text-muted-foreground">N°0{i + 1}</p>
@@ -217,7 +217,7 @@ function ProductPage() {
               Det fysiske pas <span className="italic text-accent">bliver digitalt</span> — og følger dyret livet ud.
             </h2>
             <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Vaccinationer, mikrochip-ID, ejerskifte, forsikring og rejse samles i én verificeret profil. Ejeren ejer dataene. Klinikker, myndigheder og services får adgang via permission.
+              Vaccinationer, mikrochip-ID, ejerskifte, forsikring og rejse samles i én verificeret profil. Ejeren ejer dataene. Klinikker, myndigheder og services får adgang via samtykke.
             </p>
           </div>
         </div>
@@ -269,7 +269,7 @@ function ProductPage() {
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">KONCEPTERNE</p>
           <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Otte retninger</h2>
           <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-muted-foreground">
-            Alle bygget omkring ét fysisk objekt med høj perceived value, lav produktionskompleksitet og mulighed for at vokse til en subscription.
+            Alle bygget omkring ét fysisk objekt med høj oplevet værdi, lav produktionskompleksitet og mulighed for at vokse til et abonnement.
           </p>
         </div>
 
