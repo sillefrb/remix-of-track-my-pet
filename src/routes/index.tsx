@@ -87,7 +87,7 @@ function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/40" />
           <div className="absolute inset-x-0 bottom-0 px-6 pb-12 text-center md:pb-20">
             <p className="text-[10px] font-light tracking-[0.45em] text-background/95">
-              IN LOVE WITH ANIMALS — DEVOTED TO SAFETY
+              IN LOVE WITH ANIMALS — DEVOTED TO SAEFTY
             </p>
             <h1 className="font-serif mt-6 text-5xl font-light leading-[1] tracking-tight text-background sm:text-7xl md:text-8xl lg:text-[9rem]">
               Track My Pet
