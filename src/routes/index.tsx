@@ -166,7 +166,79 @@ function Index() {
         </div>
       </section>
 
-      {/* EDITORIAL DUO — cat + design philosophy */}
+      {/* HVORFOR MODELLEN VIRKER */}
+      <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+        <div className="grid grid-cols-12 gap-10">
+          <div className="col-span-12 md:col-span-5">
+            <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+              HVORFOR MODELLEN VIRKER
+            </p>
+            <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
+              Styrken er ikke teknologien.{" "}
+              <span className="italic text-accent">Det er kombinationen.</span>
+            </h2>
+            <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+              Brugeren skal forstå værdien på få sekunder. Ikke teknisk. Ikke
+              komplekst. Ikke fyldt med features. Simpliciteten er en del af
+              produktværdien.
+            </p>
+          </div>
+
+          <div className="col-span-12 md:col-span-7">
+            <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
+              {[
+                ["Et simpelt fysisk produkt", "Forklarer sig selv på 3 sekunder."],
+                ["Høj følelsesmæssig relevans", "Tryghed for det dyr man elsker."],
+                ["Ekstremt lav friktion", "Scan → aktivér → forbundet."],
+                ["Abonnementsbaserede services", "Recurring revenue fra dag ét."],
+                ["Langsigtet dataejerskab", "Ejeren ejer profilen — vi ejer relationen."],
+                ["Løbende kunderelationer", "Hele dyrets liv, ikke ét køb."],
+              ].map(([k, v]) => (
+                <li key={k} className="bg-background p-6 md:p-7">
+                  <p className="font-serif text-lg font-light italic text-foreground">
+                    {k}
+                  </p>
+                  <p className="mt-2 text-xs font-light leading-relaxed text-foreground/70">
+                    {v}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* EMOTIONEL POSITIONERING */}
+      <section className="bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
+          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
+            EMOTIONEL POSITIONERING
+          </p>
+          <h2 className="font-serif mx-auto mt-8 max-w-3xl text-3xl font-light italic leading-snug md:text-5xl">
+            Kunderne køber ikke et QR-tag.
+          </h2>
+          <ul className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 font-serif text-2xl font-light md:text-4xl">
+            {["Tryghed", "Sikkerhed", "Kontrol", "Ansvar", "Overblik", "Bekvemmelighed"].map(
+              (w, i) => (
+                <li key={w} className="flex items-center gap-10">
+                  <span className={i % 2 === 1 ? "text-accent italic" : ""}>
+                    {w}
+                  </span>
+                  {i < 5 && (
+                    <span aria-hidden className="h-px w-6 bg-border" />
+                  )}
+                </li>
+              ),
+            )}
+          </ul>
+          <p className="mx-auto mt-16 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+            Den følelsesmæssige tilknytning og betalingsvilligheden er allerede
+            høj i kæledyrsmarkedet. Vores rolle er at omsætte den til et
+            produkt, der opleves uundværligt.
+          </p>
+        </div>
+      </section>
+
       <section className="mx-auto grid max-w-[1400px] grid-cols-1 gap-px bg-border md:grid-cols-12">
         <figure className="bg-background md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-muted">
