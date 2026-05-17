@@ -1,6 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { WaitlistCTA } from "@/components/WaitlistCTA";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
@@ -190,7 +191,59 @@ function PricingPage() {
         </div>
       </section>
 
-      {/* CONSUMER PLANS */}
+      {/* STARTER KIT — engangsdelen */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-[1400px] px-6 py-20 md:py-24">
+          <div className="grid grid-cols-12 items-end gap-6 pb-12">
+            <div className="col-span-12 md:col-span-7">
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+                STARTER KIT — N°00 / ENGANGSDEL
+              </p>
+              <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
+                Det fysiske on-ramp.
+              </h2>
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
+                Subscription begynder ved aktivering. Engangs-delen er det
+                fysiske produkt — smukt, taktilt, gaveværdigt.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-3">
+            {[
+              {
+                name: "NFC/QR Tag",
+                price: "kr. 249",
+                body: "Premium tag i børstet metal. Ingen batteri, ingen GPS, ingen logistik. Aktiveres på sekunder.",
+              },
+              {
+                name: "Starter Kit",
+                price: "kr. 449",
+                body: "Tag, kort til pung og folder til pas og dokumenter. Designet som en gave — også til sig selv.",
+              },
+              {
+                name: "Personalisering",
+                price: "kr. +79",
+                body: "Gravering med navn og nødtelefon. Valgfri farve på remmen. Leveres i præsentationsæske.",
+              },
+            ].map((k) => (
+              <article key={k.name} className="bg-background p-8 md:p-10">
+                <h3 className="font-serif text-xl font-light italic">
+                  {k.name}
+                </h3>
+                <p className="font-serif mt-6 text-3xl font-light">
+                  {k.price}
+                </p>
+                <p className="mt-6 text-sm font-light leading-relaxed text-foreground/70">
+                  {k.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="mx-auto max-w-[1400px] px-6 pb-24 md:pb-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
           FOR EJERE — N°01 / CONSUMER
@@ -311,35 +364,11 @@ function PricingPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
-        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-          BUILD THE LAYER
-        </p>
-        <h2 className="font-serif mt-8 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-          Start with building your pet's{" "}
-          <span className="italic text-accent">verified identity</span> today.
-        </h2>
-        <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-          Join pet owners, clinics, og organisationer der bruger Track My Pet
-          til at skabe et mere connected, secure system for pet identity og
-          records.
-        </p>
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          <button
-            type="button"
-            className="rounded-full bg-emerald-400 px-8 py-4 text-sm font-medium tracking-wide text-foreground hover:bg-emerald-500"
-          >
-            Get Started Free
-          </button>
-          <button
-            type="button"
-            className="rounded-full border border-border bg-background px-8 py-4 text-sm font-light tracking-wide hover:bg-muted"
-          >
-            For Clinics & Vets
-          </button>
-        </div>
-      </section>
+      <WaitlistCTA
+        eyebrow="VENTELISTE — TIDLIG ADGANG"
+        title="Skriv dig op til prelaunch-prisen."
+        body="Tidlige ejere får adgang før alle andre — og en reduceret pris på Starter Kit og første års abonnement."
+      />
 
       <SiteFooter />
     </div>
