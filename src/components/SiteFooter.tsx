@@ -10,11 +10,11 @@ export function SiteFooter() {
         <nav className="flex flex-wrap gap-x-6 gap-y-2">
           <Link to="/" className="hover:text-accent" activeOptions={{ exact: true }}>FORSIDE</Link>
           <Link to="/product" className="hover:text-accent">PRODUKT</Link>
-          <Link to="/vision" className="hover:text-accent">VISION</Link>
-          <Link to="/market" className="hover:text-accent">MARKED</Link>
-          <Link to="/pricing" className="hover:text-accent">PRICING</Link>
+          <Link to="/vision" className="hover:text-accent">HVORFOR DET ER NØDVENDIGT</Link>
+          <Link to="/market" className="hover:text-accent">BAGGRUND</Link>
+          <Link to="/pricing" className="hover:text-accent">MEDLEMSKAB</Link>
         </nav>
-        <span>FORRETNINGSCASE — 2026 · © 2026</span>
+        <span>IDENTITET OG DOKUMENTATION · © 2026</span>
       </div>
     </footer>
   );
