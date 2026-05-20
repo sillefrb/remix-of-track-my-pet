@@ -215,8 +215,11 @@ function Index() {
             EMOTIONEL POSITIONERING
           </p>
           <h2 className="font-serif mx-auto mt-8 max-w-3xl text-3xl font-light italic leading-snug md:text-5xl">
-            Kunderne køber tryghed — ikke et QR-tag.
+            Det handler om tryghed.
           </h2>
+          <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+            Ro i sindet gennem hele dyrets liv. Samlet ét sted, når det betyder noget.
+          </p>
           <ul className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 font-serif text-2xl font-light md:text-4xl">
             {["Tryghed", "Sikkerhed", "Kontrol", "Ansvar", "Overblik", "Bekvemmelighed"].map(
               (w, i) => (
@@ -386,6 +389,64 @@ function Index() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* HJÆLP — SOS */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 items-end gap-6 pb-16">
+            <div className="col-span-12 md:col-span-7">
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+                HJÆLP — N°05 / NÅR DET ER NØDVENDIGT
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
+                Hjælp, når det <span className="italic text-accent">er nødvendigt.</span>
+              </h2>
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
+                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted — udviklet til hurtigere handling og mere ro i sindet.
+              </p>
+              <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-3">
+            {[
+              {
+                tag: "AKUTPROFIL",
+                title: "Vigtig information, hurtigt fundet",
+                body: "Navn, alder, mikrochip-ID, allergier, medicin og kontaktoplysninger samlet ét sted — synligt med ét scan.",
+              },
+              {
+                tag: "VI FINDER HUND",
+                title: "Når dyret er væk",
+                body: "Et scan på taget åbner direkte kontakt til ejeren. Enkel handling for finderen, hurtig forbindelse for ejeren.",
+              },
+              {
+                tag: "HJÆLPETJENESTER",
+                title: "Forbindelse til relevante parter",
+                body: "Udviklet til at kunne integreres med dyrlæger, akutklinikker og dyreværn — så hjælpen er enkel at finde, når det betyder noget.",
+              },
+            ].map((p) => (
+              <div key={p.tag} className="bg-background p-10 md:p-12">
+                <span className="text-[10px] tracking-[0.35em] text-accent">
+                  {p.tag}
+                </span>
+                <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">
+                  {p.title}
+                </h3>
+                <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
+                  {p.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mx-auto mt-16 max-w-2xl text-center font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
+            Et produkt udviklet til både hverdag og uforudsete situationer.
+          </p>
         </div>
       </section>
 
