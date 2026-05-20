@@ -75,7 +75,7 @@ const blueprint = [
   { p: "Hvorfor bliver det stort?", a: "Workflow ownership, data lock-in, regulatorisk medvind, indbygget distribution og høj emotional retention." },
 ];
 
-function VisionPage() {
+export function VisionPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />

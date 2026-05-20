@@ -28,7 +28,7 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-function AboutPage() {
+export function AboutPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />

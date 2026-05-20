@@ -165,6 +165,9 @@
 
   header, footer { display: none !important; }
 
+  .print-all > .print-section { break-after: page; page-break-after: always; }
+  .print-all > .print-section:last-child { break-after: auto; page-break-after: auto; }
+
   section { break-inside: avoid; page-break-inside: avoid; }
   img { break-inside: avoid; max-width: 100% !important; }
 

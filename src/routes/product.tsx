@@ -39,7 +39,7 @@ const concepts = [
   { no: "08", name: "Insurance Layer", tagline: "Forsikring bygget på verified data", body: "Når sundhed, identitet og historik allerede er digitaliseret, bliver forsikring billigere, hurtigere og mere præcis." },
 ];
 
-function ProductPage() {
+export function ProductPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
