@@ -305,8 +305,8 @@ export function PricingPage() {
             FOR KLINIKKER, INTERNATER OG SAMARBEJDSPARTNERE — N°02
           </p>
           <h2 className="font-serif mt-6 max-w-3xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-            Connected workflows for{" "}
-            <span className="italic text-accent">clinics, shelters and partners.</span>
+            Forbundne arbejdsgange for{" "}
+            <span className="italic text-accent">klinikker, internater og samarbejdspartnere.</span>
           </h2>
           <p className="mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
             Flere niveauer for klinikker, gratis adgang for internater og to API-niveauer for samarbejdspartnere — forsikring, told, rejse, groomere og relevante funktioner.
