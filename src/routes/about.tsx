@@ -14,7 +14,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Track My Pet er bygget af mennesker, der elsker dyr. Vi laver det digitale infrastrukturlag for moderne kæledyrsejerskab — håndværk, omtanke og længerevarende relationer.",
+          "Track My Pet er bygget af mennesker med omtanke for dyr. Vi laver en samlet løsning til moderne kæledyrsejerskab — håndværk, omtanke og langsigtede relationer.",
       },
       { property: "og:title", content: "Om os — Track My Pet" },
       {
@@ -56,13 +56,10 @@ export function AboutPage() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Vi kender hunde og katte — fra hjertet.
+            Vi kender hunde og katte — med omtanke.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Track My Pet er skabt af mennesker, der elsker dyr. Det
-            usædvanlige ligger i, hvordan vi omsætter den kærlighed til
-            håndværk, design og infrastruktur — bygget til at gøre livet
-            bedre for både dyret og det menneske, det deler det med.
+            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og funktion — bygget til at gøre hverdagen enklere for både dyret og det menneske, det deler den med.
           </p>
         </div>
       </section>
@@ -115,10 +112,7 @@ export function AboutPage() {
                 <span className="italic text-accent">For mennesket bag det.</span>
               </h3>
               <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                Track My Pet eksisterer for tryghed og overblik. Vi bygger
-                ét sted, hvor identitet, sundhed, forsikring og rejse hører
-                hjemme — verificeret, ejet af dig, tilgængeligt for dem du
-                vælger. Et lag, der følger dyret hele livet.
+                Track My Pet eksisterer for tryghed og overblik. Vi bygger ét sted, hvor identitet, sundhed, forsikring og rejse hører hjemme — verificeret, ejet af dig, tilgængeligt for dem du vælger. Et produkt, der følger dyret gennem hele livet.
               </p>
             </div>
           </div>
@@ -137,11 +131,7 @@ export function AboutPage() {
               <span className="italic text-accent">stor hengivenhed.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Track My Pet er grundlagt i Danmark af mennesker med
-              baggrund i produktdesign, hardware, veterinærteknologi og
-              forsikring — og en delt overbevisning om, at det forbrugervendte
-              lag ovenpå EU's nye kæledyrsinfrastruktur bør bygges med
-              håndværk, ikke hastværk.
+              Track My Pet er grundlagt i Danmark af mennesker med baggrund i produktdesign, hardware, veterinærteknologi og forsikring — og en delt overbevisning om, at et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet bør bygges med håndværk, ikke hastværk.
             </p>
             <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
               Vi er ejere af hunde, katte og blandinger af begge dele. Vi
@@ -208,8 +198,7 @@ export function AboutPage() {
           </p>
           <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
             Produktionen sker hos små, familieejede partnere, vi har
-            udvalgt med omhu, og som deler vores værdier omkring kvalitet
-            og kærlighed til dyr.
+            udvalgt med omhu, og som deler vores værdier omkring kvalitet, ansvar og omsorg for dyr.
           </p>
           <div className="mt-10 h-px w-12 bg-border" />
         </div>
@@ -267,10 +256,7 @@ export function AboutPage() {
               Join <span className="italic text-accent">the</span> Pack
             </h2>
             <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/80">
-              Track My Pet bygges med ejere, opdrættere, internater og
-              dyrlæger — ikke for dem. Skriv dig op til ventelisten og
-              bliv en del af det fællesskab, der former laget ovenpå EU's
-              kæledyrsinfrastruktur.
+              Track My Pet bygges med ejere, opdrættere, internater og dyrlæger — ikke for dem. Skriv dig op til ventelisten og bliv en del af det fællesskab, der former en samlet løsning til moderne kæledyrsidentitet i Europa.
             </p>
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4 text-[11px] tracking-[0.25em]">
               <Link

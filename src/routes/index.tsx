@@ -41,32 +41,32 @@ const sections: {
     to: "/product",
     no: "I",
     label: "PRODUKT",
-    title: "Det premium fysisk-digitale lag.",
-    body: "Tag, kort og folder koblet til en verificeret digital profil. Onboarding på under et minut. Pas, vaccination, rejse og emergency — i ét.",
+    title: "Et samlet fysisk og digitalt produkt.",
+    body: "Tag, kort og folder koblet til en verificeret digital profil. Opsætning på under ét minut. Pas, vaccinationer, rejser og nødinformation — i ét.",
     img: skaterImg,
   },
   {
     to: "/vision",
     no: "II",
-    label: "VISION",
-    title: "Chippen er råvaren. Laget ovenpå er værdien.",
-    body: "Det er det digitale infrastrukturlag ovenpå. Vi forventer, at branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien selv.",
+    label: "HVORFOR DET ER NØDVENDIGT",
+    title: "Chippen er begyndelsen. Værdien ligger i det, den forbinder.",
+    body: "Det er den samlede løsning ovenpå. Vi forventer, at branding, tillid og langsigtede samarbejder bliver vigtigere end teknologien selv.",
     img: documentImg,
   },
   {
     to: "/market",
     no: "III",
-    label: "MARKED",
-    title: "198 millioner relationer venter på at blive forbundet.",
-    body: "108 mio. katte og 90 mio. hunde i Europa. En international referencemodel har allerede valideret arkitektur, prismodel og målgruppesegmentering.",
+    label: "BAGGRUND",
+    title: "198 millioner hunde og katte i Europa.",
+    body: "108 mio. katte og 90 mio. hunde. Internationale løsninger har allerede valideret arkitektur, prismodel og målgrupper.",
     img: catImg,
   },
   {
     to: "/pricing",
     no: "IV",
-    label: "PRICING",
+    label: "MEDLEMSKAB",
     title: "Free → Plus → Pro → Lifetime.",
-    body: "Tre tiers af klinik. To tiers af partner-API. Ingen hypotese — en prisstruktur, markedet allerede betaler.",
+    body: "Flere medlemsniveauer til ejere, klinikker og samarbejdspartnere. En prisstruktur, markedet allerede kender.",
   },
 ];
 
@@ -126,7 +126,7 @@ export function Index() {
                 vaccinationskort, forsikringspolicer, pas, journal,
                 nødkontakter, medicin, rejsedokumenter og pasningsinstrukser
                 manuelt — spredt på papir, i mails, mapper, apps og
-                dyrlægesystemer uden et samlet lag.
+                dyrlægesystemer uden et samlet sted.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -136,13 +136,13 @@ export function Index() {
             {[
               {
                 tag: "FRAGMENTERING",
-                title: "Otte systemer pr. dyr",
+                title: "For mange steder at holde styr på",
                 body: "Dyrlæge, forsikring, pas, microchip-register, foderabonnement, pasningsapp, rejseattest, mails. Intet taler sammen.",
               },
               {
                 tag: "EU-UDVIKLING",
                 title: "En fælles europæisk udvikling er i gang",
-                body: "En fælles europæisk udvikling inden for kæledyrsidentitet, registrering og dokumentation er i gang. Mikrochip, registrering og verificerbare oplysninger får en stadig større rolle på tværs af Europa.",
+                body: "En fælles europæisk udvikling inden for kæledyrsidentitet, registrering og dokumentation er i gang. Mikrochip, registrering og vigtige oplysninger får en stadig større rolle på tværs af europæiske lande.",
               },
               {
                 tag: "BEHOVET",
@@ -174,13 +174,10 @@ export function Index() {
               HVORFOR MODELLEN VIRKER
             </p>
             <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
-              Teknologien er midlet.{" "}
-              <span className="italic text-accent">Kombinationen er styrken.</span>
+              Teknologien skal gøre <span className="italic text-accent">hverdagen enklere.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Brugeren skal forstå værdien på få sekunder. Umiddelbar. Klar.
-              Renset for støj. Simpliciteten er en del af
-              produktværdien.
+              Et produkt der er enkelt at forstå. Enkelt at bruge. Enkelheden er en del af værdien.
             </p>
           </div>
 
@@ -190,8 +187,8 @@ export function Index() {
                 ["Et simpelt fysisk produkt", "Forklarer sig selv på 3 sekunder."],
                 ["Høj følelsesmæssig relevans", "Tryghed for det dyr man elsker."],
                 ["Ekstremt lav friktion", "Scan → aktivér → forbundet."],
-                ["Abonnementsbaserede services", "Recurring revenue fra dag ét."],
-                ["Langsigtet dataejerskab", "Ejeren ejer profilen — vi ejer relationen."],
+                ["Løbende funktioner og adgang", "Adgang der udvikler sig sammen med dyret."],
+                ["Langsigtet adgang og dokumentation", "Ejeren ejer profilen. Relationen følger dyret gennem livet."],
                 ["Løbende kunderelationer", "Hele dyrets liv — fra første scan til sidste rejse."],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6 md:p-7">
@@ -221,7 +218,7 @@ export function Index() {
             Ro i sindet gennem hele dyrets liv. Samlet ét sted, når det betyder noget.
           </p>
           <ul className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 font-serif text-2xl font-light md:text-4xl">
-            {["Tryghed", "Sikkerhed", "Kontrol", "Ansvar", "Overblik", "Bekvemmelighed"].map(
+            {["Tryghed", "Sikkerhed", "Overblik", "Ansvar", "Omsorg", "Enklere hverdag"].map(
               (w, i) => (
                 <li key={w} className="flex items-center gap-10">
                   <span className={i % 2 === 1 ? "text-accent italic" : ""}>
@@ -236,8 +233,7 @@ export function Index() {
           </ul>
           <p className="mx-auto mt-16 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
             Den følelsesmæssige tilknytning og betalingsvilligheden er allerede
-            høj i kæledyrsmarkedet. Vores rolle er at omsætte den til et
-            produkt, der opleves uundværligt.
+            høj i kæledyrsmarkedet. Vores rolle er at samle det i et produkt, der skaber tryghed og overblik.
           </p>
         </div>
       </section>
@@ -268,10 +264,8 @@ export function Index() {
           </h2>
           <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
             Skabt ud fra filosofien om, at relationen mellem mennesket og
-            kæledyr er en af de mest loyale og værdifulde, vi har.
-            Produktet er udviklet til at beskytte, understøtte og følge dyret
-            gennem livet med fokus på tryghed, kvalitet og gennemtænkte
-            funktioner — uden støj, overdesign eller unødvendig kompleksitet.
+            kæledyr er en af de mest nære og betydningsfulde, vi har.
+            Produktet er udviklet til at beskytte og følge dyret gennem livet med fokus på tryghed, kvalitet og funktioner udviklet med omtanke — uden støj, overdesign eller unødvendig kompleksitet.
           </p>
           <div className="mt-10 h-px w-12 bg-border" />
         </div>
@@ -345,15 +339,15 @@ export function Index() {
             <div className="col-span-12 md:col-span-5">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">STRATEGIEN</p>
               <h2 className="font-serif mt-8 text-4xl font-light italic leading-[1.0] md:text-5xl lg:text-6xl">
-                Glem platformen.<br />
-                Start med ét objekt, folk føler de burde have.
+                Vi begynder ét sted.<br />
+                Med ét objekt, folk føler de burde have.
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi ønsker at bygge anderledes end de fleste startups. I stedet for at lancere hele økosystemet på dag ét, ønsker vi at starte med ét fysisk objekt, der forklarer sig selv på 3 sekunder — og lade resten vokse ud af relationen bagefter.
+                Vi ønsker at bygge anderledes end de fleste startups. I stedet for at lancere alting på dag ét, ønsker vi at starte med ét fysisk objekt, der forklarer sig selv på 3 sekunder — og lade resten vokse ud af relationen bagefter.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Vi ønsker ingen super-app, ingen AI og ingen markedsplads fra dag ét. Vi ønsker ét simpelt fysisk produkt, som folk intuitivt forstår, og som åbner døren til et abonnement, et datalag og på sigt det forbrugervendte lag ovenpå EU's pet-infrastruktur.
+                Vi ønsker ingen super-app og ingen markedsplads fra dag ét. Vi ønsker ét enkelt fysisk produkt, som folk intuitivt forstår, og som åbner døren til løbende adgang, dokumentation og på sigt et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet.
               </p>
             </div>
 
@@ -361,9 +355,9 @@ export function Index() {
               <ol className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
                 {[
                   { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et objekt, ejes som et arvestykke. Kunden forstår det med det samme." },
-                  { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, reminders, family sharing. Subscription begynder her." },
-                  { step: "03", tag: "DATALAG", title: "Aggregeret indsigt", body: "Sundhed, adfærd, geografi og forbrug — anonymiseret og samtykke-baseret. Værdi for forsikring, foder, farma og forskning." },
-                  { step: "04", tag: "INFRASTRUKTUR", title: "Forbrugerlaget ovenpå EU", body: "Når EU's chipkrav ruller ud, ligger vi som det forbrugervendte lag mellem ejer, dyrlæge, myndigheder og services." },
+                  { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, påmindelser, familieadgang. Her samles dokumentation og adgang." },
+                  { step: "03", tag: "INDSIGT", title: "Aggregeret indsigt", body: "Sundhed, adfærd, geografi og forbrug — anonymiseret og samtykke-baseret. Værdi for forsikring, foder, farma og forskning." },
+                  { step: "04", tag: "EUROPÆISK UDVIKLING", title: "Et samlet produkt til kæledyrsidentitet", body: "Når EU's chipkrav ruller ud, samler vi adgang og dokumentation mellem ejer, dyrlæge, myndigheder og relevante funktioner." },
                 ].map((s) => (
                   <li key={s.step} className="bg-background p-8 md:p-10">
                     <div className="flex items-baseline justify-between">
@@ -406,7 +400,7 @@ export function Index() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted — udviklet til hurtigere handling og mere ro i sindet.
+                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted — udviklet til hurtigere adgang til vigtig information og mere ro i sindet.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -426,8 +420,8 @@ export function Index() {
               },
               {
                 tag: "HJÆLPETJENESTER",
-                title: "Forbindelse til relevante parter",
-                body: "Udviklet til at kunne integreres med dyrlæger, akutklinikker og dyreværn — så hjælpen er enkel at finde, når det betyder noget.",
+                title: "Hjælp og kontaktmuligheder",
+                body: "Udviklet til at kunne forbindes med dyrlæger, akutklinikker og dyreværn — så hjælpen er enkel at finde, når det betyder noget.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
