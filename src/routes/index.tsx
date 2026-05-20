@@ -244,8 +244,8 @@ function Index() {
         <figure className="bg-background md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-muted">
             <img
-              src={catEditorialImg}
-              alt="Tabbykat hviler i blødt vinduslys på et linnedklæde"
+              src={catImg}
+              alt="Langhåret kat i et minimalistisk lyst rum"
               width={1080}
               height={1350}
               loading="lazy"
