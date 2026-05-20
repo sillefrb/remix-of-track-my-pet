@@ -55,7 +55,7 @@ export function ProductPage() {
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">I — PRODUKTET</p>
           <h1 className="font-serif mt-8 text-4xl font-light leading-tight md:text-6xl lg:text-7xl">
-            Et fysisk produkt med <span className="italic text-accent">en relation</span> bagved.
+            Et produkt, <span className="italic text-accent">flere relationer.</span>
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
             Premium tag, kort og folder koblet til en verificeret digital profil. Lav friktion i opsætningen, høj oplevet værdi, ét konkret produkt at sælge.
