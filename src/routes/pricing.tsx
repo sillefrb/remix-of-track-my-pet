@@ -163,7 +163,7 @@ const orgPlans = [
   },
 ];
 
-function PricingPage() {
+export function PricingPage() {
   return (
     <div className="bg-background">
       <SiteHeader />

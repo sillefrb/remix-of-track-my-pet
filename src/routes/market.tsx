@@ -38,7 +38,7 @@ const revenueAreas: { title: string; body: string; type: "no" | "yes" }[] = [
 
 const winners = ["Track My Pet", "Pet Vault", "Travel Compliance"];
 
-function MarketPage() {
+export function MarketPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />

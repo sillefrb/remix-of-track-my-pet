@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as ProductRouteImport } from './routes/product'
+import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as MarketRouteImport } from './routes/market'
 import { Route as AboutRouteImport } from './routes/about'
@@ -24,6 +25,11 @@ const VisionRoute = VisionRouteImport.update({
 const ProductRoute = ProductRouteImport.update({
   id: '/product',
   path: '/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrintRoute = PrintRouteImport.update({
+  id: '/print',
+  path: '/print',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
+  '/print': typeof PrintRoute
   '/product': typeof ProductRoute
   '/vision': typeof VisionRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
+  '/print': typeof PrintRoute
   '/product': typeof ProductRoute
   '/vision': typeof VisionRoute
 }
@@ -69,20 +77,36 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
+  '/print': typeof PrintRoute
   '/product': typeof ProductRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/market' | '/pricing' | '/product' | '/vision'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/market'
+    | '/pricing'
+    | '/print'
+    | '/product'
+    | '/vision'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/market' | '/pricing' | '/product' | '/vision'
+  to:
+    | '/'
+    | '/about'
+    | '/market'
+    | '/pricing'
+    | '/print'
+    | '/product'
+    | '/vision'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/market'
     | '/pricing'
+    | '/print'
     | '/product'
     | '/vision'
   fileRoutesById: FileRoutesById
@@ -92,6 +116,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   MarketRoute: typeof MarketRoute
   PricingRoute: typeof PricingRoute
+  PrintRoute: typeof PrintRoute
   ProductRoute: typeof ProductRoute
   VisionRoute: typeof VisionRoute
 }
@@ -110,6 +135,13 @@ declare module '@tanstack/react-router' {
       path: '/product'
       fullPath: '/product'
       preLoaderRoute: typeof ProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/print': {
+      id: '/print'
+      path: '/print'
+      fullPath: '/print'
+      preLoaderRoute: typeof PrintRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -148,9 +180,20 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   MarketRoute: MarketRoute,
   PricingRoute: PricingRoute,
+  PrintRoute: PrintRoute,
   ProductRoute: ProductRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
