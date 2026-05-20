@@ -9,10 +9,10 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Chippen er råvaren — værdien ligger i det digitale infrastrukturlag ovenpå. EU's medvind, chipvirkeligheden, principper og rækkefølgen.",
+          "Chippen er begyndelsen — værdien ligger i det, den forbinder. Europæisk udvikling, chipvirkeligheden, principper og rækkefølgen.",
       },
       { property: "og:title", content: "Vision — Track My Pet" },
-      { property: "og:description", content: "Branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien." },
+      { property: "og:description", content: "Branding, tillid og langsigtede samarbejder bliver vigtigere end teknologien." },
     ],
   }),
   component: VisionPage,
@@ -20,11 +20,11 @@ export const Route = createFileRoute("/vision")({
 
 const euLayers = [
   { k: "Identitet", v: "Obligatorisk mikrochip og ejerskab" },
-  { k: "Registrering", v: "Interoperable databaser på tværs af EU" },
-  { k: "Sporbarhed", v: "Bevægelse mellem medlemslande" },
+  { k: "Registrering", v: "Fælles registre på tværs af europæiske lande" },
+  { k: "Registrering", v: "Bevægelse mellem europæiske lande" },
   { k: "Sundhedsdata", v: "Vaccination og medicinsk historik" },
   { k: "Digitalt pas", v: "Standardiseret dokumentation" },
-  { k: "Anti-fraud", v: "Beskyttelse mod illegal handel" },
+  { k: "Beskyttelse", v: "Beskyttelse mod ulovlig handel" },
 ];
 
 const chipPlayers = ["Datamars", "HomeAgain", "AVID Identification Systems", "Pet-ID Microchips", "Virbac BackHome", "AEGID RFID Solutions"];
@@ -37,18 +37,18 @@ const chipReality = [
 const chipFuture = ["Adresse og ejerhistorik", "Forsikring og dyrlæge", "Vaccinationer og medicin", "EU rejseinformation", "Allergier og advarsler", "Stjålet- eller bortløbet-status"];
 const chipRisks = ["GDPR og dataejerskab", "Veterinær- og biologisk godkendelse", "Hacking og spoofing af RFID", "Hvem må ændre oplysningerne?"];
 
-const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Fri af tung software", "Kan blive vane og adfærd"];
+const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Enkel at bruge", "Kan blive vane og adfærd"];
 
 const phases = [
   { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Premium tag og kort koblet til chip-ID. En enkel digital profil. Lav friktion i opsætningen, høj oplevet værdi." },
-  { no: "Fase 02", title: "Abonnement og digital relation", body: "Dokumenter, vaccination, påmindelser, familieadgang og nødprofil. Begyndelsen på løbende indtægter." },
+  { no: "Fase 02", title: "Løbende adgang og digital relation", body: "Dokumenter, vaccination, påmindelser, familieadgang og nødprofil." },
   { no: "Fase 03", title: "Forsikring, rejse og verificeret ejerskabsoverdragelse", body: "Partnerskaber ovenpå data og identitet. Compliance i grænsekrydsning. Verificeret ejerskabsoverdragelse." },
-  { no: "Fase 04", title: "Europæisk infrastrukturlag for kæledyrsidentitet", body: "Det forbrugervendte lag ovenpå EU's sporbarhedsinfrastruktur." },
+  { no: "Fase 04", title: "Europæisk løsning til kæledyrsidentitet", body: "Et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet." },
 ];
 
 const risks = [
-  { title: "For lille", body: "Hvis det bare bliver ”scan min hund”, bliver casen aldrig stor nok. Vi skal eje hele relationen." },
-  { title: "Feature-risiko", body: "Apple og Google kan kopiere simple QR-løsninger. Vi skal eje arbejdsgangen, relationen og dataene." },
+  { title: "For lille", body: "Hvis det bare bliver ”scan min hund”, bliver casen aldrig stor nok. Vi skal være en del af hele relationen." },
+  { title: "Feature-risiko", body: "Apple og Google kan kopiere simple QR-løsninger. Vi skal være en del af arbejdsgangen, relationen og dokumentationen." },
   { title: "Svag fastholdelse", body: "Hvis produktet kun bruges, når hunden er væk, dør abonnementet. Vi skal skabe løbende relevans." },
   { title: "Regulatorisk afhængighed", body: "Produktet skal fungere, uanset hvilken vej EU's regulering går." },
   { title: "For bred vision for tidligt", body: "Ingen super-app, ingen AI, ingen markedsplads fra dag ét. Ét fysisk produkt først." },
@@ -56,23 +56,23 @@ const risks = [
 
 const operatingModel = [
   { title: "Et marked med friktion", body: "Pet-sektoren er fragmenteret, analog og emotionel. EU's nye krav skaber en åbning." },
-  { title: "Stærk intern overbevisning", body: "Vi tror selv på, at det forbrugervendte lag ovenpå pet-infrastrukturen bliver et reelt selskab." },
+  { title: "Stærk intern overbevisning", body: "Vi tror selv på, at et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet bliver et reelt selskab." },
   { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler folk med ekspertise i hardware, design, vet-tech og forsikring — og giver dem en platform." },
-  { title: "Reelt ejerskab og reel magt", body: "Reel equity og reel beslutningsret fra dag ét — det eneste der tiltrækker A-spillere." },
+  { title: "Reelt ejerskab og reel medbestemmelse", body: "Reel equity og reel beslutningsret fra dag ét — det eneste der tiltrækker dygtige mennesker." },
   { title: "Erfaring, talent og distribution", body: "Erfarne operatører + ungt produkttalent + eksisterende distributionskanaler." },
   { title: "Eksisterende relationer som fundament", body: "Vi bygger ovenpå relationer i dyrlægebranchen, forsikringsselskaber og europæiske retail-kanaler." },
   { title: "Fokus før drift", body: "Outsource alt uden for kernen. Hardware, fulfilment og support håndteres af partnere." },
 ];
 
 const blueprint = [
-  { p: "Markedet før idéen", a: "Pet-markedet er stort, gammelt, fragmenteret og emotionelt. Pengeflow og frustration eksisterer allerede." },
+  { p: "Markedet før idéen", a: "Kæledyrsmarkedet er stort, gammelt, fragmenteret og følelsesladet. Eksisterende behov og frustration er allerede til stede." },
   { p: "Friktion med økonomisk volumen", a: "Ejere bruger tusindvis af euro årligt. Hver beslutning kræver dokumenter, login og opslag." },
   { p: "Hele processer — fra ende til ende", a: "Identitet → dokumenter → vaccination → forsikring → travel → emergency → ownership transfer." },
   { p: "Byg ovenpå eksisterende adfærd", a: "Hunde har allerede halsbånd, chip og papirer. Vi reducerer friktion på noget folk allerede gør." },
   { p: "Distribution før produkt", a: "Indbygget distribution gennem dyrlæger, opdrættere, forsikringsselskaber, retail og pet-influencers." },
   { p: "Tydelig kontrast i positionering", a: "Modsat et bureaukratisk EU-register: smukt, simpelt, ejeren ejer sine egne data." },
-  { p: "Tænk platform og lagdeling", a: "Tag → profil → dokumenter → forsikring → travel → identity infrastructure." },
-  { p: "Hvorfor bliver det stort?", a: "Workflow ownership, data lock-in, regulatorisk medvind, indbygget distribution og høj emotional retention." },
+  { p: "Tænk i samlet løsning", a: "Tag → profil → dokumenter → forsikring → rejser → samlet identitet." },
+  { p: "Hvorfor bliver det stort?", a: "Langsigtede relationer, tillid, samarbejder, eksisterende behov, regulatorisk medvind og praktisk anvendelighed gennem hele dyrets liv." },
 ];
 
 export function VisionPage() {
@@ -84,15 +84,15 @@ export function VisionPage() {
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II — KERNETESEN</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
-          Chippen er råvaren.<br />
-          Værdien ligger i det <span className="text-accent not-italic">digitale infrastrukturlag</span> ovenpå.
+          Chippen er begyndelsen.<br />
+          Værdien ligger i det, den <span className="text-accent not-italic">forbinder.</span>
         </h1>
         <div className="mx-auto mt-12 h-px w-12 bg-border" />
         <p className="mt-12 text-base font-light leading-relaxed text-foreground/80">
-          Chippen er en råvare. Det interessante er dataejerskab, verificering, interoperabilitet, opsætning, realtidsopdateringer, tillidslag, EU-kompatibilitet, akutadgang, forsikringsintegration og AI-understøttet dokumentation. Når regulering standardiserer identitet, opstår der altid et nyt software- og infrastrukturlag ovenpå.
+          Chippen er begyndelsen. Det interessante er adgang, dokumentation, registrering, sammenhæng på tværs af lande, akutadgang og forbindelse til relevante funktioner omkring dyret. Når en fælles europæisk udvikling tager form, opstår der behov for en samlet løsning, der samler det hele ét sted.
         </p>
         <p className="mt-8 font-serif text-lg font-light italic leading-relaxed text-foreground/90 md:text-xl">
-          Vi forventer, at branding, tillid og økosystempartnerskaber sandsynligvis bliver vigtigere end selve teknologien.
+          Vi forventer, at branding, tillid og langsigtede samarbejder sandsynligvis bliver vigtigere end selve teknologien.
         </p>
       </section>
 
@@ -100,27 +100,27 @@ export function VisionPage() {
       <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DET EGENTLIGE VÆRDILAG</p>
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DET EGENTLIGE VÆRDI</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Chippen er en råvare.<br /><span className="italic text-accent">Laget ovenpå</span> er forretningen.
+              Chippen er begyndelsen.<br /><span className="italic text-accent">Det, den forbinder,</span> er værdien.
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Værdien ligger i softwarelaget ovenpå hardware — i at operationalisere kompleks regulering, eje den digitale identitet og reducere informationsasymmetri mellem ejer, klinik, forsikring og myndigheder.
+              Værdien ligger i den samlede løsning ovenpå hardwaren — i at samle dokumentation, identitet og adgang ét sted og skabe mere sammenhæng mellem ejer, klinik, forsikring og myndigheder.
             </p>
           </div>
           <div className="md:col-span-7">
             <ul className="grid grid-cols-2 gap-px bg-border">
               {[
-                ["Dataejerskab", "Profilen tilhører ejeren. Chippen er blot nøglen."],
-                ["Verificering", "Realtime trust mellem parter"],
-                ["Interoperabilitet", "På tværs af EU-databaser"],
-                ["Onboarding", "Fra papir til profil på sekunder"],
-                ["Realtidsopdatering", "Vaccination, ID, status — live"],
-                ["Tillidslag", "Klinik, forsikring, told, ejer"],
-                ["EU-kompatibilitet", "Bygget til fælles regelsæt"],
-                ["Akutadgang", "Når sekunder afgør udfaldet"],
-                ["Forsikringsintegration", "Distribution og data — uden risikobæring"],
-                ["AI-dokumentation", "Verificering på tværs af formater"],
+                ["Adgang og ejerskab", "Profilen tilhører ejeren. Chippen er blot nøglen."],
+                ["Verificering", "Tillid mellem ejer, klinik og myndigheder"],
+                ["Sammenhæng", "På tværs af europæiske registre"],
+                ["Opsætning", "Fra papir til profil på få sekunder"],
+                ["Løbende opdatering", "Vaccination, ID og status"],
+                ["Tillid", "Klinik, forsikring, told og ejer"],
+                ["Europæisk udvikling", "Udviklet til fælles regelsæt"],
+                ["Akutadgang", "Når vigtig information skal være let tilgængelig"],
+                ["Forsikring", "Forbindelse og dokumentation — uden risikobæring"],
+                ["Verificeret dokumentation", "Sammenhæng på tværs af formater"],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6">
                   <p className="font-serif text-lg font-light italic text-accent">{k}</p>
@@ -137,12 +137,12 @@ export function VisionPage() {
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="grid gap-16 md:grid-cols-12">
             <div className="md:col-span-4">
-              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">EU TAILWIND</p>
+              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">EUROPÆISK UDVIKLING</p>
               <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-                Et fælles europæisk datalag er på vej.
+                En fælles europæisk udvikling inden for registrering og identitet er i gang.
               </h2>
               <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-                EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, digital sporbarhed og fælles passystemer. Det er mere end nye chipregler — det er et nyt infrastrukturlag.
+                EU bevæger sig mod obligatorisk mikrochip, fælles registre, digital registrering og fælles passystemer. Det er mere end nye chipregler — det er en samlet europæisk udvikling.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -166,7 +166,7 @@ export function VisionPage() {
           <div className="md:col-span-5">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">CHIP-VIRKELIGHEDEN</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-              Hvad chippen <span className="italic text-accent">faktisk</span> kan i dag.
+              Hvad chippen <span className="italic text-accent">bruges til</span> i dag.
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
               Markedet domineres af et lille antal aktører. Stort set alle bygger på samme teknologi: passiv RFID under huden. Lille hukommelse, ingen sporing, ingen opdatering.
@@ -228,7 +228,7 @@ export function VisionPage() {
           <div className="grid gap-16 md:grid-cols-12">
             <div className="md:col-span-4">
               <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PRINCIPPERNE</p>
-              <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">Hvad gør et produkt uundgåeligt?</h2>
+              <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">Hvad gør et produkt værdifuldt over tid?</h2>
             </div>
             <div className="md:col-span-8">
               <ul className="grid grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2">
@@ -273,7 +273,7 @@ export function VisionPage() {
               <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DEN ÆRLIGE KRITIK</p>
               <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">Hvor kan casen dø?</h2>
               <p className="mt-8 text-sm font-light leading-relaxed text-foreground/70">
-                Vi skal være brutalt realistiske. Idéen er stærk, men der er fem reelle risici, vi skal designe os ud af fra dag ét.
+                Vi skal være realistiske. Idéen er stærk, men der er fem reelle risici, vi skal designe os ud af fra dag ét.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -358,7 +358,7 @@ export function VisionPage() {
           </h2>
           <div className="mx-auto mt-12 h-px w-12 bg-background/30" />
           <p className="mt-12 text-sm font-light leading-relaxed text-background/80">
-            Workflow ownership. Data lock-in. Regulatorisk medvind. Indbygget distribution. Høj emotional retention. En relation, der varer 10–15 år pr. dyr.
+            Langsigtede relationer. Tillid. Eksisterende behov. Regulatorisk medvind. Praktisk anvendelighed. En relation, der varer 10–15 år pr. dyr.
           </p>
         </div>
       </section>

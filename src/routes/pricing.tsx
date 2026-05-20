@@ -6,17 +6,17 @@ import { WaitlistCTA } from "@/components/WaitlistCTA";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Track My Pet — Pricing" },
+      { title: "Track My Pet — Medlemskab" },
       {
         name: "description",
         content:
-          "Simpel, transparent prismodel for ejere, klinikker og partnere — benchmarket mod den internationale referencemodel.",
+          "Enkle og gennemsigtige medlemskaber for ejere, klinikker og samarbejdspartnere.",
       },
-      { property: "og:title", content: "Track My Pet — Pricing" },
+      { property: "og:title", content: "Track My Pet — Medlemskab" },
       {
         property: "og:description",
         content:
-          "Free, Plus, Pro og Lifetime for ejere. Clinic Starter, Professional og Enterprise for klinikker. Partner API for ekosystemet.",
+          "Gratis, Plus, Pro og Livstid for ejere. Startpakker for klinikker og samarbejdspartnere.",
       },
     ],
   }),
@@ -25,16 +25,16 @@ export const Route = createFileRoute("/pricing")({
 
 const consumerPlans = [
   {
-    name: "Free",
-    price: "Free",
-    cadence: "/forever",
-    tagline: "Et simpelt udgangspunkt for én verificeret profil.",
-    cta: "Get Started Free",
+    name: "Gratis",
+    price: "Gratis",
+    cadence: "/altid",
+    tagline: "Et enkelt udgangspunkt for én verificeret profil.",
+    cta: "Kom i gang gratis",
     features: [
-      "1 pet passport",
-      "Basic health records",
-      "QR verification",
-      "50MB storage",
+      "1 kæledyrsprofil",
+      "Basis-helbredsjournal",
+      "QR-verificering",
+      "50MB plads",
     ],
     highlight: false,
   },
@@ -42,15 +42,15 @@ const consumerPlans = [
     name: "Plus",
     price: "$9.99",
     cadence: "/month",
-    tagline: "Udvidede værktøjer til rejse, dokumenter og mere.",
-    cta: "Start 14-Day Trial",
+    tagline: "Udvidede funktioner til rejser, dokumenter og mere.",
+    cta: "Prøv 14 dage",
     features: [
-      "2 pet passports",
-      "Full passport access",
-      "Medical record uploads",
-      "Travel export & checklist",
-      "Verified badge",
-      "Emergency profile",
+      "2 kæledyrsprofiler",
+      "Fuld adgang til dokumentation",
+      "Upload af journal",
+      "Rejsedokumentation og tjekliste",
+      "Verificeret mærke",
+      "Akutprofil",
     ],
     highlight: true,
   },
@@ -58,31 +58,30 @@ const consumerPlans = [
     name: "Pro",
     price: "$19.99",
     cadence: "/month",
-    tagline: "For power users der vil have hele platformen.",
-    cta: "Start 14-Day Trial",
+    tagline: "Til den engagerede ejer med flere dyr.",
+    cta: "Prøv 14 dage",
     features: [
-      "Unlimited pets",
-      "AI health insights",
-      "Lost pet alerts",
-      "NFT passport minting",
-      "Premium travel clearance",
-      "Priority support",
-      "5GB storage",
+      "Ubegrænset antal dyr",
+      "Sundhedsindsigt",
+      "Besked ved bortløbet dyr",
+      "Premium rejsedokumentation",
+      "Prioriteret hjælp",
+      "5GB plads",
     ],
     highlight: false,
   },
   {
-    name: "Lifetime Passport",
+    name: "Livstid",
     price: "$299",
-    cadence: "one-time",
-    tagline: "Én betaling. Livstidsadgang.",
-    cta: "Buy Lifetime Pass",
+    cadence: "engangsbeløb",
+    tagline: "Én betaling. Adgang hele livet.",
+    cta: "Køb livstidsadgang",
     features: [
-      "1 lifetime pet passport",
-      "Full passport access",
-      "Medical records",
-      "Travel tools",
-      "One-time $299 payment",
+      "1 kæledyrsprofil for livet",
+      "Fuld adgang til dokumentation",
+      "Journal",
+      "Rejsefunktioner",
+      "Engangsbeløb på $299",
     ],
     highlight: false,
   },
@@ -94,11 +93,11 @@ const orgPlans = [
     price: "$49",
     cadence: "/mo",
     features: [
-      "Up to 50 pets",
-      "Passport creation",
-      "Manual record uploads",
-      "3 staff seats",
-      "Basic clinic dashboard",
+      "Op til 50 dyr",
+      "Oprettelse af profil",
+      "Manuelt upload af journal",
+      "3 medarbejderadgange",
+      "Basis-dashboard",
     ],
   },
   {
@@ -106,12 +105,12 @@ const orgPlans = [
     price: "$99",
     cadence: "/mo",
     features: [
-      "Unlimited pets",
-      "Bulk upload & automation",
-      "Email passport delivery",
-      "Clinic branding",
-      "5 staff seats",
-      "Record templates",
+      "Ubegrænset antal dyr",
+      "Masseupload og automatisering",
+      "Levering af profil pr. e-mail",
+      "Klinikkens egen branding",
+      "5 medarbejderadgange",
+      "Skabeloner til journaler",
     ],
   },
   {
@@ -119,12 +118,12 @@ const orgPlans = [
     price: "$299",
     cadence: "/mo",
     features: [
-      "Everything in Professional",
+      "Alt fra Professional",
       "White label",
-      "API access",
-      "Audit logs",
-      "Multi-location",
-      "25 staff seats",
+      "API-adgang",
+      "Revisionslog",
+      "Flere lokationer",
+      "25 medarbejderadgange",
     ],
   },
   {
@@ -132,11 +131,11 @@ const orgPlans = [
     price: "Free",
     cadence: "/mo",
     features: [
-      "Bulk pet creation",
-      "Adoption tracking",
-      "Pre-generated passports",
-      "3 staff seats",
-      "Free for shelters",
+      "Masseoprettelse af dyr",
+      "Styring af adoption",
+      "Forhåndsgenererede profiler",
+      "3 medarbejderadgange",
+      "Gratis for internater",
     ],
   },
   {
@@ -144,10 +143,10 @@ const orgPlans = [
     price: "$500",
     cadence: "/mo",
     features: [
-      "Passport scanner",
-      "Validation dashboard",
-      "Compliance view",
-      "API access (50K/mo)",
+      "Profilscanner",
+      "Verificeringsdashboard",
+      "Compliance-overblik",
+      "API-adgang (50K/md)",
     ],
   },
   {
@@ -155,10 +154,10 @@ const orgPlans = [
     price: "$1,000",
     cadence: "/mo",
     features: [
-      "API access (500K/mo)",
-      "API logging",
+      "API-adgang (500K/md)",
+      "API-logning",
       "White label",
-      "10 staff seats",
+      "10 medarbejderadgange",
     ],
   },
 ];
@@ -171,23 +170,20 @@ export function PricingPage() {
       {/* HERO */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-          PRICING — REFERENCEMODEL
+          MEDLEMSKAB
         </p>
         <h1 className="font-serif mt-8 text-4xl font-light leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-          Simple,{" "}
-          <span className="italic text-accent">transparent</span> pricing.
+          Enkle og{" "}
+          <span className="italic text-accent">gennemsigtige</span> medlemskaber.
         </h1>
         <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-          Start med essentielt — opgradér når dyret, husstanden, klinikken eller
-          organisationen vokser. Prismodellen er benchmarket 1:1 mod den
-          internationale referencemodel for at validere prispunkter og
-          tier-arkitektur.
+          Start enkelt — udvid når dyret, husstanden, klinikken eller organisationen vokser. Prisstrukturen er sammenholdt med internationale løsninger for at validere prispunkter og niveauer.
         </p>
         <div className="mx-auto mt-12 inline-flex items-center gap-2 rounded-full border border-border px-2 py-1 text-[11px] tracking-[0.25em] text-muted-foreground">
           <span className="rounded-full bg-foreground px-4 py-2 text-background">
-            MONTHLY
+            MÅNEDLIGT
           </span>
-          <span className="px-4 py-2">ANNUAL · SAVE 17%</span>
+          <span className="px-4 py-2">ÅRLIGT · SPAR 17%</span>
         </div>
       </section>
 
@@ -197,16 +193,15 @@ export function PricingPage() {
           <div className="grid grid-cols-12 items-end gap-6 pb-12">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                STARTER KIT — N°00 / ENGANGSDEL
+                STARTPAKKE — N°00 / ENGANGSDEL
               </p>
               <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-                Det fysiske on-ramp.
+                Det fysiske udgangspunkt.
               </h2>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Subscription begynder ved aktivering. Engangs-delen er det
-                fysiske produkt — smukt, taktilt, gaveværdigt.
+                Det løbende medlemskab begynder ved aktivering. Engangsdelen er det fysiske produkt — smukt, taktilt, gaveværdigt.
               </p>
             </div>
           </div>
@@ -219,7 +214,7 @@ export function PricingPage() {
                 body: "Premium tag i børstet metal. Ingen batteri, ingen GPS, ingen logistik. Aktiveres på sekunder.",
               },
               {
-                name: "Starter Kit",
+                name: "Startpakke",
                 price: "kr. 449",
                 body: "Tag, kort til pung og folder til pas og dokumenter. Designet som en gave — også til sig selv.",
               },
@@ -246,11 +241,11 @@ export function PricingPage() {
       </section>
       <section className="mx-auto max-w-[1400px] px-6 pb-24 md:pb-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-          FOR EJERE — N°01 / CONSUMER
+          FOR EJERE — N°01 / DYREEJERE
         </p>
         <h2 className="font-serif mt-6 max-w-2xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-          Fire planer.{" "}
-          <span className="italic text-accent">Ét identitetslag.</span>
+          Fire medlemskaber.{" "}
+          <span className="italic text-accent">Ét samlet sted.</span>
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-4">
@@ -307,16 +302,14 @@ export function PricingPage() {
       <section className="bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-            FOR KLINIKKER, SHELTERS & PARTNERE — N°02 / B2B
+            FOR KLINIKKER, INTERNATER OG SAMARBEJDSPARTNERE — N°02
           </p>
           <h2 className="font-serif mt-6 max-w-3xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
             Connected workflows for{" "}
             <span className="italic text-accent">clinics, shelters and partners.</span>
           </h2>
           <p className="mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Tre niveauer for klinikker, gratis adgang for shelters og to
-            API-tiers for partnere — forsikring, told, rejse, groomers og
-            services.
+            Flere niveauer for klinikker, gratis adgang for internater og to API-niveauer for samarbejdspartnere — forsikring, told, rejse, groomere og relevante funktioner.
           </p>
 
           <div className="mt-16 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -350,16 +343,15 @@ export function PricingPage() {
                 >
                   {p.name.startsWith("Partner") ||
                   p.name.endsWith("Enterprise")
-                    ? "Contact Sales"
-                    : "Start Trial"}
+                    ? "Kontakt os"
+                    : "Prøv"}
                 </button>
               </article>
             ))}
           </div>
 
           <p className="mt-12 max-w-2xl text-xs font-light leading-relaxed text-muted-foreground">
-            Shelters og rescues kan kvalificere sig til gratis eller
-            subsidieret adgang. Kontakt os for at høre mere.
+            Internater og dyreværn kan kvalificere sig til gratis eller subsidieret adgang. Kontakt os for at høre mere.
           </p>
         </div>
       </section>

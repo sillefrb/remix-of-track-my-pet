@@ -9,10 +9,10 @@ export const Route = createFileRoute("/market")({
       {
         name: "description",
         content:
-          "198 millioner hunde og katte i Europa. International referencemodel har valideret arkitektur, prismodel og målgruppesegmentering.",
+          "198 millioner hunde og katte i Europa. Internationale løsninger har valideret arkitektur, prismodel og målgrupper.",
       },
       { property: "og:title", content: "Marked — Track My Pet" },
-      { property: "og:description", content: "108M katte, 90M hunde, 198M relationer som adresserbar målgruppe i EU." },
+      { property: "og:description", content: "108M katte og 90M hunde i Europa." },
     ],
   }),
   component: MarketPage,
@@ -23,17 +23,17 @@ const analogies = [
   { name: "Shopify", layer: "ovenpå e-commerce" },
   { name: "AirHelp", layer: "ovenpå flyrettigheder" },
   { name: "MitID", layer: "ovenpå digital identitet" },
-  { name: "Track My Pet", layer: "ovenpå pet identity" },
+  { name: "Track My Pet", layer: "udviklet til moderne kæledyrsidentitet" },
 ];
 
 const revenueAreas: { title: string; body: string; type: "no" | "yes" }[] = [
-  { type: "no", title: "Uden for fokus", body: "Selve tagget. Chippen. Engangssalget. Hardware bliver kommodity hurtigt." },
-  { type: "yes", title: "Subscription", body: "Premium digital profil med dokumenter, reminders og family sharing." },
-  { type: "yes", title: "Insurance partnerships", body: "Verified identitet og sundhedsdata gør forsikring billigere og enklere." },
-  { type: "yes", title: "Verified identity", body: "Trust-laget mellem ejer, dyrlæge, pasning og myndigheder." },
-  { type: "yes", title: "Document infrastructure", body: "Vaccination, pas, medicin og historik — ét standardiseret lag." },
-  { type: "yes", title: "Recurring services", body: "Travel compliance, ownership transfer, emergency, vet history." },
-  { type: "yes", title: "Big data", body: "Aggregeret, anonymiseret indsigt om sundhed, adfærd, geografi og forbrug — værdifuldt for forsikring, foderindustri, farma, dyrlæger og forskning." },
+  { type: "no", title: "Uden for fokus", body: "Selve tagget. Chippen. Engangssalget. Det fysiske bliver hurtigt en standardvare." },
+  { type: "yes", title: "Løbende adgang", body: "Premium digital profil med dokumenter, påmindelser og familieadgang." },
+  { type: "yes", title: "Forsikringssamarbejder", body: "Verificeret identitet og sundhedsoplysninger gør forsikring enklere og mere præcis." },
+  { type: "yes", title: "Verificeret identitet", body: "Tillid mellem ejer, dyrlæge, pasning og myndigheder." },
+  { type: "yes", title: "Samlet dokumentation", body: "Vaccination, pas, medicin og historik — samlet ét sted." },
+  { type: "yes", title: "Løbende funktioner", body: "Rejsedokumentation, ejerskifte, akutadgang og dyrlægehistorik." },
+  { type: "yes", title: "Anonymiseret indsigt", body: "Aggregeret, anonymiseret indsigt om sundhed, adfærd, geografi og forbrug — værdifuldt for forsikring, foderindustri, farma, dyrlæger og forskning." },
 ];
 
 const winners = ["Track My Pet", "Pet Vault", "Travel Compliance"];
@@ -50,12 +50,12 @@ export function MarketPage() {
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">III — MARKET · EUROPA 2023</p>
               <h1 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-                198 millioner <span className="italic text-accent">relationer</span> venter på at blive forbundet.
+                198 millioner <span className="italic text-accent">hunde og katte</span> i Europa.
               </h1>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Europæisk bestand af hunde og katte. Adresserbar målgruppe for et fælles identitets- og infrastrukturlag. Kilde: FEDIAF 2025.
+                Europæisk bestand af hunde og katte. Målgruppen for en samlet løsning til kæledyrsidentitet. Kilde: FEDIAF 2025.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -110,7 +110,7 @@ export function MarketPage() {
                 <span>KATTE</span><span>HUNDE</span>
               </div>
               <p className="mt-10 font-serif text-base font-light italic leading-relaxed text-foreground/85">
-                Én prik = én million dyr = én million potentielle verificerede profiler.
+                Én prik = én million dyr = én million mulige verificerede profiler.
               </p>
               <p className="mt-6 text-[10px] tracking-[0.35em] text-muted-foreground">
                 KILDE — FEDIAF FACTS &amp; FIGURES 2025 (DATA: 2023)
@@ -123,34 +123,34 @@ export function MarketPage() {
       {/* REFERENCE MODEL */}
       <section>
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">REFERENCEMODEL — MARKEDSBEVIS</p>
+          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">INTERNATIONALE LØSNINGER</p>
           <h2 className="font-serif mt-6 max-w-3xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-            Et eksisterende build viser præcis,{" "}
-            <span className="italic text-accent">hvordan laget operationaliseres.</span>
+            Et eksisterende produkt viser præcis,{" "}
+            <span className="italic text-accent">hvordan løsningen kan se ud.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-foreground/75">
-            Et tilsvarende produkt er allerede bygget internationalt under navnet <span className="italic">The Identity Layer for Pets</span>. Samme arkitektur. Samme målgrupper. Samme prismodel.
+            Et tilsvarende produkt er allerede bygget internationalt under navnet <span className="italic">The Identity Layer for Pets</span>. Samme arkitektur. Samme målgrupper. Samme prisstruktur.
           </p>
 
           <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
             <div className="bg-background p-10">
               <p className="text-[10px] tracking-[0.35em] text-muted-foreground">HVAD PRODUKTET ER</p>
-              <h3 className="font-serif mt-6 text-2xl font-light italic leading-snug">En digital pet-identity-platform</h3>
+              <h3 className="font-serif mt-6 text-2xl font-light italic leading-snug">En digital løsning til kæledyrsidentitet</h3>
               <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
-                Ejerskab, journal, dokumenter og service-historik i ét verificeret system. Ét identitetslag — ejere, dyrlæger, klinikker, internater og services trækker på samme kilde.
+                Ejerskab, journal, dokumenter og historik samlet i ét verificeret system. Ét samlet sted — ejere, dyrlæger, klinikker, internater og relevante funktioner trækker på samme oplysninger.
               </p>
             </div>
             <div className="bg-background p-10">
               <p className="text-[10px] tracking-[0.35em] text-muted-foreground">KERNEPROPOSITION</p>
               <h3 className="font-serif mt-6 text-2xl font-light italic leading-snug">Verified Pet Profiles · Secure Records · Real-Time Access</h3>
               <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
-                Verificerede profiler · sikre journaler · realtime-adgang · permission-based deling. Ét lag, mange parter, samme sandhed.
+                Verificerede profiler · sikre journaler · hurtig adgang · deling efter samtykke. Ét sted, mange parter, samme oplysninger.
               </p>
             </div>
           </div>
 
           <div className="mt-12">
-            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">ØKOSYSTEMET — FIRE PARTER, ÉT LAG</p>
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FIRE PARTER, ÉT SAMLET STED</p>
             <div className="mt-12 grid gap-px bg-border md:grid-cols-2 lg:grid-cols-4">
               {[
                 ["Pet Owners", "Administrer dyrets identitet, journal og dokumenter sikkert ét sted."],
@@ -169,10 +169,10 @@ export function MarketPage() {
           <div className="mt-20 border-t border-border pt-16">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">IMPLIKATIONEN</p>
             <h3 className="font-serif mt-6 max-w-4xl text-3xl font-light italic leading-tight md:text-4xl">
-              Spørgsmålet er ikke længere <span className="text-accent">om</span> identitetslaget bliver bygget — men hvem der ejer det i Norden.
+              Spørgsmålet er ikke længere <span className="text-accent">om</span> en samlet løsning bliver bygget — men hvem der bygger den i Norden.
             </h3>
             <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-foreground/75">
-              Arkitektur, prismodel og målgrupper er bevist internationalt. Vi har EU-tailwinden, det danske klinik-netværk, regulatorisk nærhed og et sprog, hverken Plaid eller en US-aktør taler. Vinduet er åbent — og lukker.
+              Arkitektur, prismodel og målgrupper er bevist internationalt. Vi har den europæiske udvikling, det danske kliniknetværk, regulatorisk nærhed og et sprog, hverken Plaid eller en amerikansk aktør taler. Vinduet er åbent — og lukker.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export function MarketPage() {
         <div className="mx-auto max-w-5xl px-6 py-24 md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PARALLELLER</p>
           <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-            Hver gang regulering standardiserer identitet, opstår der et nyt forbrugervendt lag.
+            Hver gang regulering samler identitet, opstår der et nyt forbrugervendt produkt.
           </h2>
           <ul className="mt-16 border-t border-border">
             {analogies.map((a) => (
@@ -202,7 +202,7 @@ export function MarketPage() {
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">HVOR ER PENGENE?</p>
           <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Værdien ligger i relationen — ovenpå hardwaren.</h2>
           <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-muted-foreground">
-            Hardware er entry. Værdien ligger i subscription, partnerships og data-laget.
+            Det fysiske produkt er begyndelsen. Værdien ligger i løbende adgang, samarbejder og anonymiseret indsigt.
           </p>
         </div>
 
@@ -243,7 +243,7 @@ export function MarketPage() {
                   { tag: "DYRLÆGER", body: "Benchmark, populationssundhed og tidlig opsporing af sygdomsmønstre." },
                   { tag: "MYNDIGHEDER", body: "Realtidsbillede af bestand, vaccinationsdækning og smittespredning." },
                   { tag: "FORSKNING", body: "Et europæisk longitudinelt datasæt om kæledyrs sundhed og levealder." },
-                  { tag: "RETAIL & SERVICES", body: "Forbrugsmønstre, geografi og loyalitet til segmentering og produktudvikling." },
+                  { tag: "PRODUKTER OG FUNKTIONER", body: "Forbrugsmønstre, geografi og loyalitet til segmentering og produktudvikling." },
                 ].map((d) => (
                   <div key={d.tag} className="bg-background p-8">
                     <span className="text-[10px] tracking-[0.35em] text-accent">{d.tag}</span>
@@ -277,7 +277,7 @@ export function MarketPage() {
           </div>
           <div className="mx-auto mt-20 max-w-2xl text-center">
             <p className="text-base font-light leading-relaxed text-foreground/80">
-              Tre produkter. Hver simpel nok til hurtig lancering. Tilsammen fundamentet for et europæisk forbrugerlag ovenpå pet-infrastrukturen.
+              Tre produkter. Hver enkel nok til hurtig lancering. Tilsammen fundamentet for et samlet europæisk produkt til kæledyrsidentitet.
             </p>
           </div>
         </div>
