@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/dogpass-hero.jpg";
 import catImg from "@/assets/dogpass-cat.jpg";
+import catEditorialImg from "@/assets/dogpass-cat-editorial.jpg";
 import skaterImg from "@/assets/dogpass-aktiv-skater.jpg";
 import documentImg from "@/assets/dogpass-document.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -243,8 +244,8 @@ function Index() {
         <figure className="bg-background md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-muted">
             <img
-              src={catImg}
-              alt="Langhåret kat i et minimalistisk lyst rum"
+              src={catEditorialImg}
+              alt="Tabbykat hviler i blødt vinduslys på et linnedklæde"
               width={1080}
               height={1350}
               loading="lazy"

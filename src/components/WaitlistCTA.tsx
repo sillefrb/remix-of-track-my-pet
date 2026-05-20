@@ -8,9 +8,9 @@ type Props = {
 };
 
 export function WaitlistCTA({
-  eyebrow = "VENTELISTE — TIDLIG ADGANG",
+  eyebrow = "VENTELISTE — JOIN THE PACK",
   title = "Vær blandt de første ejere med et verificeret pet ID.",
-  body = "Skriv dig op for tidlig adgang, prelaunch-pris på det fysiske tag og opdateringer om EU's nye pet-infrastruktur.",
+  body = "Skriv dig op for tidlig adgang, førlanceringspris på det fysiske tag og opdateringer om EU's nye kæledyrsinfrastruktur.",
   variant = "default",
 }: Props) {
   const [email, setEmail] = useState("");
