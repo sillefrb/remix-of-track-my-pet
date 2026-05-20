@@ -27,7 +27,7 @@ const analogies = [
 ];
 
 const revenueAreas: { title: string; body: string; type: "no" | "yes" }[] = [
-  { type: "no", title: "Ikke her", body: "Selve tagget. Chippen. Engangssalget. Hardware bliver kommodity hurtigt." },
+  { type: "no", title: "Uden for fokus", body: "Selve tagget. Chippen. Engangssalget. Hardware bliver kommodity hurtigt." },
   { type: "yes", title: "Subscription", body: "Premium digital profil med dokumenter, reminders og family sharing." },
   { type: "yes", title: "Insurance partnerships", body: "Verified identitet og sundhedsdata gør forsikring billigere og enklere." },
   { type: "yes", title: "Verified identity", body: "Trust-laget mellem ejer, dyrlæge, pasning og myndigheder." },
@@ -172,7 +172,7 @@ function MarketPage() {
               Spørgsmålet er ikke længere <span className="text-accent">om</span> identitetslaget bliver bygget — men hvem der ejer det i Norden.
             </h3>
             <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-foreground/75">
-              Arkitektur, prismodel og målgrupper er bevist internationalt. Vi har EU-tailwinden, det danske klinik-netværk, regulatorisk nærhed og et sprog, hverken Plaid eller en US-aktør taler. Vinduet er åbent — ikke uendeligt.
+              Arkitektur, prismodel og målgrupper er bevist internationalt. Vi har EU-tailwinden, det danske klinik-netværk, regulatorisk nærhed og et sprog, hverken Plaid eller en US-aktør taler. Vinduet er åbent — og lukker.
             </p>
           </div>
         </div>
@@ -200,7 +200,7 @@ function MarketPage() {
       <section className="mx-auto max-w-5xl px-6 py-24 md:py-32">
         <div className="text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">HVOR ER PENGENE?</p>
-          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Ikke i hardware. I relationen.</h2>
+          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Værdien ligger i relationen — ovenpå hardwaren.</h2>
           <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-muted-foreground">
             Hardware er entry. Værdien ligger i subscription, partnerships og data-laget.
           </p>

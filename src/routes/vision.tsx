@@ -9,7 +9,7 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Det interessante er ikke chippen — det er det digitale infrastrukturlag ovenpå. EU's medvind, chipvirkeligheden, principper og rækkefølgen.",
+          "Chippen er råvaren — værdien ligger i det digitale infrastrukturlag ovenpå. EU's medvind, chipvirkeligheden, principper og rækkefølgen.",
       },
       { property: "og:title", content: "Vision — Track My Pet" },
       { property: "og:description", content: "Branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien." },
@@ -32,12 +32,12 @@ const chipReality = [
   { k: "Passiv RFID", v: "Intet batteri — aktiveres magnetisk af scanner" },
   { k: "Lille hukommelse", v: "Returnerer typisk kun et statisk ID-nummer" },
   { k: "Ingen live tracking", v: "GPS, eSIM og Bluetooth kræver batteri" },
-  { k: "Ikke til opdatering", v: "Data lever i databaser, ikke på chippen" },
+  { k: "Statisk identifikator", v: "Data lever i databaser, ikke på chippen" },
 ];
 const chipFuture = ["Adresse og ejerhistorik", "Forsikring og dyrlæge", "Vaccinationer og medicin", "EU rejseinformation", "Allergier og advarsler", "Stjålet- eller bortløbet-status"];
 const chipRisks = ["GDPR og dataejerskab", "Veterinær- og biologisk godkendelse", "Hacking og spoofing af RFID", "Hvem må ændre oplysningerne?"];
 
-const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Ikke afhængig af tung software", "Kan blive vane og adfærd"];
+const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Fri af tung software", "Kan blive vane og adfærd"];
 
 const phases = [
   { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Premium tag og kort koblet til chip-ID. En enkel digital profil. Lav friktion i opsætningen, høj oplevet værdi." },
@@ -57,17 +57,17 @@ const risks = [
 const operatingModel = [
   { title: "Et marked med friktion", body: "Pet-sektoren er fragmenteret, analog og emotionel. EU's nye krav skaber en åbning." },
   { title: "Stærk intern overbevisning", body: "Vi tror selv på, at det forbrugervendte lag ovenpå pet-infrastrukturen bliver et reelt selskab." },
-  { title: "Dygtige folk, der ikke vil starte alene", body: "Vi samler folk med ekspertise i hardware, design, vet-tech og forsikring — og giver dem en platform." },
+  { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler folk med ekspertise i hardware, design, vet-tech og forsikring — og giver dem en platform." },
   { title: "Reelt ejerskab og reel magt", body: "Reel equity og reel beslutningsret fra dag ét — det eneste der tiltrækker A-spillere." },
   { title: "Erfaring, talent og distribution", body: "Erfarne operatører + ungt produkttalent + eksisterende distributionskanaler." },
   { title: "Eksisterende relationer som fundament", body: "Vi bygger ovenpå relationer i dyrlægebranchen, forsikringsselskaber og europæiske retail-kanaler." },
-  { title: "Fokus før drift", body: "Outsource alt der ikke er kerne. Hardware, fulfilment og support håndteres af partnere." },
+  { title: "Fokus før drift", body: "Outsource alt uden for kernen. Hardware, fulfilment og support håndteres af partnere." },
 ];
 
 const blueprint = [
-  { p: "Start med markedet, ikke idéen", a: "Pet-markedet er stort, gammelt, fragmenteret og emotionelt. Pengeflow og frustration eksisterer allerede." },
+  { p: "Markedet før idéen", a: "Pet-markedet er stort, gammelt, fragmenteret og emotionelt. Pengeflow og frustration eksisterer allerede." },
   { p: "Friktion med økonomisk volumen", a: "Ejere bruger tusindvis af euro årligt. Hver beslutning kræver dokumenter, login og opslag." },
-  { p: "Hele processer, ikke features", a: "Identitet → dokumenter → vaccination → forsikring → travel → emergency → ownership transfer." },
+  { p: "Hele processer — fra ende til ende", a: "Identitet → dokumenter → vaccination → forsikring → travel → emergency → ownership transfer." },
   { p: "Byg ovenpå eksisterende adfærd", a: "Hunde har allerede halsbånd, chip og papirer. Vi reducerer friktion på noget folk allerede gør." },
   { p: "Distribution før produkt", a: "Indbygget distribution gennem dyrlæger, opdrættere, forsikringsselskaber, retail og pet-influencers." },
   { p: "Tydelig kontrast i positionering", a: "Modsat et bureaukratisk EU-register: smukt, simpelt, ejeren ejer sine egne data." },
@@ -84,8 +84,8 @@ function VisionPage() {
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II — KERNETESEN</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
-          Det interessante er ikke chippen.<br />
-          Det er det <span className="text-accent not-italic">digitale infrastrukturlag</span> ovenpå.
+          Chippen er råvaren.<br />
+          Værdien ligger i det <span className="text-accent not-italic">digitale infrastrukturlag</span> ovenpå.
         </h1>
         <div className="mx-auto mt-12 h-px w-12 bg-border" />
         <p className="mt-12 text-base font-light leading-relaxed text-foreground/80">
@@ -105,13 +105,13 @@ function VisionPage() {
               Chippen er en råvare.<br /><span className="italic text-accent">Laget ovenpå</span> er forretningen.
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Værdien ligger ikke i hardware. Den ligger i at operationalisere kompleks regulering, eje den digitale identitet og reducere informationsasymmetri mellem ejer, klinik, forsikring og myndigheder.
+              Værdien ligger i softwarelaget ovenpå hardware — i at operationalisere kompleks regulering, eje den digitale identitet og reducere informationsasymmetri mellem ejer, klinik, forsikring og myndigheder.
             </p>
           </div>
           <div className="md:col-span-7">
             <ul className="grid grid-cols-2 gap-px bg-border">
               {[
-                ["Dataejerskab", "Ejeren ejer profilen — ikke chippen"],
+                ["Dataejerskab", "Profilen tilhører ejeren. Chippen er blot nøglen."],
                 ["Verificering", "Realtime trust mellem parter"],
                 ["Interoperabilitet", "På tværs af EU-databaser"],
                 ["Onboarding", "Fra papir til profil på sekunder"],
@@ -119,7 +119,7 @@ function VisionPage() {
                 ["Tillidslag", "Klinik, forsikring, told, ejer"],
                 ["EU-kompatibilitet", "Bygget til fælles regelsæt"],
                 ["Akutadgang", "Når sekunder afgør udfaldet"],
-                ["Forsikringsintegration", "Distribution og data — ikke risiko"],
+                ["Forsikringsintegration", "Distribution og data — uden risikobæring"],
                 ["AI-dokumentation", "Verificering på tværs af formater"],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6">
@@ -142,7 +142,7 @@ function VisionPage() {
                 Et fælles europæisk datalag er på vej.
               </h2>
               <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-                EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, digital sporbarhed og fælles passystemer. Det er ikke bare ”nye regler om chip” — det er et nyt infrastrukturlag.
+                EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, digital sporbarhed og fælles passystemer. Det er mere end nye chipregler — det er et nyt infrastrukturlag.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -207,9 +207,9 @@ function VisionPage() {
           </div>
           <div className="bg-background p-10 md:p-14">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">HVIS CHIPPEN IKKE KAN</p>
-            <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">Vi rører ikke chippen</h3>
+            <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">Uafhængig af chipudviklingen</h3>
             <p className="mt-4 text-sm font-light leading-relaxed text-foreground/75">
-              Skulle chip-teknologien ikke modnes, fungerer Track My Pet uændret. Vi peger på det eksisterende chip-ID og bygger hele værdien i tag, app og cloudprofil.
+              Modner chip-teknologien langsommere end ventet, kører Track My Pet uændret videre. Vi peger på det eksisterende chip-ID og bygger hele værdien i tag, app og cloudprofil.
             </p>
             <ul className="mt-8 space-y-2">
               {chipRisks.map((r) => (

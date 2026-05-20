@@ -48,7 +48,7 @@ const sections: {
     to: "/vision",
     no: "II",
     label: "VISION",
-    title: "Det interessante er ikke chippen.",
+    title: "Chippen er råvaren. Laget ovenpå er værdien.",
     body: "Det er det digitale infrastrukturlag ovenpå. Vi forventer, at branding, tillid og økosystempartnerskaber bliver vigtigere end teknologien selv.",
     img: documentImg,
   },
@@ -65,7 +65,7 @@ const sections: {
     no: "IV",
     label: "PRICING",
     title: "Free → Plus → Pro → Lifetime.",
-    body: "Tre tiers af klinik. To tiers af partner-API. Markedet betaler allerede — det er ikke en hypotese, det er en prisstruktur.",
+    body: "Tre tiers af klinik. To tiers af partner-API. Ingen hypotese — en prisstruktur, markedet allerede betaler.",
   },
 ];
 
@@ -147,7 +147,7 @@ function Index() {
               {
                 tag: "ÅBNINGEN",
                 title: "Ingen forbrugervendt løsning",
-                body: "Alligevel findes der stadig intet samlet lag, der samler det hele i ét — for ejeren, ikke for systemet.",
+                body: "Alligevel findes der stadig intet samlet lag, der samler det hele i ét — bygget om ejeren, ikke om systemet.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -174,12 +174,12 @@ function Index() {
               HVORFOR MODELLEN VIRKER
             </p>
             <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
-              Styrken er ikke teknologien.{" "}
-              <span className="italic text-accent">Det er kombinationen.</span>
+              Teknologien er midlet.{" "}
+              <span className="italic text-accent">Kombinationen er styrken.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Brugeren skal forstå værdien på få sekunder. Ikke teknisk. Ikke
-              komplekst. Ikke fyldt med features. Simpliciteten er en del af
+              Brugeren skal forstå værdien på få sekunder. Umiddelbar. Klar.
+              Renset for støj. Simpliciteten er en del af
               produktværdien.
             </p>
           </div>
@@ -192,7 +192,7 @@ function Index() {
                 ["Ekstremt lav friktion", "Scan → aktivér → forbundet."],
                 ["Abonnementsbaserede services", "Recurring revenue fra dag ét."],
                 ["Langsigtet dataejerskab", "Ejeren ejer profilen — vi ejer relationen."],
-                ["Løbende kunderelationer", "Hele dyrets liv, ikke ét køb."],
+                ["Løbende kunderelationer", "Hele dyrets liv — fra første scan til sidste rejse."],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6 md:p-7">
                   <p className="font-serif text-lg font-light italic text-foreground">
@@ -215,7 +215,7 @@ function Index() {
             EMOTIONEL POSITIONERING
           </p>
           <h2 className="font-serif mx-auto mt-8 max-w-3xl text-3xl font-light italic leading-snug md:text-5xl">
-            Kunderne køber ikke et QR-tag.
+            Kunderne køber tryghed — ikke et QR-tag.
           </h2>
           <ul className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 font-serif text-2xl font-light md:text-4xl">
             {["Tryghed", "Sikkerhed", "Kontrol", "Ansvar", "Overblik", "Bekvemmelighed"].map(
@@ -342,7 +342,7 @@ function Index() {
             <div className="col-span-12 md:col-span-5">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">STRATEGIEN</p>
               <h2 className="font-serif mt-8 text-4xl font-light italic leading-[1.0] md:text-5xl lg:text-6xl">
-                Start ikke med en platform.<br />
+                Glem platformen.<br />
                 Start med ét objekt, folk føler de burde have.
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
@@ -357,7 +357,7 @@ function Index() {
             <div className="col-span-12 md:col-span-7">
               <ol className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
                 {[
-                  { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et produkt — ikke en tjeneste. Kunden forstår det med det samme." },
+                  { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et objekt, ejes som et arvestykke. Kunden forstår det med det samme." },
                   { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, reminders, family sharing. Subscription begynder her." },
                   { step: "03", tag: "DATALAG", title: "Aggregeret indsigt", body: "Sundhed, adfærd, geografi og forbrug — anonymiseret og samtykke-baseret. Værdi for forsikring, foder, farma og forskning." },
                   { step: "04", tag: "INFRASTRUKTUR", title: "Forbrugerlaget ovenpå EU", body: "Når EU's chipkrav ruller ud, ligger vi som det forbrugervendte lag mellem ejer, dyrlæge, myndigheder og services." },
