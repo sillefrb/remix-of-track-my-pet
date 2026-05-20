@@ -27,6 +27,9 @@ export function SiteHeader() {
           <Link to="/pricing" className={linkBase} activeProps={{ className: "text-accent" }}>
             PRICING
           </Link>
+          <Link to="/about" className={linkBase} activeProps={{ className: "text-accent" }}>
+            OM OS
+          </Link>
         </nav>
         <span className="hidden text-[11px] tracking-[0.25em] text-muted-foreground lg:block">
           FORRETNINGSCASE — 2026
