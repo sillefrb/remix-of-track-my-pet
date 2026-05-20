@@ -98,12 +98,11 @@ function Index() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Operativsystemet for moderne kæledyrsejerskab.
+            Fra pas til digital identitet.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Et simpelt fysisk NFC/QR-tag forbundet til en sikker digital profil
-            med alt om dyret — sundhed, vaccination, forsikring, pas,
-            nødkontakter, rejse og familieadgang. Scan → aktivér → forbundet.
+            Et samlet produkt til identitet, dokumentation og tryghed gennem
+            hele dyrets liv. Et fysisk tag og en digital profil — samlet ét sted.
           </p>
         </div>
       </section>
@@ -141,14 +140,14 @@ function Index() {
                 body: "Dyrlæge, forsikring, pas, microchip-register, foderabonnement, pasningsapp, rejseattest, mails. Intet taler sammen.",
               },
               {
-                tag: "EU-REGULERING",
-                title: "Et nyt fælles lag er på vej",
-                body: "EU bevæger sig mod obligatorisk mikrochip, interoperable databaser, sporbarhed og digital registrering på tværs af medlemslande. Det markerer begyndelsen på en fælles europæisk infrastruktur for digital kæledyrsidentitet.",
+                tag: "EU-UDVIKLING",
+                title: "En fælles europæisk udvikling er i gang",
+                body: "En fælles europæisk udvikling inden for kæledyrsidentitet, registrering og dokumentation er i gang. Mikrochip, registrering og verificerbare oplysninger får en stadig større rolle på tværs af Europa.",
               },
               {
-                tag: "ÅBNINGEN",
-                title: "Ingen forbrugervendt løsning",
-                body: "Alligevel findes der stadig intet samlet lag, der samler det hele i ét — bygget om ejeren, ikke om systemet.",
+                tag: "BEHOVET",
+                title: "Behov for en enklere adgang",
+                body: "Kæledyrsidentitet bevæger sig gradvist fra fysiske dokumenter til mere sammenhængende digitale løsninger. Det skaber behov for enklere adgang til dokumentation, registrering og identitet samlet ét sted.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
