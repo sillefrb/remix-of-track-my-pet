@@ -59,7 +59,7 @@ const sections: {
     label: "MARKED",
     title: "198 millioner relationer venter på at blive forbundet.",
     body: "108 mio. katte og 90 mio. hunde i Europa. En international referencemodel har allerede valideret arkitektur, prismodel og målgruppesegmentering.",
-    img: catEditorialImg,
+    img: catImg,
   },
   {
     to: "/pricing",
@@ -244,7 +244,7 @@ function Index() {
         <figure className="bg-background md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-muted">
             <img
-              src={catImg}
+              src={catEditorialImg}
               alt="Hvid plettet kat siddende i profil foran en mørk træport"
               width={1080}
               height={1350}
