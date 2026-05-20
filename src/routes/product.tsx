@@ -212,12 +212,12 @@ function ProductPage() {
             </figcaption>
           </figure>
           <div className="flex flex-col justify-center bg-background p-10 md:col-span-5 md:p-14">
-            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FROM PAPER TO PROFILE</p>
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FRA PAS TIL DIGITAL IDENTITET</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Det fysiske pas <span className="italic text-accent">bliver digitalt</span> — og følger dyret livet ud.
+              Et samlet produkt til identitet, dokumentation og <span className="italic text-accent">tryghed gennem hele dyrets liv.</span>
             </h2>
             <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Vaccinationer, mikrochip-ID, ejerskifte, forsikring og rejse samles i én verificeret profil. Ejeren ejer dataene. Klinikker, myndigheder og services får adgang via samtykke.
+              Vaccinationer, mikrochip-ID, forsikring, ejerskab og dokumentation samles ét sted. Udviklet til at skabe mere sammenhæng mellem ejer, klinikker og relevante funktioner omkring dyret.
             </p>
           </div>
         </div>

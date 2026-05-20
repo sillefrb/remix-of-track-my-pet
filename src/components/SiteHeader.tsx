@@ -19,20 +19,20 @@ export function SiteHeader() {
             PRODUKT
           </Link>
           <Link to="/vision" className={linkBase} activeProps={{ className: "text-accent" }}>
-            VISION
+            HVORFOR DET ER NØDVENDIGT
           </Link>
           <Link to="/market" className={linkBase} activeProps={{ className: "text-accent" }}>
-            MARKED
+            BAGGRUND
           </Link>
           <Link to="/pricing" className={linkBase} activeProps={{ className: "text-accent" }}>
-            PRICING
+            MEDLEMSKAB
           </Link>
           <Link to="/about" className={linkBase} activeProps={{ className: "text-accent" }}>
             OM OS
           </Link>
         </nav>
         <span className="hidden text-[11px] tracking-[0.25em] text-muted-foreground lg:block">
-          FORRETNINGSCASE — 2026
+          OM PRODUKTET
         </span>
       </div>
     </header>
