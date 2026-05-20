@@ -293,7 +293,7 @@ function ProductPage() {
         <div className="mx-auto max-w-3xl px-6 py-20 text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">NÆSTE</p>
           <h2 className="font-serif mt-6 text-3xl font-light italic leading-snug md:text-4xl">
-            Hvorfor er det her infrastruktur — ikke en app?
+            Hvorfor er det her infrastruktur frem for en app?
           </h2>
           <Link to="/vision" className="mt-10 inline-block rounded-full bg-foreground px-8 py-3 text-[11px] tracking-[0.25em] text-background hover:bg-accent">
             LÆS VISIONEN
