@@ -10,13 +10,13 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Enkle og gennemsigtige medlemskaber for ejere, klinikker og samarbejdspartnere.",
+          "Enkle og gennemsigtige medlemskaber for ejere, klinikker og samarbejdspartnere — udviklet til moderne kæledyrsejerskab.",
       },
       { property: "og:title", content: "Track My Pet — Medlemskab" },
       {
         property: "og:description",
         content:
-          "Gratis, Plus, Pro og Livstid for ejere. Startpakker for klinikker og samarbejdspartnere.",
+          "Gratis, Plus, Pro og Livstid for ejere. Pakker til klinikker og samarbejdspartnere.",
       },
     ],
   }),
@@ -89,7 +89,7 @@ const consumerPlans = [
 
 const orgPlans = [
   {
-    name: "Clinic Starter",
+    name: "Klinik Start",
     price: "$49",
     cadence: "/mo",
     features: [
@@ -101,7 +101,7 @@ const orgPlans = [
     ],
   },
   {
-    name: "Clinic Professional",
+    name: "Klinik Professionel",
     price: "$99",
     cadence: "/mo",
     features: [
@@ -114,7 +114,7 @@ const orgPlans = [
     ],
   },
   {
-    name: "Clinic Enterprise",
+    name: "Klinik Udvidet",
     price: "$299",
     cadence: "/mo",
     features: [
@@ -127,7 +127,7 @@ const orgPlans = [
     ],
   },
   {
-    name: "Shelter Basic",
+    name: "Internat Basis",
     price: "Free",
     cadence: "/mo",
     features: [
@@ -139,7 +139,7 @@ const orgPlans = [
     ],
   },
   {
-    name: "Partner Validation",
+    name: "Partner Verificering",
     price: "$500",
     cadence: "/mo",
     features: [
@@ -150,7 +150,7 @@ const orgPlans = [
     ],
   },
   {
-    name: "Partner API Access",
+    name: "Partner API-adgang",
     price: "$1,000",
     cadence: "/mo",
     features: [
@@ -177,7 +177,7 @@ export function PricingPage() {
           <span className="italic text-accent">gennemsigtige</span> medlemskaber.
         </h1>
         <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-          Start enkelt — udvid når dyret, husstanden, klinikken eller organisationen vokser. Prisstrukturen er sammenholdt med internationale løsninger for at validere prispunkter og niveauer.
+          Start enkelt — udvid når dyret, husstanden, klinikken eller organisationen vokser. Et samlet produkt udviklet til hele dyrets liv.
         </p>
         <div className="mx-auto mt-12 inline-flex items-center gap-2 rounded-full border border-border px-2 py-1 text-[11px] tracking-[0.25em] text-muted-foreground">
           <span className="rounded-full bg-foreground px-4 py-2 text-background">
@@ -258,7 +258,7 @@ export function PricingPage() {
             >
               {p.highlight && (
                 <span className="mb-4 inline-block w-fit rounded-full bg-accent/10 px-3 py-1 text-[10px] tracking-[0.3em] text-accent">
-                  MOST POPULAR
+                  MEST POPULÆR
                 </span>
               )}
               <h3 className="font-serif text-2xl font-light italic">
@@ -309,7 +309,7 @@ export function PricingPage() {
             <span className="italic text-accent">klinikker, internater og samarbejdspartnere.</span>
           </h2>
           <p className="mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Flere niveauer for klinikker, gratis adgang for internater og to API-niveauer for samarbejdspartnere — forsikring, told, rejse, groomere og relevante funktioner.
+            Flere niveauer for klinikker, gratis adgang for internater og to niveauer for samarbejdspartnere — forsikring, rejsedokumentation, pasning og relevante funktioner.
           </p>
 
           <div className="mt-16 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -342,7 +342,7 @@ export function PricingPage() {
                   className="mt-10 w-full rounded-full border border-border bg-background px-6 py-3 text-xs tracking-[0.2em] text-foreground transition hover:bg-muted"
                 >
                   {p.name.startsWith("Partner") ||
-                  p.name.endsWith("Enterprise")
+                  p.name.endsWith("Udvidet")
                     ? "Kontakt os"
                     : "Prøv"}
                 </button>
@@ -359,7 +359,7 @@ export function PricingPage() {
       <WaitlistCTA
         eyebrow="VENTELISTE — TIDLIG ADGANG"
         title="Skriv dig op til førlanceringsprisen."
-        body="Tidlige ejere får adgang før alle andre — og en reduceret pris på Starter Kit og første års abonnement."
+        body="Tidlige ejere får adgang før alle andre — og en reduceret pris på startpakken og første års medlemskab."
       />
 
       <SiteFooter />

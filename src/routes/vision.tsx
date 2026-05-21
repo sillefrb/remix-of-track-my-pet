@@ -9,10 +9,10 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Chippen er begyndelsen — værdien ligger i det, den forbinder. Europæisk udvikling, chipvirkeligheden, principper og rækkefølgen.",
+          "En samlet løsning til identitet, dokumentation og tryghed. Europæisk udvikling, principper og rækkefølgen.",
       },
       { property: "og:title", content: "Vision — Track My Pet" },
-      { property: "og:description", content: "Branding, tillid og langsigtede samarbejder bliver vigtigere end teknologien." },
+      { property: "og:description", content: "Tillid, omsorg og langsigtede relationer er vigtigere end teknologien." },
     ],
   }),
   component: VisionPage,
@@ -40,39 +40,39 @@ const chipRisks = ["GDPR og dataejerskab", "Veterinær- og biologisk godkendelse
 const principles = ["Simpelt fysisk objekt", "Løser én konkret irritation", "Følelsesmæssig relevans", "”Hvorfor findes det ikke allerede?”-effekt", "Lav produktionskompleksitet", "Høj oplevet værdi", "Let at forklare i video", "Globalt problem", "Enkel at bruge", "Kan blive vane og adfærd"];
 
 const phases = [
-  { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Premium tag og kort koblet til chip-ID. En enkel digital profil. Lav friktion i opsætningen, høj oplevet værdi." },
+  { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Et gennemtænkt tag og kort koblet til mikrochip-ID. En enkel digital profil. Enkel opsætning, høj praktisk værdi." },
   { no: "Fase 02", title: "Løbende adgang og digital relation", body: "Dokumenter, vaccination, påmindelser, familieadgang og nødprofil." },
-  { no: "Fase 03", title: "Forsikring, rejse og verificeret ejerskabsoverdragelse", body: "Partnerskaber ovenpå data og identitet. Compliance i grænsekrydsning. Verificeret ejerskabsoverdragelse." },
-  { no: "Fase 04", title: "Europæisk løsning til kæledyrsidentitet", body: "Et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet." },
+  { no: "Fase 03", title: "Forsikring, rejse og verificeret ejerskabsoverdragelse", body: "Samarbejder omkring forsikring, rejsedokumentation og verificeret ejerskifte." },
+  { no: "Fase 04", title: "En samlet løsning til kæledyrsidentitet", body: "En samlet løsning til identitet, dokumentation og tryghed — udviklet i takt med den europæiske udvikling inden for kæledyrsidentitet." },
 ];
 
 const risks = [
-  { title: "For lille", body: "Hvis det bare bliver ”scan min hund”, bliver casen aldrig stor nok. Vi skal være en del af hele relationen." },
-  { title: "Feature-risiko", body: "Apple og Google kan kopiere simple QR-løsninger. Vi skal være en del af arbejdsgangen, relationen og dokumentationen." },
-  { title: "Svag fastholdelse", body: "Hvis produktet kun bruges, når hunden er væk, dør abonnementet. Vi skal skabe løbende relevans." },
-  { title: "Regulatorisk afhængighed", body: "Produktet skal fungere, uanset hvilken vej EU's regulering går." },
-  { title: "For bred vision for tidligt", body: "Ingen super-app, ingen AI, ingen markedsplads fra dag ét. Ét fysisk produkt først." },
+  { title: "For lille", body: "Hvis det bare bliver “scan min hund”, kommer produktet aldrig til at betyde nok. Det skal være en del af hele relationen mellem ejer og dyr." },
+  { title: "Feature-risiko", body: "Simple QR-løsninger er lette at kopiere. Værdien ligger i at være en del af hverdagen, relationen og dokumentationen." },
+  { title: "Svag fastholdelse", body: "Hvis produktet kun bruges i nødsituationer, mister det relevans. Det skal være en naturlig del af hverdagen." },
+  { title: "Regulatorisk afhængighed", body: "Produktet skal fungere uanset hvilken vej den europæiske udvikling går." },
+  { title: "For bred vision for tidligt", body: "Vi begynder enkelt. Ét gennemtænkt fysisk produkt, der vokser i takt med relationen." },
 ];
 
 const operatingModel = [
-  { title: "Et marked med friktion", body: "Pet-sektoren er fragmenteret, analog og emotionel. EU's nye krav skaber en åbning." },
-  { title: "Stærk intern overbevisning", body: "Vi tror selv på, at et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet bliver et reelt selskab." },
-  { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler folk med ekspertise i hardware, design, vet-tech og forsikring — og giver dem en platform." },
-  { title: "Reelt ejerskab og reel medbestemmelse", body: "Reel equity og reel beslutningsret fra dag ét — det eneste der tiltrækker dygtige mennesker." },
-  { title: "Erfaring, talent og distribution", body: "Erfarne operatører + ungt produkttalent + eksisterende distributionskanaler." },
-  { title: "Eksisterende relationer som fundament", body: "Vi bygger ovenpå relationer i dyrlægebranchen, forsikringsselskaber og europæiske retail-kanaler." },
-  { title: "Fokus før drift", body: "Outsource alt uden for kernen. Hardware, fulfilment og support håndteres af partnere." },
+  { title: "Et marked med friktion", body: "Kæledyrsmarkedet er fragmenteret og analogt. Den europæiske udvikling åbner for en mere sammenhængende løsning." },
+  { title: "Stærk intern overbevisning", body: "Vi tror på, at en samlet løsning til kæledyrsidentitet og dokumentation har en naturlig plads i moderne kæledyrsejerskab." },
+  { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler mennesker med erfaring fra design, hardware, dyrlægeverdenen og forsikring — og giver dem rammerne til at bygge noget langsigtet." },
+  { title: "Reelt ejerskab og reel medbestemmelse", body: "Reelt ejerskab og reel beslutningsret fra start — fordi langsigtede produkter bygges af mennesker, der selv er en del af dem." },
+  { title: "Erfaring, talent og distribution", body: "Erfarne folk, ungt produkttalent og eksisterende relationer i branchen." },
+  { title: "Eksisterende relationer som fundament", body: "Vi bygger videre på eksisterende relationer i dyrlægebranchen, forsikringsverdenen og europæiske detailkanaler." },
+  { title: "Fokus før drift", body: "Vi holder fokus på kernen. Produktion, levering og support varetages af pålidelige partnere." },
 ];
 
 const blueprint = [
-  { p: "Markedet før idéen", a: "Kæledyrsmarkedet er stort, gammelt, fragmenteret og følelsesladet. Eksisterende behov og frustration er allerede til stede." },
-  { p: "Friktion med økonomisk volumen", a: "Ejere bruger tusindvis af euro årligt. Hver beslutning kræver dokumenter, login og opslag." },
-  { p: "Hele processer — fra ende til ende", a: "Identitet → dokumenter → vaccination → forsikring → travel → emergency → ownership transfer." },
-  { p: "Byg ovenpå eksisterende adfærd", a: "Hunde har allerede halsbånd, chip og papirer. Vi reducerer friktion på noget folk allerede gør." },
-  { p: "Distribution før produkt", a: "Indbygget distribution gennem dyrlæger, opdrættere, forsikringsselskaber, retail og pet-influencers." },
-  { p: "Tydelig kontrast i positionering", a: "Modsat et bureaukratisk EU-register: smukt, simpelt, ejeren ejer sine egne data." },
-  { p: "Tænk i samlet løsning", a: "Tag → profil → dokumenter → forsikring → rejser → samlet identitet." },
-  { p: "Hvorfor bliver det stort?", a: "Langsigtede relationer, tillid, samarbejder, eksisterende behov, regulatorisk medvind og praktisk anvendelighed gennem hele dyrets liv." },
+  { p: "Markedet før idéen", a: "Kæledyrsmarkedet er stort, gammelt og fragmenteret. Behovet for et samlet sted er allerede til stede." },
+  { p: "Friktion med økonomisk volumen", a: "Ejere bruger store beløb årligt. Hver beslutning kræver dokumenter, login og opslag flere steder." },
+  { p: "Hele processer — fra ende til ende", a: "Identitet → dokumentation → vaccination → forsikring → rejser → akut hjælp → ejerskifte." },
+  { p: "Byg ovenpå eksisterende adfærd", a: "Hunde har allerede halsbånd, chip og papirer. Vi gør hverdagen enklere omkring noget, folk allerede gør." },
+  { p: "Distribution før produkt", a: "Naturlig distribution gennem dyrlæger, opdrættere, forsikringsselskaber og detail." },
+  { p: "Tydelig kontrast i positionering", a: "I kontrast til et bureaukratisk register: enkelt, gennemtænkt, og ejeren beholder sine egne oplysninger." },
+  { p: "Tænk i samlet løsning", a: "Tag → profil → dokumentation → forsikring → rejser → samlet identitet." },
+  { p: "Hvorfor bliver det stort?", a: "Langsigtede relationer, tillid, eksisterende behov og praktisk værdi gennem hele dyrets liv." },
 ];
 
 export function VisionPage() {
@@ -84,15 +84,14 @@ export function VisionPage() {
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II — KERNETESEN</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
-          Chippen er begyndelsen.<br />
-          Værdien ligger i det, den <span className="text-accent not-italic">forbinder.</span>
+          Et samlet sted for<br /><span className="text-accent not-italic">identitet og dokumentation.</span>
         </h1>
         <div className="mx-auto mt-12 h-px w-12 bg-border" />
         <p className="mt-12 text-base font-light leading-relaxed text-foreground/80">
-          Chippen er begyndelsen. Det interessante er adgang, dokumentation, registrering, sammenhæng på tværs af lande, akutadgang og forbindelse til relevante funktioner omkring dyret. Når en fælles europæisk udvikling tager form, opstår der behov for en samlet løsning, der samler det hele ét sted.
+          Mikrochippen er et udgangspunkt. Det egentlige behov er adgang, dokumentation, registrering, sammenhæng på tværs af europæiske lande og hurtig hjælp, når det er nødvendigt. En fælles europæisk udvikling skaber behov for ét samlet sted at samle det hele.
         </p>
         <p className="mt-8 font-serif text-lg font-light italic leading-relaxed text-foreground/90 md:text-xl">
-          Vi forventer, at branding, tillid og langsigtede samarbejder sandsynligvis bliver vigtigere end selve teknologien.
+          Tillid, omsorg og langsigtede relationer er det, der bærer et produkt som dette gennem hele dyrets liv.
         </p>
       </section>
 
@@ -100,12 +99,12 @@ export function VisionPage() {
       <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DET EGENTLIGE VÆRDI</p>
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DEN EGENTLIGE VÆRDI</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Chippen er begyndelsen.<br /><span className="italic text-accent">Det, den forbinder,</span> er værdien.
+              Et samlet sted for<br /><span className="italic text-accent">vigtig information om dyret.</span>
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Værdien ligger i den samlede løsning ovenpå hardwaren — i at samle dokumentation, identitet og adgang ét sted og skabe mere sammenhæng mellem ejer, klinik, forsikring og myndigheder.
+              Værdien ligger i den samlede løsning — i at samle dokumentation, identitet og adgang ét sted og skabe mere sammenhæng mellem ejer, klinik, forsikring og myndigheder.
             </p>
           </div>
           <div className="md:col-span-7">
@@ -248,7 +247,7 @@ export function VisionPage() {
       <section className="mx-auto max-w-5xl px-6 py-24 md:py-32">
         <div className="text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">RÆKKEFØLGEN</p>
-          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Fra objekt til infrastruktur</h2>
+          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Fra objekt til samlet løsning</h2>
         </div>
         <ol className="mt-20">
           {phases.map((p) => (
@@ -320,12 +319,12 @@ export function VisionPage() {
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="grid gap-16 md:grid-cols-12">
             <div className="md:col-span-5">
-              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">BLUEPRINT-CHECK</p>
+              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">CASEN MOD KENDTE MØNSTRE</p>
               <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-                Holder casen op imod blueprintet for skalerbare selskaber?
+                Holder casen mod kendte mønstre for langsigtede produkter?
               </h2>
               <p className="font-serif mt-10 text-xl font-light italic leading-snug text-accent md:text-2xl">
-                Et marked. En proces. En position. En relation, der varer hele dyrets liv.
+                Ét marked. Én relation. Ét samlet sted. Gennem hele dyrets liv.
               </p>
             </div>
             <div className="md:col-span-7">
