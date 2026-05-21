@@ -15,13 +15,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Et premium consumer operating system ovenpå EU's nye traceability-infrastruktur for hunde og katte.",
+          "Et samlet produkt til identitet, dokumentation og tryghed gennem hele dyrets liv. Et fysisk tag og en digital profil samlet ét sted.",
       },
       { property: "og:title", content: "Track My Pet — Forretningscase" },
       {
         property: "og:description",
         content:
-          "Et premium consumer operating system ovenpå EU's nye traceability-infrastruktur.",
+          "En samlet løsning til identitet og dokumentation — udviklet til moderne kæledyrsejerskab.",
       },
       { property: "og:image", content: heroImg },
     ],
@@ -49,8 +49,8 @@ const sections: {
     to: "/vision",
     no: "II",
     label: "HVORFOR DET ER NØDVENDIGT",
-    title: "Chippen er begyndelsen. Værdien ligger i det, den forbinder.",
-    body: "Det er den samlede løsning ovenpå. Vi forventer, at branding, tillid og langsigtede samarbejder bliver vigtigere end teknologien selv.",
+    title: "Et samlet sted for vigtig information om dit kæledyr.",
+    body: "Identitet, dokumentation og adgang samlet ét sted. Tillid, omsorg og langsigtede relationer er vigtigere end teknologien selv.",
     img: documentImg,
   },
   {
@@ -58,15 +58,15 @@ const sections: {
     no: "III",
     label: "BAGGRUND",
     title: "198 millioner hunde og katte i Europa.",
-    body: "108 mio. katte og 90 mio. hunde. Internationale løsninger har allerede valideret arkitektur, prismodel og målgrupper.",
+    body: "108 mio. katte og 90 mio. hunde. Internationale løsninger viser, hvordan en samlet løsning til kæledyrsidentitet kan se ud.",
     img: catImg,
   },
   {
     to: "/pricing",
     no: "IV",
     label: "MEDLEMSKAB",
-    title: "Free → Plus → Pro → Lifetime.",
-    body: "Flere medlemsniveauer til ejere, klinikker og samarbejdspartnere. En prisstruktur, markedet allerede kender.",
+    title: "Gratis → Plus → Pro → Livstid.",
+    body: "Flere medlemsniveauer til ejere, klinikker og samarbejdspartnere. Enkel og gennemsigtig adgang.",
   },
 ];
 
@@ -116,17 +116,13 @@ export function Index() {
                 PROBLEMET — N°00 / I DAG
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
-                Kritisk information om dit kæledyr ligger{" "}
+                Vigtig information om dit kæledyr ligger{" "}
                 <span className="italic text-accent">spredt overalt.</span>
               </h2>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Millioner af hunde- og katteejere i Europa håndterer stadig
-                vaccinationskort, forsikringspolicer, pas, journal,
-                nødkontakter, medicin, rejsedokumenter og pasningsinstrukser
-                manuelt — spredt på papir, i mails, mapper, apps og
-                dyrlægesystemer uden et samlet sted.
+                Information om kæledyr ligger stadig spredt på tværs af pas, mails, klinikker, forsikringer og registre. Vigtige oplysninger er ofte svære at finde, når de skal bruges hurtigt.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -344,10 +340,10 @@ export function Index() {
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi ønsker at bygge anderledes end de fleste startups. I stedet for at lancere alting på dag ét, ønsker vi at starte med ét fysisk objekt, der forklarer sig selv på 3 sekunder — og lade resten vokse ud af relationen bagefter.
+                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv — og lader resten vokse roligt ud af relationen mellem ejer og dyr.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Vi ønsker ingen super-app og ingen markedsplads fra dag ét. Vi ønsker ét enkelt fysisk produkt, som folk intuitivt forstår, og som åbner døren til løbende adgang, dokumentation og på sigt et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet.
+                Et enkelt fysisk produkt, som er let at forstå — og som åbner for løbende adgang, dokumentation og en samlet løsning, der følger den europæiske udvikling inden for kæledyrsidentitet.
               </p>
             </div>
 
@@ -356,8 +352,8 @@ export function Index() {
                 {[
                   { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et objekt, ejes som et arvestykke. Kunden forstår det med det samme." },
                   { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, påmindelser, familieadgang. Her samles dokumentation og adgang." },
-                  { step: "03", tag: "INDSIGT", title: "Aggregeret indsigt", body: "Sundhed, adfærd, geografi og forbrug — anonymiseret og samtykke-baseret. Værdi for forsikring, foder, farma og forskning." },
-                  { step: "04", tag: "EUROPÆISK UDVIKLING", title: "Et samlet produkt til kæledyrsidentitet", body: "Når EU's chipkrav ruller ud, samler vi adgang og dokumentation mellem ejer, dyrlæge, myndigheder og relevante funktioner." },
+                  { step: "03", tag: "INDSIGT", title: "Samlet indsigt", body: "Anonymiseret og samtykke-baseret indsigt om sundhed og hverdag. Værdifuldt for forsikring, dyrlæger og forskning — uden at ejeren mister kontrollen." },
+                  { step: "04", tag: "EUROPÆISK UDVIKLING", title: "Et samlet produkt til kæledyrsidentitet", body: "I takt med den europæiske udvikling inden for kæledyrsidentitet samler vi adgang og dokumentation mellem ejer, dyrlæge, myndigheder og relevante funktioner." },
                 ].map((s) => (
                   <li key={s.step} className="bg-background p-8 md:p-10">
                     <div className="flex items-baseline justify-between">

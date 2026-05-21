@@ -14,7 +14,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Track My Pet er bygget af mennesker med omtanke for dyr. Vi laver en samlet løsning til moderne kæledyrsejerskab — håndværk, omtanke og langsigtede relationer.",
+          "Track My Pet er bygget af mennesker med omtanke for dyr. En samlet løsning til identitet, dokumentation og tryghed gennem hele dyrets liv.",
       },
       { property: "og:title", content: "Om os — Track My Pet" },
       {
@@ -131,7 +131,7 @@ export function AboutPage() {
               <span className="italic text-accent">stor hengivenhed.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Track My Pet er grundlagt i Danmark af mennesker med baggrund i produktdesign, hardware, veterinærteknologi og forsikring — og en delt overbevisning om, at et samlet produkt udviklet til den europæiske udvikling inden for kæledyrsidentitet bør bygges med håndværk, ikke hastværk.
+              Track My Pet er grundlagt i Danmark af mennesker med baggrund i produktdesign, hardware, dyrlægeverdenen og forsikring — og en fælles overbevisning om, at en samlet løsning til kæledyrsidentitet og dokumentation bør bygges med håndværk og omtanke, ikke hastværk.
             </p>
             <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
               Vi er ejere af hunde, katte og blandinger af begge dele. Vi
@@ -147,7 +147,7 @@ export function AboutPage() {
                 ["Design", "Premium, taktilt, gennemtænkt i hver detalje."],
                 ["Hardware", "NFC, QR og chip-ID — fra prototype til produktion."],
                 ["Vet-tech", "Journal, vaccination og verificering bygget med klinikker."],
-                ["Forsikring", "Distribution, data og integration uden risikobæring."],
+                ["Forsikring", "Samarbejder og dokumentation — uden risikobæring."],
                 ["Compliance", "GDPR, EU-pas, sporbarhed og grænsekrydsning."],
                 ["Fællesskab", "Ejere, opdrættere, internater, dyrlæger."],
               ].map(([k, v]) => (
@@ -256,7 +256,7 @@ export function AboutPage() {
               Join <span className="italic text-accent">the</span> Pack
             </h2>
             <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/80">
-              Track My Pet bygges med ejere, opdrættere, internater og dyrlæger — ikke for dem. Skriv dig op til ventelisten og bliv en del af det fællesskab, der former en samlet løsning til moderne kæledyrsidentitet i Europa.
+              Track My Pet bygges sammen med ejere, opdrættere, internater og dyrlæger. Skriv dig op til ventelisten og bliv en del af det fællesskab, der former en samlet løsning til kæledyrsidentitet og dokumentation i Europa.
             </p>
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4 text-[11px] tracking-[0.25em]">
               <Link

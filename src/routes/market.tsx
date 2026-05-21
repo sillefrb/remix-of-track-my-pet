@@ -9,10 +9,10 @@ export const Route = createFileRoute("/market")({
       {
         name: "description",
         content:
-          "198 millioner hunde og katte i Europa. Internationale løsninger har valideret arkitektur, prismodel og målgrupper.",
+          "198 millioner hunde og katte i Europa. Internationale løsninger viser, hvordan en samlet løsning til kæledyrsidentitet kan se ud.",
       },
       { property: "og:title", content: "Marked — Track My Pet" },
-      { property: "og:description", content: "108M katte og 90M hunde i Europa." },
+      { property: "og:description", content: "108 millioner katte og 90 millioner hunde i Europa." },
     ],
   }),
   component: MarketPage,
@@ -33,10 +33,10 @@ const revenueAreas: { title: string; body: string; type: "no" | "yes" }[] = [
   { type: "yes", title: "Verificeret identitet", body: "Tillid mellem ejer, dyrlæge, pasning og myndigheder." },
   { type: "yes", title: "Samlet dokumentation", body: "Vaccination, pas, medicin og historik — samlet ét sted." },
   { type: "yes", title: "Løbende funktioner", body: "Rejsedokumentation, ejerskifte, akutadgang og dyrlægehistorik." },
-  { type: "yes", title: "Anonymiseret indsigt", body: "Aggregeret, anonymiseret indsigt om sundhed, adfærd, geografi og forbrug — værdifuldt for forsikring, foderindustri, farma, dyrlæger og forskning." },
+  { type: "yes", title: "Anonymiseret indsigt", body: "Anonymiseret og samtykke-baseret indsigt om sundhed, hverdag og adfærd — værdifuldt for forsikring, dyrlæger og forskning. Ejeren beholder kontrollen." },
 ];
 
-const winners = ["Track My Pet", "Pet Vault", "Travel Compliance"];
+const winners = ["Track My Pet", "Samlet dokumentation", "Rejsedokumentation"];
 
 export function MarketPage() {
   return (
@@ -169,10 +169,10 @@ export function MarketPage() {
           <div className="mt-20 border-t border-border pt-16">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">IMPLIKATIONEN</p>
             <h3 className="font-serif mt-6 max-w-4xl text-3xl font-light italic leading-tight md:text-4xl">
-              Spørgsmålet er ikke længere <span className="text-accent">om</span> en samlet løsning bliver bygget — men hvem der bygger den i Norden.
+              Spørgsmålet er ikke længere <span className="text-accent">om</span> en samlet løsning bliver bygget — men hvem der bygger den i Norden med den rette omtanke.
             </h3>
             <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-foreground/75">
-              Arkitektur, prismodel og målgrupper er bevist internationalt. Vi har den europæiske udvikling, det danske kliniknetværk, regulatorisk nærhed og et sprog, hverken Plaid eller en amerikansk aktør taler. Vinduet er åbent — og lukker.
+              Modellen er allerede vist internationalt. Vi har den europæiske udvikling, det danske kliniknetværk og et sprog, som internationale aktører ikke taler. Tiden er den rette.
             </p>
           </div>
         </div>
@@ -200,9 +200,9 @@ export function MarketPage() {
       <section className="mx-auto max-w-5xl px-6 py-24 md:py-32">
         <div className="text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">HVOR ER PENGENE?</p>
-          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Værdien ligger i relationen — ovenpå hardwaren.</h2>
+          <h2 className="font-serif mt-6 text-4xl font-light md:text-5xl">Værdien ligger i relationen — ikke i hardwaren.</h2>
           <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-muted-foreground">
-            Det fysiske produkt er begyndelsen. Værdien ligger i løbende adgang, samarbejder og anonymiseret indsigt.
+            Det fysiske produkt er udgangspunktet. Værdien ligger i løbende adgang, samarbejder og samlet dokumentation gennem hele dyrets liv.
           </p>
         </div>
 
@@ -224,15 +224,15 @@ export function MarketPage() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 gap-10">
             <div className="col-span-12 md:col-span-5">
-              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">DATA-LAGET</p>
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">SAMLET INDSIGT</p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
-                Hver relation <span className="italic text-accent">producerer data.</span>
+                Hver relation skaber <span className="italic text-accent">samlet indsigt.</span>
               </h2>
               <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                198 millioner digitale profiler skaber et datasæt, ingen i Europa har i dag. Sundhed, vaccination, adfærd, rejsemønstre, livsfaser, forbrug — på tværs af lande, racer og aldre.
+                198 millioner digitale profiler giver et samlet billede af kæledyrenes hverdag. Sundhed, vaccination, livsfaser og rejser — på tværs af europæiske lande, racer og aldre.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Aggregeret og anonymiseret. En selvstændig forretningsmodel. Ejeren beholder kontrollen.
+                Aggregeret, anonymiseret og samtykke-baseret. Ejeren beholder kontrollen.
               </p>
             </div>
             <div className="col-span-12 md:col-span-7">
@@ -277,7 +277,7 @@ export function MarketPage() {
           </div>
           <div className="mx-auto mt-20 max-w-2xl text-center">
             <p className="text-base font-light leading-relaxed text-foreground/80">
-              Tre produkter. Hver enkel nok til hurtig lancering. Tilsammen fundamentet for et samlet europæisk produkt til kæledyrsidentitet.
+              Tre dele. Hver enkel nok til at stå alene. Tilsammen fundamentet for en samlet løsning til kæledyrsidentitet i Europa.
             </p>
           </div>
         </div>
