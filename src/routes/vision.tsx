@@ -353,11 +353,11 @@ export function VisionPage() {
         <div className="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-background/60">DET VIGTIGSTE SPØRGSMÅL</p>
           <h2 className="font-serif mt-10 text-3xl font-light italic leading-snug text-background md:text-4xl lg:text-5xl">
-            Hvis det her lykkes ekstremt godt — hvorfor skulle det så blive stort?
+            Hvorfor er det her vigtigt på den lange bane?
           </h2>
           <div className="mx-auto mt-12 h-px w-12 bg-background/30" />
           <p className="mt-12 text-sm font-light leading-relaxed text-background/80">
-            Langsigtede relationer. Tillid. Eksisterende behov. Regulatorisk medvind. Praktisk anvendelighed. En relation, der varer 10–15 år pr. dyr.
+            Fordi det handler om tryghed, omsorg og en relation, der varer hele dyrets liv. Et produkt man vender tilbage til — år efter år.
           </p>
         </div>
       </section>
