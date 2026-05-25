@@ -517,6 +517,116 @@ export function Index() {
         </div>
       </section>
 
+      {/* FOR EJERE — split med profilkort */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 items-center gap-12 lg:gap-20">
+            <div className="col-span-12 lg:col-span-7">
+              <p className="text-[10px] tracking-[0.45em] text-accent">
+                FOR EJERE
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
+                Alt en ejer har brug for,{" "}
+                <span className="italic text-accent">i én verificeret profil.</span>
+              </h2>
+
+              <ul className="mt-14 space-y-10">
+                {[
+                  {
+                    title: "Opbevar dokumenter trygt",
+                    body: "Hold dyrets identitet og vigtige oplysninger organiseret og tilgængelige.",
+                  },
+                  {
+                    title: "Følg vaccinationer og helbred",
+                    body: "Hold styr på vaccinationer, journal og vigtige milepæle gennem hele livet.",
+                  },
+                  {
+                    title: "Del øjeblikkeligt, når det er nødvendigt",
+                    body: "Sikre links, QR-verificering og eksport til klinik, pasning eller akutte situationer.",
+                  },
+                  {
+                    title: "Adgang overalt",
+                    body: "Brug Track My Pet på enhver enhed — dyrets oplysninger samlet ét sted.",
+                  },
+                ].map((f) => (
+                  <li key={f.title} className="flex items-start gap-5">
+                    <span aria-hidden className="mt-2 h-px w-6 shrink-0 bg-accent" />
+                    <div>
+                      <h3 className="font-serif text-lg font-light italic text-foreground md:text-xl">
+                        {f.title}
+                      </h3>
+                      <p className="mt-2 max-w-md text-sm font-light leading-relaxed text-foreground/70">
+                        {f.body}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-14">
+                <Link
+                  to="/product"
+                  className="inline-flex items-center rounded-full bg-foreground px-6 py-3 text-[11px] tracking-[0.25em] text-background transition hover:bg-accent"
+                >
+                  OPRET DIN PROFIL
+                </Link>
+              </div>
+            </div>
+
+            {/* PROFILKORT */}
+            <div className="col-span-12 lg:col-span-5">
+              <div className="mx-auto max-w-sm rounded-2xl border border-border bg-card p-8 shadow-sm md:p-10">
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-muted">
+                    <span className="font-serif text-3xl font-light italic text-foreground/70">
+                      M
+                    </span>
+                  </div>
+                  <p className="font-serif mt-6 text-2xl font-light text-foreground">
+                    Mikko
+                  </p>
+                  <p className="mt-1 text-xs font-light tracking-wide text-muted-foreground">
+                    Siberian Husky · 4 år
+                  </p>
+                </div>
+
+                <ul className="mt-10 space-y-3">
+                  {[
+                    { name: "Rabies", status: "Gyldig", tone: "ok" },
+                    { name: "DHPP", status: "Gyldig", tone: "ok" },
+                    { name: "Bordetella", status: "Udløber snart", tone: "warn" },
+                  ].map((v) => (
+                    <li
+                      key={v.name}
+                      className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-light ${
+                        v.tone === "ok"
+                          ? "bg-accent/10 text-foreground"
+                          : "bg-muted text-foreground"
+                      }`}
+                    >
+                      <span>{v.name}</span>
+                      <span
+                        className={`text-xs tracking-wide ${
+                          v.tone === "ok" ? "text-accent" : "text-foreground/60"
+                        }`}
+                      >
+                        {v.status}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-8 text-center text-[10px] tracking-[0.35em] text-muted-foreground">
+                  VERIFICERET PROFIL · PP-A4F29B1C
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* FUNKTIONER — 6 KERNEEGENSKABER */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
