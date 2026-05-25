@@ -14,6 +14,7 @@ import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as MarketRouteImport } from './routes/market'
+import { Route as B2bRouteImport } from './routes/b2b'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -42,6 +43,11 @@ const MarketRoute = MarketRouteImport.update({
   path: '/market',
   getParentRoute: () => rootRouteImport,
 } as any)
+const B2bRoute = B2bRouteImport.update({
+  id: '/b2b',
+  path: '/b2b',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -56,6 +62,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/b2b': typeof B2bRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -65,6 +72,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/b2b': typeof B2bRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -75,6 +83,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/b2b': typeof B2bRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -86,6 +95,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/b2b'
     | '/market'
     | '/pricing'
     | '/print'
@@ -95,6 +105,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/b2b'
     | '/market'
     | '/pricing'
     | '/print'
@@ -104,6 +115,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/b2b'
     | '/market'
     | '/pricing'
     | '/print'
@@ -114,6 +126,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  B2bRoute: typeof B2bRoute
   MarketRoute: typeof MarketRoute
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/b2b': {
+      id: '/b2b'
+      path: '/b2b'
+      fullPath: '/b2b'
+      preLoaderRoute: typeof B2bRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -178,6 +198,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  B2bRoute: B2bRoute,
   MarketRoute: MarketRoute,
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
@@ -187,3 +208,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
