@@ -104,7 +104,84 @@ export function Index() {
             Et samlet produkt til identitet, dokumentation og tryghed gennem
             hele dyrets liv. Et fysisk tag og en digital profil — samlet ét sted.
           </p>
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
+            <Link to="/product" className="rounded-full bg-foreground px-6 py-3 text-background transition hover:bg-accent">
+              FÅ DIT PET ID
+            </Link>
+            <Link to="/pricing" className="rounded-full border border-border px-6 py-3 text-foreground transition hover:border-accent hover:text-accent">
+              FOR KLINIKKER OG ORGANISATIONER
+            </Link>
+          </div>
         </div>
+
+        {/* TILLIDSBJÆLKE */}
+        <div className="border-y border-border bg-card">
+          <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-center gap-x-10 gap-y-4 px-6 py-6 text-[10px] tracking-[0.35em] text-muted-foreground">
+            <span>BRUGT AF EJERE</span>
+            <span aria-hidden className="h-px w-6 bg-border" />
+            <span>KLINIKKER</span>
+            <span aria-hidden className="h-px w-6 bg-border" />
+            <span>INTERNATER</span>
+            <span aria-hidden className="h-px w-6 bg-border" />
+            <span>SAMARBEJDSPARTNERE</span>
+          </div>
+        </div>
+      </section>
+
+      {/* SÅDAN FUNGERER DET — 3 TRIN */}
+      <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+        <div className="grid grid-cols-12 items-end gap-6 pb-16">
+          <div className="col-span-12 md:col-span-7">
+            <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+              SÅDAN FUNGERER DET — N°0A / TRE TRIN
+            </p>
+            <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
+              Enkel at komme i gang. <span className="italic text-accent">Enkel at bruge.</span>
+            </h2>
+          </div>
+          <div className="col-span-12 md:col-span-5">
+            <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
+              Tre rolige trin fra fysisk tag til en samlet digital profil — klar til hverdag og uforudsete situationer.
+            </p>
+            <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
+          </div>
+        </div>
+
+        <ol className="grid grid-cols-1 gap-px bg-border md:grid-cols-3">
+          {[
+            {
+              step: "01",
+              tag: "OPRET",
+              title: "Opret en verificeret profil",
+              body: "Tilføj billede, identitet og ejeroplysninger. Profilen er udgangspunktet for dyrets digitale identitet.",
+            },
+            {
+              step: "02",
+              tag: "SAMLE",
+              title: "Saml dokumenter og journal",
+              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted — roligt og struktureret.",
+            },
+            {
+              step: "03",
+              tag: "DEL",
+              title: "Del sikkert, når det er nødvendigt",
+              body: "Giv dyrlæge, klinik, pasning eller rejseudbyder adgang via QR, link eller eksport — kun når du vælger det.",
+            },
+          ].map((s) => (
+            <li key={s.step} className="bg-background p-10 md:p-12">
+              <div className="flex items-baseline justify-between">
+                <span className="font-serif text-sm italic text-muted-foreground">{s.step}</span>
+                <span className="text-[10px] tracking-[0.35em] text-accent">{s.tag}</span>
+              </div>
+              <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">
+                {s.title}
+              </h3>
+              <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
+                {s.body}
+              </p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       {/* PROBLEMET */}
@@ -437,6 +514,111 @@ export function Index() {
           <p className="mx-auto mt-16 max-w-2xl text-center font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
             Et produkt udviklet til både hverdag og uforudsete situationer.
           </p>
+        </div>
+      </section>
+
+      {/* FUNKTIONER — 6 KERNEEGENSKABER */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 items-end gap-6 pb-16">
+            <div className="col-span-12 md:col-span-7">
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+                FUNKTIONER — N°06 / KERNEN
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
+                Alt det vigtige <span className="italic text-accent">samlet ét sted.</span>
+              </h2>
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
+                Seks gennemtænkte funktioner udviklet til identitet, dokumentation og tryghed gennem hele dyrets liv.
+              </p>
+              <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                tag: "IDENTITET",
+                title: "Verificeret profil",
+                body: "En sikker digital profil med identitet, ejerskab og vigtige oplysninger — dyrets digitale pas.",
+              },
+              {
+                tag: "JOURNAL",
+                title: "Sundhedstidslinje",
+                body: "Vaccinationer, behandlinger og vigtige helbredshændelser samlet i én rolig tidslinje med påmindelser.",
+              },
+              {
+                tag: "DOKUMENTER",
+                title: "Samlet dokumentation",
+                body: "Attester, rejsedokumenter, indtagsskemaer og bilag opbevaret ét sted.",
+              },
+              {
+                tag: "DELING",
+                title: "QR- og linkverificering",
+                body: "Del adgang til vigtige oplysninger med klinik, pasning eller hjælper — enkelt og kontrolleret.",
+              },
+              {
+                tag: "REJSE",
+                title: "Rejsedokumentation",
+                body: "Rejserelaterede oplysninger og dokumenter samlet til roligere bevægelse på tværs af europæiske lande.",
+              },
+              {
+                tag: "ADGANG",
+                title: "Adgangskontrol",
+                body: "Samtykke-baseret deling, historik og rolleadgang — ejeren bestemmer, hvem der ser hvad.",
+              },
+            ].map((f) => (
+              <article key={f.tag} className="bg-background p-10 md:p-12">
+                <span className="text-[10px] tracking-[0.35em] text-accent">
+                  {f.tag}
+                </span>
+                <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">
+                  {f.title}
+                </h3>
+                <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
+                  {f.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OPLEVELSEN — DET LEVENDE ID */}
+      <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+        <div className="grid grid-cols-12 gap-10">
+          <div className="col-span-12 md:col-span-5">
+            <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
+              OPLEVELSEN — N°07 / ET LEVENDE ID
+            </p>
+            <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
+              En digital identitet, der <span className="italic text-accent">følger dyret</span> gennem livet.
+            </h2>
+            <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+              Interaktiv, verificerbar og altid opdateret. Et roligt sted at vende tilbage til — fra første scan til sidste rejse.
+            </p>
+          </div>
+
+          <div className="col-span-12 md:col-span-7">
+            <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-1">
+              {[
+                ["Samlet profilvisning", "Identitet, journal, verificering og dokumenter set i ét roligt overblik."],
+                ["Enkel navigation", "Bevæg dig mellem helbred, dokumenter, services og aktivitet uden friktion."],
+                ["Bygget til at vokse", "Udviklet til at følge den europæiske udvikling og udvide sig over tid."],
+              ].map(([k, v]) => (
+                <li key={k} className="bg-background p-8 md:p-10">
+                  <p className="font-serif text-xl font-light italic text-foreground">
+                    {k}
+                  </p>
+                  <p className="mt-3 text-sm font-light leading-relaxed text-foreground/70">
+                    {v}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
