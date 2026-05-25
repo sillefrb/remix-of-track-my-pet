@@ -569,6 +569,11 @@ export function Index() {
                 title: "Adgangskontrol",
                 body: "Samtykke-baseret deling, historik og rolleadgang — ejeren bestemmer, hvem der ser hvad.",
               },
+              {
+                tag: "ONLINE VET",
+                title: "Online dyrlæge",
+                body: "Hurtig adgang til en dyrlæge via video eller chat — med dyrets profil og journal som udgangspunkt for samtalen.",
+              },
             ].map((f) => (
               <article key={f.tag} className="bg-background p-10 md:p-12">
                 <span className="text-[10px] tracking-[0.35em] text-accent">
