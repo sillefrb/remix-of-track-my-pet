@@ -153,10 +153,10 @@ export function MarketPage() {
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FIRE PARTER, ÉT SAMLET STED</p>
             <div className="mt-12 grid gap-px bg-border md:grid-cols-2 lg:grid-cols-4">
               {[
-                ["Pet Owners", "Administrer dyrets identitet, journal og dokumenter sikkert ét sted."],
-                ["Vets & Clinics", "Adgang til verificerede profiler, opdater journaler, reducér administrativ overhead."],
-                ["Shelters & Rescues", "Verificerede profiler på tværs af intake, pleje og adoption."],
-                ["Services & Travel", "Verificér pet-information hurtigere, streamline onboarding."],
+                ["Ejere", "Administrer dyrets identitet, journal og dokumenter sikkert ét sted."],
+                ["Dyrlæger og klinikker", "Adgang til verificerede profiler, opdater journaler, reducér administrativ overhead."],
+                ["Internater og dyreværn", "Verificerede profiler på tværs af intake, pleje og adoption."],
+                ["Pasning og rejse", "Verificér pet-information hurtigere, streamline onboarding."],
               ].map(([k, v]) => (
                 <div key={k} className="bg-background p-8">
                   <h4 className="font-serif text-xl font-light italic">{k}</h4>
