@@ -625,6 +625,119 @@ export function Index() {
         </div>
       </section>
 
+      {/* SØG PASNING — split med pasningskort */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 items-center gap-12 lg:gap-20">
+            <div className="col-span-12 lg:col-span-5 order-2 lg:order-1">
+              <div className="mx-auto max-w-sm rounded-2xl border border-border bg-background p-8 shadow-sm md:p-10">
+                <p className="text-[10px] tracking-[0.35em] text-accent">
+                  PASNING I NÆRHEDEN
+                </p>
+                <ul className="mt-8 space-y-5">
+                  {[
+                    { name: "Anna L.", role: "Hundepasser · København K", dist: "1,2 km", rating: "4.9" },
+                    { name: "Mads B.", role: "Dyrepension · Frederiksberg", dist: "2,8 km", rating: "4.8" },
+                    { name: "Sofie H.", role: "Luftetur & dagpasning", dist: "3,4 km", rating: "5.0" },
+                  ].map((s) => (
+                    <li
+                      key={s.name}
+                      className="flex items-center justify-between gap-4 border-b border-border pb-5 last:border-0 last:pb-0"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-muted">
+                          <span className="font-serif text-sm font-light italic text-foreground/70">
+                            {s.name.charAt(0)}
+                          </span>
+                        </div>
+                        <div>
+                          <p className="font-serif text-base font-light text-foreground">
+                            {s.name}
+                          </p>
+                          <p className="text-xs font-light text-muted-foreground">
+                            {s.role}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-xs tracking-wide text-accent">★ {s.rating}</p>
+                        <p className="mt-1 text-[10px] text-muted-foreground">{s.dist}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-8 text-center text-[10px] tracking-[0.35em] text-muted-foreground">
+                  VERIFICEREDE PASSERE · TRACK MY PET
+                </p>
+              </div>
+            </div>
+
+            <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
+              <p className="text-[10px] tracking-[0.45em] text-accent">
+                SØG PASNING
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
+                Find tryg pasning,{" "}
+                <span className="italic text-accent">når livet kalder.</span>
+              </h2>
+              <p className="mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/75">
+                Et netværk af verificerede hundepassere, dyrepensioner og luftere — alle med adgang til dyrets profil og vigtige oplysninger fra første kontakt.
+              </p>
+
+              <ul className="mt-12 space-y-10">
+                {[
+                  {
+                    title: "Verificerede passere",
+                    body: "Alle passere er identitetsbekræftet og anmeldt af andre ejere — ingen anonyme profiler.",
+                  },
+                  {
+                    title: "Profilen følger med",
+                    body: "Del vaccinationer, vaner og kontaktoplysninger med ét tryk, så passeren har alt fra start.",
+                  },
+                  {
+                    title: "Hverdag og rejse",
+                    body: "Dagpasning, luftetur, weekendophold eller længere ferier — find det match, der passer dit dyr.",
+                  },
+                  {
+                    title: "Tryg kommunikation",
+                    body: "Aftal direkte i appen, modtag opdateringer undervejs og hold alt samlet ét sted.",
+                  },
+                ].map((f) => (
+                  <li key={f.title} className="flex items-start gap-5">
+                    <span aria-hidden className="mt-2 h-px w-6 shrink-0 bg-accent" />
+                    <div>
+                      <h3 className="font-serif text-lg font-light italic text-foreground md:text-xl">
+                        {f.title}
+                      </h3>
+                      <p className="mt-2 max-w-md text-sm font-light leading-relaxed text-foreground/70">
+                        {f.body}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-14 flex flex-wrap gap-4">
+                <Link
+                  to="/product"
+                  className="inline-flex items-center rounded-full bg-foreground px-6 py-3 text-[11px] tracking-[0.25em] text-background transition hover:bg-accent"
+                >
+                  SØG PASNING
+                </Link>
+                <Link
+                  to="/b2b"
+                  className="inline-flex items-center rounded-full border border-border px-6 py-3 text-[11px] tracking-[0.25em] text-foreground transition hover:border-accent hover:text-accent"
+                >
+                  BLIV PASSER
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
 
       {/* FUNKTIONER — 6 KERNEEGENSKABER */}
