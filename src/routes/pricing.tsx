@@ -6,13 +6,13 @@ import { WaitlistCTA } from "@/components/WaitlistCTA";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Track My Pet — Medlemskab" },
+      { title: "Track My Pet, Medlemskab" },
       {
         name: "description",
         content:
-          "Enkle og gennemsigtige medlemskaber for ejere, klinikker og samarbejdspartnere — udviklet til moderne kæledyrsejerskab.",
+          "Enkle og gennemsigtige medlemskaber for ejere, klinikker og samarbejdspartnere, udviklet til moderne kæledyrsejerskab.",
       },
-      { property: "og:title", content: "Track My Pet — Medlemskab" },
+      { property: "og:title", content: "Track My Pet, Medlemskab" },
       {
         property: "og:description",
         content:
@@ -177,7 +177,7 @@ export function PricingPage() {
           <span className="italic text-accent">gennemsigtige</span> medlemskaber.
         </h1>
         <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-          Start enkelt — udvid når dyret, husstanden, klinikken eller organisationen vokser. Et samlet produkt udviklet til hele dyrets liv.
+          Start enkelt, udvid når dyret, husstanden, klinikken eller organisationen vokser. Et samlet produkt udviklet til hele dyrets liv.
         </p>
         <div className="mx-auto mt-12 inline-flex items-center gap-2 rounded-full border border-border px-2 py-1 text-[11px] tracking-[0.25em] text-muted-foreground">
           <span className="rounded-full bg-foreground px-4 py-2 text-background">
@@ -187,13 +187,13 @@ export function PricingPage() {
         </div>
       </section>
 
-      {/* STARTER KIT — engangsdelen */}
+      {/* STARTER KIT, engangsdelen */}
       <section className="border-y border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-20 md:py-24">
           <div className="grid grid-cols-12 items-end gap-6 pb-12">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                STARTPAKKE — N°00 / ENGANGSDEL
+                STARTPAKKE, N°00 / ENGANGSDEL
               </p>
               <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
                 Det fysiske udgangspunkt.
@@ -201,7 +201,7 @@ export function PricingPage() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Det løbende medlemskab begynder ved aktivering. Engangsdelen er det fysiske produkt — smukt, taktilt, gaveværdigt.
+                Det løbende medlemskab begynder ved aktivering. Engangsdelen er det fysiske produkt, smukt, taktilt, gaveværdigt.
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export function PricingPage() {
               {
                 name: "Startpakke",
                 price: "kr. 449",
-                body: "Tag, kort til pung og folder til pas og dokumenter. Designet som en gave — også til sig selv.",
+                body: "Tag, kort til pung og folder til pas og dokumenter. Designet som en gave, også til sig selv.",
               },
               {
                 name: "Personalisering",
@@ -241,7 +241,7 @@ export function PricingPage() {
       </section>
       <section className="mx-auto max-w-[1400px] px-6 pb-24 md:pb-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-          FOR EJERE — N°01 / DYREEJERE
+          FOR EJERE, N°01 / DYREEJERE
         </p>
         <h2 className="font-serif mt-6 max-w-2xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
           Fire medlemskaber.{" "}
@@ -302,14 +302,14 @@ export function PricingPage() {
       <section className="bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">
-            FOR KLINIKKER, INTERNATER OG SAMARBEJDSPARTNERE — N°02
+            FOR KLINIKKER, INTERNATER OG SAMARBEJDSPARTNERE, N°02
           </p>
           <h2 className="font-serif mt-6 max-w-3xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
             Forbundne arbejdsgange for{" "}
             <span className="italic text-accent">klinikker, internater og samarbejdspartnere.</span>
           </h2>
           <p className="mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Flere niveauer for klinikker, gratis adgang for internater og to niveauer for samarbejdspartnere — forsikring, rejsedokumentation, pasning og relevante funktioner.
+            Flere niveauer for klinikker, gratis adgang for internater og to niveauer for samarbejdspartnere, forsikring, rejsedokumentation, pasning og relevante funktioner.
           </p>
 
           <div className="mt-16 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -357,9 +357,9 @@ export function PricingPage() {
       </section>
 
       <WaitlistCTA
-        eyebrow="VENTELISTE — TIDLIG ADGANG"
+        eyebrow="VENTELISTE, TIDLIG ADGANG"
         title="Skriv dig op til førlanceringsprisen."
-        body="Tidlige ejere får adgang før alle andre — og en reduceret pris på startpakken og første års medlemskab."
+        body="Tidlige ejere får adgang før alle andre, og en reduceret pris på startpakken og første års medlemskab."
       />
 
       <SiteFooter />

@@ -10,17 +10,17 @@ import { WaitlistCTA } from "@/components/WaitlistCTA";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Om os — Track My Pet" },
+      { title: "Om os, Track My Pet" },
       {
         name: "description",
         content:
           "Track My Pet er bygget af mennesker med omtanke for dyr. En samlet løsning til identitet, dokumentation og tryghed gennem hele dyrets liv.",
       },
-      { property: "og:title", content: "Om os — Track My Pet" },
+      { property: "og:title", content: "Om os, Track My Pet" },
       {
         property: "og:description",
         content:
-          "En beretning om hvorfor vi bygger Track My Pet — og hvem vi bygger det for.",
+          "En beretning om hvorfor vi bygger Track My Pet, og hvem vi bygger det for.",
       },
       { property: "og:image", content: founderImg },
     ],
@@ -46,7 +46,7 @@ export function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/40" />
           <div className="absolute inset-x-0 bottom-0 px-6 pb-12 text-center md:pb-20">
             <p className="text-[10px] font-light tracking-[0.45em] text-background/95">
-              OM OS — N°V / FILOSOFI
+              OM OS, N°V / FILOSOFI
             </p>
             <h1 className="font-serif mt-6 text-5xl font-light leading-[1] tracking-tight text-background sm:text-7xl md:text-8xl">
               Om Track My Pet
@@ -56,10 +56,10 @@ export function AboutPage() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Vi kender hunde og katte — med omtanke.
+            Vi kender hunde og katte, med omtanke.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og funktion — bygget til at gøre hverdagen enklere for både dyret og det menneske, det deler den med.
+            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og funktion, bygget til at gøre hverdagen enklere for både dyret og det menneske, det deler den med.
           </p>
         </div>
       </section>
@@ -70,7 +70,7 @@ export function AboutPage() {
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                OPRINDELSEN — N°01 / 2025
+                OPRINDELSEN, N°01 / 2025
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
                 Vi startede med en{" "}
@@ -83,7 +83,7 @@ export function AboutPage() {
                 ved om dyret, vi elsker mest? Vaccinationer i én mappe.
                 Forsikringen i en mail. Pas i en skuffe. Chip-nummeret hos
                 en dyrlæge, vi for længst har skiftet. Alt det, der betyder
-                noget, ligger spredt — og altid det forkerte sted, når det
+                noget, ligger spredt, og altid det forkerte sted, når det
                 gælder.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
@@ -112,7 +112,7 @@ export function AboutPage() {
                 <span className="italic text-accent">For mennesket bag det.</span>
               </h3>
               <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                Track My Pet eksisterer for tryghed og overblik. Vi bygger ét sted, hvor identitet, sundhed, forsikring og rejse hører hjemme — verificeret, ejet af dig, tilgængeligt for dem du vælger. Et produkt, der følger dyret gennem hele livet.
+                Track My Pet eksisterer for tryghed og overblik. Vi bygger ét sted, hvor identitet, sundhed, forsikring og rejse hører hjemme, verificeret, ejet af dig, tilgængeligt for dem du vælger. Et produkt, der følger dyret gennem hele livet.
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ export function AboutPage() {
               <span className="italic text-accent">stor hengivenhed.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Track My Pet er grundlagt i Danmark af mennesker med baggrund i produktdesign, hardware, dyrlægeverdenen og forsikring — og en fælles overbevisning om, at en samlet løsning til kæledyrsidentitet og dokumentation bør bygges med håndværk og omtanke, ikke hastværk.
+              Track My Pet er grundlagt i Danmark af mennesker med baggrund i produktdesign, hardware, dyrlægeverdenen og forsikring, og en fælles overbevisning om, at en samlet løsning til kæledyrsidentitet og dokumentation bør bygges med håndværk og omtanke, ikke hastværk.
             </p>
             <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
               Vi er ejere af hunde, katte og blandinger af begge dele. Vi
@@ -145,9 +145,9 @@ export function AboutPage() {
             <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
               {[
                 ["Design", "Premium, taktilt, gennemtænkt i hver detalje."],
-                ["Hardware", "NFC, QR og chip-ID — fra prototype til produktion."],
+                ["Hardware", "NFC, QR og chip-ID, fra prototype til produktion."],
                 ["Vet-tech", "Journal, vaccination og verificering bygget med klinikker."],
-                ["Forsikring", "Samarbejder og dokumentation — uden risikobæring."],
+                ["Forsikring", "Samarbejder og dokumentation, uden risikobæring."],
                 ["Compliance", "GDPR, EU-pas, sporbarhed og grænsekrydsning."],
                 ["Fællesskab", "Ejere, opdrættere, internater, dyrlæger."],
               ].map(([k, v]) => (
@@ -179,7 +179,7 @@ export function AboutPage() {
             />
           </div>
           <figcaption className="px-6 py-6 text-[10px] tracking-[0.35em] text-muted-foreground">
-            HÅNDVÆRK — N°02 / DETALJE
+            HÅNDVÆRK, N°02 / DETALJE
           </figcaption>
         </figure>
         <div className="flex flex-col justify-center bg-background p-10 md:col-span-7 md:p-16">
@@ -191,7 +191,7 @@ export function AboutPage() {
             Køb <span className="italic text-accent">bedre.</span>
           </h2>
           <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-            Vi tror på færre, men bedre ting — og på at beholde dem længe.
+            Vi tror på færre, men bedre ting, og på at beholde dem længe.
             Hvert materiale og hver detalje er valgt af det interne
             designhold. Læder, der ældes smukt. Metal, der tåler vand,
             salt og år. Elektronik, der virker, når det gælder.
@@ -218,7 +218,7 @@ export function AboutPage() {
             {[
               ["Håndværk", "Materialer, der ældes smukt. Detaljer, der står til regnskab."],
               ["Ejerskab", "Dataene tilhører ejeren. Vi forvalter, vi ejer ikke."],
-              ["Lang horisont", "Vi bygger for hele dyrets liv — ikke næste kvartal."],
+              ["Lang horisont", "Vi bygger for hele dyrets liv, ikke næste kvartal."],
               ["Stilhed", "Ingen push, ingen støj. Værktøjet skal være der, når det gælder."],
               ["Partnerskaber", "Klinikker, forsikring og myndigheder som ligeværdige."],
               ["Bæredygtighed", "Genanvendte materialer, fair produktion, færre ting."],
@@ -250,7 +250,7 @@ export function AboutPage() {
           <div className="absolute inset-0 bg-background/60" />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
             <p className="text-[10px] tracking-[0.5em] text-foreground/80">
-              N°03 — FÆLLESSKABET
+              N°03, FÆLLESSKABET
             </p>
             <h2 className="font-serif mt-8 text-5xl font-light leading-[0.95] tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl">
               Join <span className="italic text-accent">the</span> Pack
