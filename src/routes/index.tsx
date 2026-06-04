@@ -128,8 +128,56 @@ export function Index() {
         </div>
       </section>
 
+      {/* PROBLEM — FRAGMENTERING */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 gap-12 lg:gap-20">
+            <div className="col-span-12 lg:col-span-5">
+              <p className="text-[10px] tracking-[0.45em] text-accent">
+                PROBLEMET
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl">
+                Intet taler <span className="italic text-accent">sammen.</span>
+              </h2>
+              <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/70">
+                Ejerskab af et kæledyr er fordelt over et væld af systemer, abonnementer og indbakker — uden et samlet sted for det vigtige.
+              </p>
+            </div>
+
+            <div className="col-span-12 lg:col-span-7">
+              <ul className="grid grid-cols-2 gap-px bg-border sm:grid-cols-3">
+                {[
+                  "Dyrlæge",
+                  "Medicin",
+                  "Forsikring",
+                  "Pas",
+                  "Microchip-register",
+                  "Foderabonnement",
+                  "Pasningsapp",
+                  "Rejseattest",
+                  "Mails",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="bg-background px-5 py-8 text-center"
+                  >
+                    <span className="font-serif text-base font-light italic text-foreground md:text-lg">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-8 font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
+                Ni systemer. Én ejer. Ingen sammenhæng.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SÅDAN FUNGERER DET — 3 TRIN */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+
         <div className="grid grid-cols-12 items-end gap-6 pb-16">
           <div className="col-span-12 md:col-span-7">
             <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
