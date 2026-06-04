@@ -263,6 +263,92 @@ export function ProductPage() {
         </figure>
       </section>
 
+      {/* EMERGENCY PET CARD */}
+      <section className="bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="mb-16 text-center">
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">EMERGENCY PET CARD, N°03</p>
+            <h2 className="font-serif mx-auto mt-6 max-w-2xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
+              Ét scan, og hjælperen ved <span className="italic text-accent">præcis hvad de skal gøre.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              En nødvisning åbnes direkte i browseren, når QR scannes. Ingen app, ingen login. Nødkontakt, instruktioner og medicininformation er tilgængelige med det samme.
+            </p>
+          </div>
+
+          <div className="grid gap-10 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-5">
+              <div className="rounded-md border border-border bg-card p-10 text-center">
+                <p className="text-[10px] tracking-[0.4em] text-muted-foreground">SCAN FOR NØDINFO</p>
+                <div className="mx-auto mt-8 grid h-44 w-44 grid-cols-8 grid-rows-8 gap-[2px] bg-background p-3">
+                  {Array.from({ length: 64 }).map((_, i) => {
+                    const filled = [0,1,2,5,6,7,8,15,16,18,19,20,23,24,26,29,30,31,32,33,35,37,38,40,42,45,46,48,51,52,53,56,57,58,61,62,63].includes(i);
+                    return <span key={i} className={filled ? "bg-foreground" : "bg-transparent"} />;
+                  })}
+                </div>
+                <p className="font-serif mt-8 text-lg font-light italic">Luna · Border Collie</p>
+                <p className="mt-2 text-[10px] tracking-[0.35em] text-muted-foreground">VERIFICERET PROFIL · TMP-04821</p>
+              </div>
+            </div>
+
+            <div className="md:col-span-7">
+              <div className="rounded-md border border-border bg-card">
+                <div className="flex items-center justify-between border-b border-border px-6 py-4">
+                  <span className="text-[10px] tracking-[0.35em] text-accent">NØDVISNING</span>
+                  <span className="text-[10px] tracking-[0.35em] text-muted-foreground">tmp.app/e/04821</span>
+                </div>
+
+                <div className="space-y-px bg-border">
+                  <div className="bg-card p-6">
+                    <p className="text-[10px] tracking-[0.35em] text-muted-foreground">NØDKONTAKT, PRIMÆR</p>
+                    <p className="font-serif mt-3 text-2xl font-light">Sofie Lindberg</p>
+                    <p className="mt-2 text-sm font-light text-foreground/75">Ejer · +45 28 14 92 03</p>
+                  </div>
+                  <div className="bg-card p-6">
+                    <p className="text-[10px] tracking-[0.35em] text-muted-foreground">NØDKONTAKT, SEKUNDÆR</p>
+                    <p className="font-serif mt-3 text-xl font-light">Anders Holm · partner</p>
+                    <p className="mt-2 text-sm font-light text-foreground/75">+45 41 77 60 18</p>
+                  </div>
+                  <div className="bg-card p-6">
+                    <p className="text-[10px] tracking-[0.35em] text-muted-foreground">INSTRUKTIONER</p>
+                    <ul className="mt-3 space-y-2 text-sm font-light leading-relaxed text-foreground/85">
+                      <li>· Sky og angst i fremmede omgivelser, tal stille og roligt.</li>
+                      <li>· Lad sig håndtere af fremmede med selen påsat.</li>
+                      <li>· Ved skade, kontakt Evidensia Frederiksberg, +45 70 20 60 60.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-card p-6">
+                    <p className="text-[10px] tracking-[0.35em] text-muted-foreground">MEDICIN OG SUNDHED</p>
+                    <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                      <div>
+                        <p className="font-serif text-base font-light italic">Apoquel 16 mg</p>
+                        <p className="mt-1 text-xs font-light text-foreground/70">1 tablet morgen, mod kløe</p>
+                      </div>
+                      <div>
+                        <p className="font-serif text-base font-light italic">Allergi</p>
+                        <p className="mt-1 text-xs font-light text-foreground/70">Penicillin, undgå</p>
+                      </div>
+                      <div>
+                        <p className="font-serif text-base font-light italic">Vaccination</p>
+                        <p className="mt-1 text-xs font-light text-foreground/70">DHPPi, gyldig til 03/2027</p>
+                      </div>
+                      <div>
+                        <p className="font-serif text-base font-light italic">Mikrochip</p>
+                        <p className="mt-1 text-xs font-light text-foreground/70">208 094 100 482 117</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-t border-border px-6 py-4 text-[10px] tracking-[0.35em] text-muted-foreground">
+                  ADGANG LOGGET · EJER UNDERRETTET AUTOMATISK
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONCEPTS */}
       <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="text-center">
