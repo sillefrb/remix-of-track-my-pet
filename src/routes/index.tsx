@@ -207,7 +207,7 @@ export function Index() {
               step: "02",
               tag: "SAMLE",
               title: "Saml dokumenter og journal",
-              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted — roligt og struktureret.",
+              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted — enkelt og struktureret.",
             },
             {
               step: "03",
@@ -232,43 +232,38 @@ export function Index() {
         </ol>
       </section>
 
-      {/* PROBLEMET */}
+      {/* KONTEKST — EUROPÆISK UDVIKLING */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                PROBLEMET — N°00 / I DAG
+                KONTEKST — N°00 / EUROPA
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
-                Vigtig information om dit kæledyr ligger{" "}
-                <span className="italic text-accent">spredt overalt.</span>
+                Kæledyrsidentitet bevæger sig{" "}
+                <span className="italic text-accent">mod én standard.</span>
               </h2>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Information om kæledyr ligger stadig spredt på tværs af pas, mails, klinikker, forsikringer og registre. Vigtige oplysninger er ofte svære at finde, når de skal bruges hurtigt.
+                En fælles europæisk udvikling inden for identitet, registrering og dokumentation er i gang — og skaber rum for en samlet løsning.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-2">
             {[
-              {
-                tag: "FRAGMENTERING",
-                title: "For mange steder at holde styr på",
-                body: "Dyrlæge, forsikring, pas, microchip-register, foderabonnement, pasningsapp, rejseattest, mails. Intet taler sammen.",
-              },
               {
                 tag: "EU-UDVIKLING",
                 title: "En fælles europæisk udvikling er i gang",
-                body: "En fælles europæisk udvikling inden for kæledyrsidentitet, registrering og dokumentation er i gang. Mikrochip, registrering og vigtige oplysninger får en stadig større rolle på tværs af europæiske lande.",
+                body: "Mikrochip, registrering og vigtige oplysninger får en stadig større rolle på tværs af europæiske lande.",
               },
               {
                 tag: "BEHOVET",
                 title: "Behov for en enklere adgang",
-                body: "Kæledyrsidentitet bevæger sig gradvist fra fysiske dokumenter til mere sammenhængende digitale løsninger. Det skaber behov for enklere adgang til dokumentation, registrering og identitet samlet ét sted.",
+                body: "Kæledyrsidentitet bevæger sig fra fysiske dokumenter til sammenhængende digitale løsninger — samlet ét sted.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -465,7 +460,7 @@ export function Index() {
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv — og lader resten vokse roligt ud af relationen mellem ejer og dyr.
+                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv — og lader resten vokse enkelt ud af relationen mellem ejer og dyr.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
                 Et enkelt fysisk produkt, som er let at forstå — og som åbner for løbende adgang, dokumentation og en samlet løsning, der følger den europæiske udvikling inden for kæledyrsidentitet.
@@ -818,7 +813,7 @@ export function Index() {
               {
                 tag: "JOURNAL",
                 title: "Sundhedstidslinje",
-                body: "Vaccinationer, behandlinger og vigtige helbredshændelser samlet i én rolig tidslinje med påmindelser.",
+                body: "Vaccinationer, behandlinger og vigtige helbredshændelser samlet i én enkel tidslinje med påmindelser.",
               },
               {
                 tag: "DOKUMENTER",
@@ -873,7 +868,7 @@ export function Index() {
               En digital identitet, der <span className="italic text-accent">følger dyret</span> gennem livet.
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Interaktiv, verificerbar og altid opdateret. Et roligt sted at vende tilbage til — fra første scan til sidste rejse.
+              Interaktiv, verificerbar og altid opdateret. Et enkelt sted at vende tilbage til — fra første scan til sidste rejse.
             </p>
           </div>
 
