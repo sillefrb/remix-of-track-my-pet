@@ -8,7 +8,7 @@ type Props = {
 };
 
 export function WaitlistCTA({
-  eyebrow = "VENTELISTE — JOIN THE PACK",
+  eyebrow = "VENTELISTE, JOIN THE PACK",
   title = "Vær blandt de første med adgang til et verificeret pet ID udviklet til moderne kæledyrsejerskab.",
   body = "Et samlet produkt til identitet, dokumentation og tryghed samlet ét sted gennem hele dyrets liv.",
   variant = "default",
@@ -42,7 +42,7 @@ export function WaitlistCTA({
 
         {submitted ? (
           <p className="mt-12 font-serif text-lg font-light italic text-accent">
-            Tak — vi er i kontakt, så snart der er nyt.
+            Tak, vi er i kontakt, så snart der er nyt.
           </p>
         ) : (
           <form

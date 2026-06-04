@@ -9,7 +9,7 @@ import { AboutPage } from "./about";
 
 export const Route = createFileRoute("/print")({
   head: () => ({
-    meta: [{ title: "Track My Pet — Samlet dokument" }],
+    meta: [{ title: "Track My Pet, Samlet dokument" }],
   }),
   component: PrintAll,
 });

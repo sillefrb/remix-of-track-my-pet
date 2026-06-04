@@ -5,13 +5,13 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/vision")({
   head: () => ({
     meta: [
-      { title: "Vision — Track My Pet" },
+      { title: "Vision, Track My Pet" },
       {
         name: "description",
         content:
           "En samlet løsning til identitet, dokumentation og tryghed. Europæisk udvikling, principper og rækkefølgen.",
       },
-      { property: "og:title", content: "Vision — Track My Pet" },
+      { property: "og:title", content: "Vision, Track My Pet" },
       { property: "og:description", content: "Tillid, omsorg og langsigtede relationer er vigtigere end teknologien." },
     ],
   }),
@@ -29,7 +29,7 @@ const euLayers = [
 
 const chipPlayers = ["Datamars", "HomeAgain", "AVID Identification Systems", "Pet-ID Microchips", "Virbac BackHome", "AEGID RFID Solutions"];
 const chipReality = [
-  { k: "Passiv RFID", v: "Intet batteri — aktiveres magnetisk af scanner" },
+  { k: "Passiv RFID", v: "Intet batteri, aktiveres magnetisk af scanner" },
   { k: "Lille hukommelse", v: "Returnerer typisk kun et statisk ID-nummer" },
   { k: "Ingen live tracking", v: "GPS, eSIM og Bluetooth kræver batteri" },
   { k: "Statisk identifikator", v: "Data lever i databaser, ikke på chippen" },
@@ -43,7 +43,7 @@ const phases = [
   { no: "Fase 01", title: "Elegant fysisk identitetsprodukt", body: "Et gennemtænkt tag og kort koblet til mikrochip-ID. En enkel digital profil. Enkel opsætning, høj praktisk værdi." },
   { no: "Fase 02", title: "Løbende adgang og digital relation", body: "Dokumenter, vaccination, påmindelser, familieadgang og nødprofil." },
   { no: "Fase 03", title: "Forsikring, rejse og verificeret ejerskabsoverdragelse", body: "Samarbejder omkring forsikring, rejsedokumentation og verificeret ejerskifte." },
-  { no: "Fase 04", title: "En samlet løsning til kæledyrsidentitet", body: "En samlet løsning til identitet, dokumentation og tryghed — udviklet i takt med den europæiske udvikling inden for kæledyrsidentitet." },
+  { no: "Fase 04", title: "En samlet løsning til kæledyrsidentitet", body: "En samlet løsning til identitet, dokumentation og tryghed, udviklet i takt med den europæiske udvikling inden for kæledyrsidentitet." },
 ];
 
 const risks = [
@@ -57,8 +57,8 @@ const risks = [
 const operatingModel = [
   { title: "Et marked med friktion", body: "Kæledyrsmarkedet er fragmenteret og analogt. Den europæiske udvikling åbner for en mere sammenhængende løsning." },
   { title: "Stærk intern overbevisning", body: "Vi tror på, at en samlet løsning til kæledyrsidentitet og dokumentation har en naturlig plads i moderne kæledyrsejerskab." },
-  { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler mennesker med erfaring fra design, hardware, dyrlægeverdenen og forsikring — og giver dem rammerne til at bygge noget langsigtet." },
-  { title: "Reelt ejerskab og reel medbestemmelse", body: "Reelt ejerskab og reel beslutningsret fra start — fordi langsigtede produkter bygges af mennesker, der selv er en del af dem." },
+  { title: "Dygtige folk, der vil bygge sammen", body: "Vi samler mennesker med erfaring fra design, hardware, dyrlægeverdenen og forsikring, og giver dem rammerne til at bygge noget langsigtet." },
+  { title: "Reelt ejerskab og reel medbestemmelse", body: "Reelt ejerskab og reel beslutningsret fra start, fordi langsigtede produkter bygges af mennesker, der selv er en del af dem." },
   { title: "Erfaring, talent og distribution", body: "Erfarne folk, ungt produkttalent og eksisterende relationer i branchen." },
   { title: "Eksisterende relationer som fundament", body: "Vi bygger videre på eksisterende relationer i dyrlægebranchen, forsikringsverdenen og europæiske detailkanaler." },
   { title: "Fokus før drift", body: "Vi holder fokus på kernen. Produktion, levering og support varetages af pålidelige partnere." },
@@ -67,7 +67,7 @@ const operatingModel = [
 const blueprint = [
   { p: "Markedet før idéen", a: "Kæledyrsmarkedet er stort, gammelt og fragmenteret. Behovet for et samlet sted er allerede til stede." },
   { p: "Friktion med økonomisk volumen", a: "Ejere bruger store beløb årligt. Hver beslutning kræver dokumenter, login og opslag flere steder." },
-  { p: "Hele processer — fra ende til ende", a: "Identitet → dokumentation → vaccination → forsikring → rejser → akut hjælp → ejerskifte." },
+  { p: "Hele processer, fra ende til ende", a: "Identitet → dokumentation → vaccination → forsikring → rejser → akut hjælp → ejerskifte." },
   { p: "Byg ovenpå eksisterende adfærd", a: "Hunde har allerede halsbånd, chip og papirer. Vi gør hverdagen enklere omkring noget, folk allerede gør." },
   { p: "Distribution før produkt", a: "Naturlig distribution gennem dyrlæger, opdrættere, forsikringsselskaber og detail." },
   { p: "Tydelig kontrast i positionering", a: "I kontrast til et bureaukratisk register: enkelt, gennemtænkt, og ejeren beholder sine egne oplysninger." },
@@ -82,7 +82,7 @@ export function VisionPage() {
 
       {/* HERO TESE */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
-        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II — KERNETESEN</p>
+        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II, KERNETESEN</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
           Et samlet sted for<br /><span className="text-accent not-italic">identitet og dokumentation.</span>
         </h1>
@@ -104,7 +104,7 @@ export function VisionPage() {
               Et samlet sted for<br /><span className="italic text-accent">vigtig information om dyret.</span>
             </h2>
             <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-              Værdien ligger i den samlede løsning — i at samle dokumentation, identitet og adgang ét sted og skabe mere sammenhæng mellem ejer, klinik, forsikring og myndigheder.
+              Værdien ligger i den samlede løsning, i at samle dokumentation, identitet og adgang ét sted og skabe mere sammenhæng mellem ejer, klinik, forsikring og myndigheder.
             </p>
           </div>
           <div className="md:col-span-7">
@@ -118,7 +118,7 @@ export function VisionPage() {
                 ["Tillid", "Klinik, forsikring, told og ejer"],
                 ["Europæisk udvikling", "Udviklet til fælles regelsæt"],
                 ["Akutadgang", "Når vigtig information skal være let tilgængelig"],
-                ["Forsikring", "Forbindelse og dokumentation — uden risikobæring"],
+                ["Forsikring", "Forbindelse og dokumentation, uden risikobæring"],
                 ["Verificeret dokumentation", "Sammenhæng på tværs af formater"],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6">
@@ -141,7 +141,7 @@ export function VisionPage() {
                 En fælles europæisk udvikling inden for registrering og identitet er i gang.
               </h2>
               <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
-                EU bevæger sig mod obligatorisk mikrochip, fælles registre, digital registrering og fælles passystemer. Det er mere end nye chipregler — det er en samlet europæisk udvikling.
+                EU bevæger sig mod obligatorisk mikrochip, fælles registre, digital registrering og fælles passystemer. Det er mere end nye chipregler, det er en samlet europæisk udvikling.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -357,7 +357,7 @@ export function VisionPage() {
           </h2>
           <div className="mx-auto mt-12 h-px w-12 bg-background/30" />
           <p className="mt-12 text-sm font-light leading-relaxed text-background/80">
-            Fordi det handler om tryghed, omsorg og en relation, der varer hele dyrets liv. Et produkt man vender tilbage til — år efter år.
+            Fordi det handler om tryghed, omsorg og en relation, der varer hele dyrets liv. Et produkt man vender tilbage til, år efter år.
           </p>
         </div>
       </section>
@@ -367,7 +367,7 @@ export function VisionPage() {
         <div className="mx-auto max-w-3xl px-6 py-20 text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">NÆSTE</p>
           <h2 className="font-serif mt-6 text-3xl font-light italic leading-snug md:text-4xl">
-            Hvor stort er markedet — og hvem har allerede valideret det?
+            Hvor stort er markedet, og hvem har allerede valideret det?
           </h2>
           <Link to="/market" className="mt-10 inline-block rounded-full bg-foreground px-8 py-3 text-[11px] tracking-[0.25em] text-background hover:bg-accent">
             SE MARKEDET

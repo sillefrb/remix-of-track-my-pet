@@ -11,17 +11,17 @@ import { WaitlistCTA } from "@/components/WaitlistCTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Track My Pet — Forretningscase" },
+      { title: "Track My Pet, Forretningscase" },
       {
         name: "description",
         content:
           "Et samlet produkt til identitet, dokumentation og tryghed gennem hele dyrets liv. Et fysisk tag og en digital profil samlet ét sted.",
       },
-      { property: "og:title", content: "Track My Pet — Forretningscase" },
+      { property: "og:title", content: "Track My Pet, Forretningscase" },
       {
         property: "og:description",
         content:
-          "En samlet løsning til identitet og dokumentation — udviklet til moderne kæledyrsejerskab.",
+          "En samlet løsning til identitet og dokumentation, udviklet til moderne kæledyrsejerskab.",
       },
       { property: "og:image", content: heroImg },
     ],
@@ -42,7 +42,7 @@ const sections: {
     no: "I",
     label: "PRODUKT",
     title: "Et samlet fysisk og digitalt produkt.",
-    body: "Tag, kort og folder koblet til en verificeret digital profil. Opsætning på under ét minut. Pas, vaccinationer, rejser og nødinformation — i ét.",
+    body: "Tag, kort og folder koblet til en verificeret digital profil. Opsætning på under ét minut. Pas, vaccinationer, rejser og nødinformation, i ét.",
     img: skaterImg,
   },
   {
@@ -75,7 +75,7 @@ export function Index() {
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* HERO — full-bleed editorial */}
+      {/* HERO, full-bleed editorial */}
       <section className="relative">
         <div className="relative aspect-[4/5] w-full overflow-hidden bg-muted md:aspect-[16/9]">
           <img
@@ -88,7 +88,7 @@ export function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/40" />
           <div className="absolute inset-x-0 bottom-0 px-6 pb-12 text-center md:pb-20">
             <p className="text-[10px] font-light tracking-[0.45em] text-background/95">
-              IN LOVE WITH ANIMALS — JOIN THE PACK
+              IN LOVE WITH ANIMALS, JOIN THE PACK
             </p>
             <h1 className="font-serif mt-6 text-5xl font-light leading-[1] tracking-tight text-background sm:text-7xl md:text-8xl lg:text-[9rem]">
               Track My Pet
@@ -101,7 +101,7 @@ export function Index() {
             Fra pas til digital identitet.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Et samlet sted for identitet, dokumentation og omsorg. Et fysisk tag og en digital profil — udviklet til hele dyrets liv, også når livet ændrer sig.
+            Et samlet sted for identitet, dokumentation og omsorg. Et fysisk tag og en digital profil, udviklet til hele dyrets liv, også når livet ændrer sig.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
             <Link to="/product" className="rounded-full bg-foreground px-6 py-3 text-background transition hover:bg-accent">
@@ -127,7 +127,7 @@ export function Index() {
         </div>
       </section>
 
-      {/* PROBLEM — FRAGMENTERING */}
+      {/* PROBLEM, FRAGMENTERING */}
       <section className="border-t border-border bg-background">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 gap-12 lg:gap-20">
@@ -139,7 +139,7 @@ export function Index() {
                 Intet taler <span className="italic text-accent">sammen.</span>
               </h2>
               <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/70">
-                Ejerskab af et kæledyr er fordelt over et væld af systemer, abonnementer og indbakker — uden et samlet sted for det vigtige.
+                Ejerskab af et kæledyr er fordelt over et væld af systemer, abonnementer og indbakker, uden et samlet sted for det vigtige.
               </p>
             </div>
 
@@ -174,13 +174,13 @@ export function Index() {
         </div>
       </section>
 
-      {/* SÅDAN FUNGERER DET — 3 TRIN */}
+      {/* SÅDAN FUNGERER DET, 3 TRIN */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
 
         <div className="grid grid-cols-12 items-end gap-6 pb-16">
           <div className="col-span-12 md:col-span-7">
             <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-              SÅDAN FUNGERER DET — N°0A / TRE TRIN
+              SÅDAN FUNGERER DET, N°0A / TRE TRIN
             </p>
             <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
               Enkel at komme i gang. <span className="italic text-accent">Enkel at bruge.</span>
@@ -188,7 +188,7 @@ export function Index() {
           </div>
           <div className="col-span-12 md:col-span-5">
             <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-              Tre enkelte trin fra fysisk tag til en samlet digital profil — klar til hverdag og uforudsete situationer.
+              Tre enkelte trin fra fysisk tag til en samlet digital profil, klar til hverdag og uforudsete situationer.
             </p>
             <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
           </div>
@@ -206,13 +206,13 @@ export function Index() {
               step: "02",
               tag: "SAMLE",
               title: "Saml dokumenter og journal",
-              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted — enkelt og struktureret.",
+              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted, enkelt og struktureret.",
             },
             {
               step: "03",
               tag: "DEL",
               title: "Del sikkert, når det er nødvendigt",
-              body: "Giv dyrlæge, klinik, pasning eller rejseudbyder adgang via QR, link eller eksport — kun når du vælger det.",
+              body: "Giv dyrlæge, klinik, pasning eller rejseudbyder adgang via QR, link eller eksport, kun når du vælger det.",
             },
           ].map((s) => (
             <li key={s.step} className="bg-background p-10 md:p-12">
@@ -231,13 +231,13 @@ export function Index() {
         </ol>
       </section>
 
-      {/* KONTEKST — EUROPÆISK UDVIKLING */}
+      {/* KONTEKST, EUROPÆISK UDVIKLING */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                KONTEKST — N°00 / EUROPA
+                KONTEKST, N°00 / EUROPA
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
                 Kæledyrsidentitet bevæger sig{" "}
@@ -246,7 +246,7 @@ export function Index() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                En fælles europæisk udvikling inden for identitet, registrering og dokumentation er i gang — og skaber rum for en samlet løsning.
+                En fælles europæisk udvikling inden for identitet, registrering og dokumentation er i gang, og skaber rum for en samlet løsning.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -262,7 +262,7 @@ export function Index() {
               {
                 tag: "BEHOVET",
                 title: "Behov for en enklere adgang",
-                body: "Kæledyrsidentitet bevæger sig fra fysiske dokumenter til sammenhængende digitale løsninger — samlet ét sted.",
+                body: "Kæledyrsidentitet bevæger sig fra fysiske dokumenter til sammenhængende digitale løsninger, samlet ét sted.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -304,7 +304,7 @@ export function Index() {
                 ["Ekstremt lav friktion", "Scan → aktivér → forbundet."],
                 ["Løbende funktioner og adgang", "Adgang der udvikler sig sammen med dyret."],
                 ["Langsigtet adgang og dokumentation", "Ejeren ejer profilen. Relationen følger dyret gennem livet."],
-                ["Løbende kunderelationer", "Hele dyrets liv — fra første scan til sidste rejse."],
+                ["Løbende kunderelationer", "Hele dyrets liv, fra første scan til sidste rejse."],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6 md:p-7">
                   <p className="font-serif text-lg font-light italic text-foreground">
@@ -366,7 +366,7 @@ export function Index() {
             />
           </div>
           <figcaption className="px-6 py-6 text-[10px] tracking-[0.35em] text-muted-foreground">
-            EDITORIAL — N°01 / FELINE
+            EDITORIAL, N°01 / FELINE
           </figcaption>
         </figure>
         <div className="flex flex-col justify-center bg-background p-10 md:col-span-7 md:p-16">
@@ -380,18 +380,18 @@ export function Index() {
           <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
             Skabt ud fra filosofien om, at relationen mellem mennesket og
             kæledyr er en af de mest nære og betydningsfulde, vi har.
-            Produktet er udviklet til at beskytte og følge dyret gennem livet med fokus på tryghed, kvalitet og funktioner udviklet med omtanke — uden støj, overdesign eller unødvendig kompleksitet.
+            Produktet er udviklet til at beskytte og følge dyret gennem livet med fokus på tryghed, kvalitet og funktioner udviklet med omtanke, uden støj, overdesign eller unødvendig kompleksitet.
           </p>
           <div className="mt-10 h-px w-12 bg-border" />
         </div>
       </section>
 
-      {/* INDEX — fire sider */}
+      {/* INDEX, fire sider */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
         <div className="grid grid-cols-12 items-end gap-6 pb-16">
           <div className="col-span-12 md:col-span-7">
             <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-              INDHOLD — N°00 / FORRETNINGSCASE
+              INDHOLD, N°00 / FORRETNINGSCASE
             </p>
             <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
               Casen i fire <span className="italic text-accent">kapitler.</span>
@@ -399,7 +399,7 @@ export function Index() {
           </div>
           <div className="col-span-12 md:col-span-5">
             <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-              Produkt, vision, marked og prismodel — hver del kan læses og
+              Produkt, vision, marked og prismodel, hver del kan læses og
               deles for sig. Følg rækkefølgen, eller spring direkte til det,
               der interesserer dig.
             </p>
@@ -447,7 +447,7 @@ export function Index() {
         </div>
       </section>
 
-      {/* CONCLUSION — strategi */}
+      {/* CONCLUSION, strategi */}
       <section className="bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 gap-10">
@@ -459,10 +459,10 @@ export function Index() {
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv — og lader resten vokse enkelt ud af relationen mellem ejer og dyr.
+                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv, og lader resten vokse enkelt ud af relationen mellem ejer og dyr.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Et enkelt fysisk produkt, som er let at forstå — og som åbner for løbende adgang, dokumentation og en samlet løsning, der følger den europæiske udvikling inden for kæledyrsidentitet.
+                Et enkelt fysisk produkt, som er let at forstå, og som åbner for løbende adgang, dokumentation og en samlet løsning, der følger den europæiske udvikling inden for kæledyrsidentitet.
               </p>
             </div>
 
@@ -471,7 +471,7 @@ export function Index() {
                 {[
                   { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et objekt, ejes som et arvestykke. Kunden forstår det med det samme." },
                   { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, påmindelser, familieadgang. Her samles dokumentation og adgang." },
-                  { step: "03", tag: "INDSIGT", title: "Samlet indsigt", body: "Anonymiseret og samtykke-baseret indsigt om sundhed og hverdag. Værdifuldt for forsikring, dyrlæger og forskning — uden at ejeren mister kontrollen." },
+                  { step: "03", tag: "INDSIGT", title: "Samlet indsigt", body: "Anonymiseret og samtykke-baseret indsigt om sundhed og hverdag. Værdifuldt for forsikring, dyrlæger og forskning, uden at ejeren mister kontrollen." },
                   { step: "04", tag: "EUROPÆISK UDVIKLING", title: "Et samlet produkt til kæledyrsidentitet", body: "I takt med den europæiske udvikling inden for kæledyrsidentitet samler vi adgang og dokumentation mellem ejer, dyrlæge, myndigheder og relevante funktioner." },
                 ].map((s) => (
                   <li key={s.step} className="bg-background p-8 md:p-10">
@@ -501,13 +501,13 @@ export function Index() {
         </div>
       </section>
 
-      {/* HJÆLP — SOS */}
+      {/* HJÆLP, SOS */}
       <section className="border-t border-border bg-background">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                HJÆLP — N°05 / NÅR DET ER NØDVENDIGT
+                HJÆLP, N°05 / NÅR DET ER NØDVENDIGT
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
                 Hjælp, når det <span className="italic text-accent">er nødvendigt.</span>
@@ -515,7 +515,7 @@ export function Index() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted — udviklet til hurtigere adgang til vigtig information og mere ro i sindet.
+                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted, udviklet til hurtigere adgang til vigtig information og mere ro i sindet.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -526,7 +526,7 @@ export function Index() {
               {
                 tag: "AKUTPROFIL",
                 title: "Vigtig information, hurtigt fundet",
-                body: "Navn, alder, mikrochip-ID, allergier, medicin og kontaktoplysninger samlet ét sted — synligt med ét scan.",
+                body: "Navn, alder, mikrochip-ID, allergier, medicin og kontaktoplysninger samlet ét sted, synligt med ét scan.",
               },
               {
                 tag: "VI FINDER HUND",
@@ -536,7 +536,7 @@ export function Index() {
               {
                 tag: "HJÆLPETJENESTER",
                 title: "Hjælp og kontaktmuligheder",
-                body: "Udviklet til at kunne forbindes med dyrlæger, akutklinikker og dyreværn — så hjælpen er enkel at finde, når det betyder noget.",
+                body: "Udviklet til at kunne forbindes med dyrlæger, akutklinikker og dyreværn, så hjælpen er enkel at finde, når det betyder noget.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -561,7 +561,7 @@ export function Index() {
               Vigtig information om dyret skal være let at finde.
             </p>
             <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-              Kontaktpersoner, medicin, rutiner og ønsker omkring omsorg samlet ét sted — tilgængeligt for de mennesker, du vælger.
+              Kontaktpersoner, medicin, rutiner og ønsker omkring omsorg samlet ét sted, tilgængeligt for de mennesker, du vælger.
             </p>
           </div>
 
@@ -571,13 +571,13 @@ export function Index() {
         </div>
       </section>
 
-      {/* OMSORG — HVIS LIVET ÆNDRER SIG */}
+      {/* OMSORG, HVIS LIVET ÆNDRER SIG */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 gap-12 lg:gap-20">
             <div className="col-span-12 lg:col-span-5">
               <p className="text-[10px] tracking-[0.45em] text-accent">
-                OMSORG — HVIS LIVET ÆNDRER SIG
+                OMSORG, HVIS LIVET ÆNDRER SIG
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
                 Et kæledyr er en del af{" "}
@@ -587,10 +587,10 @@ export function Index() {
                 Alligevel findes der sjældent et samlet sted for de oplysninger og ønsker, der bliver vigtige, hvis ejeren bliver alvorligt syg eller går bort.
               </p>
               <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                Track My Pet samler kontaktpersoner, nødinformation og ønsker omkring dyrets videre omsorg ét sted — tilgængeligt, når det betyder noget.
+                Track My Pet samler kontaktpersoner, nødinformation og ønsker omkring dyrets videre omsorg ét sted, tilgængeligt, når det betyder noget.
               </p>
               <p className="mt-10 font-serif text-lg font-light italic leading-snug text-foreground/85">
-                Udviklet til hele dyrets liv — også når livet ændrer sig.
+                Udviklet til hele dyrets liv, også når livet ændrer sig.
               </p>
             </div>
 
@@ -608,7 +608,7 @@ export function Index() {
                   En privat profil for dyrets videre omsorg.
                 </h3>
                 <p className="mt-4 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-                  Kontaktpersoner, pasningsønsker og vigtig information om dyret — ved sygdom, indlæggelse eller dødsfald. Synlig kun for de mennesker, du vælger.
+                  Kontaktpersoner, pasningsønsker og vigtig information om dyret, ved sygdom, indlæggelse eller dødsfald. Synlig kun for de mennesker, du vælger.
                 </p>
 
                 <ul className="mt-10 grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
@@ -632,7 +632,7 @@ export function Index() {
                 </ul>
 
                 <p className="mt-10 text-xs font-light leading-relaxed text-foreground/70">
-                  Vigtig information tilgængelig for de mennesker, du vælger — varmt, værdigt og samlet ét sted.
+                  Vigtig information tilgængelig for de mennesker, du vælger, varmt, værdigt og samlet ét sted.
                 </p>
               </div>
             </div>
@@ -640,7 +640,7 @@ export function Index() {
         </div>
       </section>
 
-      {/* FOR EJERE — split med profilkort */}
+      {/* FOR EJERE, split med profilkort */}
       <section className="border-t border-border bg-background">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-center gap-12 lg:gap-20">
@@ -669,7 +669,7 @@ export function Index() {
                   },
                   {
                     title: "Adgang overalt",
-                    body: "Brug Track My Pet på enhver enhed — dyrets oplysninger samlet ét sted.",
+                    body: "Brug Track My Pet på enhver enhed, dyrets oplysninger samlet ét sted.",
                   },
                 ].map((f) => (
                   <li key={f.title} className="flex items-start gap-5">
@@ -748,7 +748,7 @@ export function Index() {
         </div>
       </section>
 
-      {/* SØG PASNING — split med pasningskort */}
+      {/* SØG PASNING, split med pasningskort */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-center gap-12 lg:gap-20">
@@ -804,14 +804,14 @@ export function Index() {
                 <span className="italic text-accent">når livet kalder.</span>
               </h2>
               <p className="mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/75">
-                Et netværk af verificerede hundepassere, dyrepensioner og luftere — alle med adgang til dyrets profil og vigtige oplysninger fra første kontakt.
+                Et netværk af verificerede hundepassere, dyrepensioner og luftere, alle med adgang til dyrets profil og vigtige oplysninger fra første kontakt.
               </p>
 
               <ul className="mt-12 space-y-10">
                 {[
                   {
                     title: "Verificerede passere",
-                    body: "Alle passere er identitetsbekræftet og anmeldt af andre ejere — ingen anonyme profiler.",
+                    body: "Alle passere er identitetsbekræftet og anmeldt af andre ejere, ingen anonyme profiler.",
                   },
                   {
                     title: "Profilen følger med",
@@ -819,7 +819,7 @@ export function Index() {
                   },
                   {
                     title: "Hverdag og rejse",
-                    body: "Dagpasning, luftetur, weekendophold eller længere ferier — find det match, der passer dit dyr.",
+                    body: "Dagpasning, luftetur, weekendophold eller længere ferier, find det match, der passer dit dyr.",
                   },
                   {
                     title: "Tryg kommunikation",
@@ -863,13 +863,13 @@ export function Index() {
 
 
 
-      {/* FUNKTIONER — 6 KERNEEGENSKABER */}
+      {/* FUNKTIONER, 6 KERNEEGENSKABER */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                FUNKTIONER — N°06 / KERNEN
+                FUNKTIONER, N°06 / KERNEN
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
                 Alt det vigtige <span className="italic text-accent">samlet ét sted.</span>
@@ -888,7 +888,7 @@ export function Index() {
               {
                 tag: "IDENTITET",
                 title: "Verificeret profil",
-                body: "En sikker digital profil med identitet, ejerskab og vigtige oplysninger — dyrets digitale pas.",
+                body: "En sikker digital profil med identitet, ejerskab og vigtige oplysninger, dyrets digitale pas.",
               },
               {
                 tag: "JOURNAL",
@@ -903,7 +903,7 @@ export function Index() {
               {
                 tag: "DELING",
                 title: "QR- og linkverificering",
-                body: "Del adgang til vigtige oplysninger med klinik, pasning eller hjælper — enkelt og kontrolleret.",
+                body: "Del adgang til vigtige oplysninger med klinik, pasning eller hjælper, enkelt og kontrolleret.",
               },
               {
                 tag: "REJSE",
@@ -913,12 +913,12 @@ export function Index() {
               {
                 tag: "ADGANG",
                 title: "Adgangskontrol",
-                body: "Samtykke-baseret deling, historik og rolleadgang — ejeren bestemmer, hvem der ser hvad.",
+                body: "Samtykke-baseret deling, historik og rolleadgang, ejeren bestemmer, hvem der ser hvad.",
               },
               {
                 tag: "ONLINE VET",
                 title: "Online dyrlæge",
-                body: "Hurtig adgang til en dyrlæge via video eller chat — med dyrets profil og journal som udgangspunkt for samtalen.",
+                body: "Hurtig adgang til en dyrlæge via video eller chat, med dyrets profil og journal som udgangspunkt for samtalen.",
               },
             ].map((f) => (
               <article key={f.tag} className="bg-background p-10 md:p-12">
@@ -937,18 +937,18 @@ export function Index() {
         </div>
       </section>
 
-      {/* OPLEVELSEN — DET LEVENDE ID */}
+      {/* OPLEVELSEN, DET LEVENDE ID */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
         <div className="grid grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-5">
             <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-              OPLEVELSEN — N°07 / ET LEVENDE ID
+              OPLEVELSEN, N°07 / ET LEVENDE ID
             </p>
             <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl lg:text-6xl">
               En digital identitet, der <span className="italic text-accent">følger dyret</span> gennem livet.
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Interaktiv, verificerbar og altid opdateret. Et enkelt sted at vende tilbage til — fra første scan til sidste rejse.
+              Interaktiv, verificerbar og altid opdateret. Et enkelt sted at vende tilbage til, fra første scan til sidste rejse.
             </p>
           </div>
 

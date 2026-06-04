@@ -14,13 +14,13 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/product")({
   head: () => ({
     meta: [
-      { title: "Produktet — Track My Pet" },
+      { title: "Produktet, Track My Pet" },
       {
         name: "description",
         content:
           "Premium tag, kort og folder koblet til en verificeret digital profil. Enkel opsætning. Pas, vaccinationer, rejser og nødinformation samlet ét sted.",
       },
-      { property: "og:title", content: "Produktet — Track My Pet" },
+      { property: "og:title", content: "Produktet, Track My Pet" },
       { property: "og:description", content: "Et samlet fysisk og digitalt produkt for ejer og dyr." },
       { property: "og:image", content: skaterImg },
     ],
@@ -29,13 +29,13 @@ export const Route = createFileRoute("/product")({
 });
 
 const concepts = [
-  { no: "01", name: "Track My Pet", tagline: "Fysisk nød-ID + digital identitet", body: "Et gennemtænkt tag udviklet til hverdagen — til halsbånd eller seletøj. Hvis hunden findes, scannes QR eller NFC, og ejeren kontaktes med det samme." },
+  { no: "01", name: "Track My Pet", tagline: "Fysisk nød-ID + digital identitet", body: "Et gennemtænkt tag udviklet til hverdagen, til halsbånd eller seletøj. Hvis hunden findes, scannes QR eller NFC, og ejeren kontaktes med det samme." },
   { no: "02", name: "Dog Folder", tagline: "Alt om hunden, ét sted", body: "Et fysisk premium kit kombineret med en app. Vaccinepapirer, forsikring, pas, medicin og bookinghistorik samlet ét sted." },
   { no: "03", name: "Emergency Pet Card", tagline: "Hvis der sker dig noget", body: "Et kort til pung eller bil. Hvis ejer kommer ud for en ulykke, ved redningsfolk straks, at der er et dyr alene hjemme." },
   { no: "04", name: "Lost Mode for Dogs", tagline: "NFC bygget til bortløbne hunde", body: "Ren UX omkring NFC og QR: midlertidig sporing, lokal alarm og lokal besked når hunden er væk fra hjemmet." },
-  { no: "05", name: "Dokumentarkiv", tagline: "Hele dyrets liv samlet ét sted", body: "Sundhed, dokumenter, pasning, forsikring, billeder, medicin og vaccinationer — med et fysisk udgangspunkt." },
-  { no: "06", name: "Rejsedokumentation", tagline: "Krydsning af grænser uden besvær", body: "Et samlet produkt der gør grænsekrydsning enkel — vaccination, ID og dokumenter klar på få sekunder." },
-  { no: "07", name: "Trusted Dog Transfer", tagline: "Tryg overdragelse af ejerskab", body: "Et register over sundhed, vaccination, adfærd, ejerskab, skader og forsikring — beskytter både køber og dyr." },
+  { no: "05", name: "Dokumentarkiv", tagline: "Hele dyrets liv samlet ét sted", body: "Sundhed, dokumenter, pasning, forsikring, billeder, medicin og vaccinationer, med et fysisk udgangspunkt." },
+  { no: "06", name: "Rejsedokumentation", tagline: "Krydsning af grænser uden besvær", body: "Et samlet produkt der gør grænsekrydsning enkel, vaccination, ID og dokumenter klar på få sekunder." },
+  { no: "07", name: "Trusted Dog Transfer", tagline: "Tryg overdragelse af ejerskab", body: "Et register over sundhed, vaccination, adfærd, ejerskab, skader og forsikring, beskytter både køber og dyr." },
   { no: "08", name: "Forsikring og dokumentation", tagline: "Forsikring bygget på verificerede oplysninger", body: "Når sundhed, identitet og historik allerede er samlet digitalt, bliver forsikring enklere, hurtigere og mere præcis." },
 ];
 
@@ -49,11 +49,11 @@ export function ProductPage() {
         <figure className="relative aspect-[16/9] w-full overflow-hidden bg-muted">
           <img src={onboardingImg} alt="Ejer opretter sin hund i Track My Pet" className="h-full w-full object-cover" />
           <figcaption className="absolute bottom-6 left-6 text-[10px] tracking-[0.35em] text-background/95 md:bottom-10 md:left-10">
-            EDITORIAL — N°02 / ONBOARDING
+            EDITORIAL, N°02 / ONBOARDING
           </figcaption>
         </figure>
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
-          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">I — PRODUKTET</p>
+          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">I, PRODUKTET</p>
           <h1 className="font-serif mt-8 text-4xl font-light leading-tight md:text-6xl lg:text-7xl">
             Et produkt, <span className="italic text-accent">flere relationer.</span>
           </h1>
@@ -68,7 +68,7 @@ export function ProductPage() {
         <div className="mx-auto max-w-[1500px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16 md:pb-20">
             <div className="col-span-12 md:col-span-7">
-              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">CAMPAIGN — N°03 / AKTIV</p>
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">CAMPAIGN, N°03 / AKTIV</p>
               <h2 className="font-serif mt-8 text-5xl font-light leading-[0.95] tracking-tight md:text-7xl lg:text-[7rem]">
                 AKTIV.<br /><span className="italic text-accent">Udviklet til</span> hverdagen.
               </h2>
@@ -107,7 +107,7 @@ export function ProductPage() {
               </figcaption>
             </figure>
             <div className="col-span-12 flex flex-col justify-end md:col-span-5 md:pb-6 md:pl-6">
-              <p className="text-[10px] tracking-[0.4em] text-accent">AKTIV — MANIFEST</p>
+              <p className="text-[10px] tracking-[0.4em] text-accent">AKTIV, MANIFEST</p>
               <p className="font-serif mt-6 text-2xl font-light italic leading-snug md:text-3xl lg:text-4xl">
                 Et liv med dyr er fyldt med<br />bevægelse, rejser og hverdage<br />— og dokumenter, der følger<br />med uden besvær.
               </p>
@@ -120,7 +120,7 @@ export function ProductPage() {
       <section className="bg-card">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <p className="text-center text-[10px] tracking-[0.4em] text-muted-foreground">
-            ÉT SAMLET STED — TRE MÅLGRUPPER
+            ÉT SAMLET STED, TRE MÅLGRUPPER
           </p>
           <h2 className="font-serif mx-auto mt-8 max-w-3xl text-center text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
             Produktet <span className="italic text-accent">samler</span> ejer, klinikker og relevante funktioner ét sted.
@@ -145,7 +145,7 @@ export function ProductPage() {
       <section className="bg-[#eef9f0]">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="mb-16 text-center">
-            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PRODUCT MOCK — N°01 / ONBOARDING</p>
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PRODUCT MOCK, N°01 / ONBOARDING</p>
             <h2 className="font-serif mx-auto mt-6 max-w-2xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
               Fra papir til verificeret profil <span className="italic text-accent">på under et minut.</span>
             </h2>
@@ -200,7 +200,7 @@ export function ProductPage() {
         </div>
       </section>
 
-      {/* DOCUMENT — editorial duo */}
+      {/* DOCUMENT, editorial duo */}
       <section className="bg-background">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-px bg-border md:grid-cols-12">
           <figure className="bg-background md:col-span-7">
@@ -208,7 +208,7 @@ export function ProductPage() {
               <img src={documentImg} alt="Pet passport og digital profil" loading="lazy" className="h-full w-full object-cover" />
             </div>
             <figcaption className="px-6 py-6 text-[10px] tracking-[0.35em] text-muted-foreground">
-              EDITORIAL — N°04 / DOKUMENTATION
+              EDITORIAL, N°04 / DOKUMENTATION
             </figcaption>
           </figure>
           <div className="flex flex-col justify-center bg-background p-10 md:col-span-5 md:p-14">
@@ -228,7 +228,7 @@ export function ProductPage() {
         <figure className="relative aspect-[16/9] w-full overflow-hidden bg-muted">
           <img src={walkImg} alt="To salukier i golden hour" loading="lazy" className="h-full w-full object-cover" />
           <figcaption className="absolute bottom-6 left-6 text-[10px] tracking-[0.35em] text-background/95 md:bottom-10 md:left-10">
-            EDITORIAL — N°05 / SIGHTHOUNDS
+            EDITORIAL, N°05 / SIGHTHOUNDS
           </figcaption>
         </figure>
       </section>
@@ -239,7 +239,7 @@ export function ProductPage() {
           <div className="flex flex-col justify-center bg-card p-10 md:col-span-5 md:p-14">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FIT FOR TRAVEL</p>
             <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Grænse, tog, hotel — <span className="italic text-accent">klar på få sekunder.</span>
+              Grænse, tog, hotel, <span className="italic text-accent">klar på få sekunder.</span>
             </h2>
             <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
               Track My Pet samler vaccination, mikrochip og rejsedokumentation i én profil, ejeren kan dele med et enkelt scan.
@@ -250,7 +250,7 @@ export function ProductPage() {
               <img src={travelImg} alt="Lille hund i lædertaske på togperron" loading="lazy" className="h-full w-full object-cover" />
             </div>
             <figcaption className="px-6 py-6 text-[10px] tracking-[0.35em] text-muted-foreground">
-              EDITORIAL — N°06 / TRAVEL
+              EDITORIAL, N°06 / TRAVEL
             </figcaption>
           </figure>
         </div>
