@@ -101,8 +101,7 @@ export function Index() {
             Fra pas til digital identitet.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Et samlet produkt til identitet, dokumentation og tryghed gennem
-            hele dyrets liv. Et fysisk tag og en digital profil — samlet ét sted.
+            Et samlet sted for identitet, dokumentation og omsorg. Et fysisk tag og en digital profil — udviklet til hele dyrets liv, også når livet ændrer sig.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
             <Link to="/product" className="rounded-full bg-foreground px-6 py-3 text-background transition hover:bg-accent">
@@ -554,9 +553,90 @@ export function Index() {
             ))}
           </div>
 
+          <div className="mx-auto mt-16 max-w-2xl border-t border-border pt-12 text-center">
+            <p className="text-[10px] tracking-[0.4em] text-accent">
+              HVIS NOGET SKER MED EJEREN
+            </p>
+            <p className="mt-6 font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
+              Vigtig information om dyret skal være let at finde.
+            </p>
+            <p className="mx-auto mt-6 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              Kontaktpersoner, medicin, rutiner og ønsker omkring omsorg samlet ét sted — tilgængeligt for de mennesker, du vælger.
+            </p>
+          </div>
+
           <p className="mx-auto mt-16 max-w-2xl text-center font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
-            Et produkt udviklet til både hverdag og uforudsete situationer.
+            Skabt til både hverdag og uforudsete situationer.
           </p>
+        </div>
+      </section>
+
+      {/* OMSORG — HVIS LIVET ÆNDRER SIG */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 gap-12 lg:gap-20">
+            <div className="col-span-12 lg:col-span-5">
+              <p className="text-[10px] tracking-[0.45em] text-accent">
+                OMSORG — HVIS LIVET ÆNDRER SIG
+              </p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
+                Et kæledyr er en del af{" "}
+                <span className="italic text-accent">familien.</span>
+              </h2>
+              <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+                Alligevel findes der sjældent et samlet sted for de oplysninger og ønsker, der bliver vigtige, hvis ejeren bliver alvorligt syg eller går bort.
+              </p>
+              <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+                Track My Pet samler kontaktpersoner, nødinformation og ønsker omkring dyrets videre omsorg ét sted — tilgængeligt, når det betyder noget.
+              </p>
+              <p className="mt-10 font-serif text-lg font-light italic leading-snug text-foreground/85">
+                Udviklet til hele dyrets liv — også når livet ændrer sig.
+              </p>
+            </div>
+
+            <div className="col-span-12 lg:col-span-7">
+              <div className="rounded-2xl border border-border bg-background p-8 md:p-12">
+                <div className="flex items-baseline justify-between">
+                  <span className="font-serif text-sm italic text-muted-foreground">
+                    N°08
+                  </span>
+                  <span className="text-[10px] tracking-[0.35em] text-accent">
+                    OMSORGSPROFIL
+                  </span>
+                </div>
+                <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">
+                  En privat profil for dyrets videre omsorg.
+                </h3>
+                <p className="mt-4 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+                  Kontaktpersoner, pasningsønsker og vigtig information om dyret — ved sygdom, indlæggelse eller dødsfald. Synlig kun for de mennesker, du vælger.
+                </p>
+
+                <ul className="mt-10 grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
+                  {[
+                    { tag: "NØDKONTAKTER", body: "Familie, venner eller udvalgte personer." },
+                    { tag: "MIDLERTIDIG PASNING", body: "Den, du ønsker, skal træde til først." },
+                    { tag: "ØNSKER", body: "Dine ønsker for dyrets omsorg." },
+                    { tag: "MEDICIN OG RUTINER", body: "Det daglige, der gør hverdagen tryg." },
+                    { tag: "FAMILIE OG NÆRE", body: "Kontakt til de mennesker, der står dyret nær." },
+                    { tag: "ADGANG", body: "Dokumentation og adgang samlet ét sted." },
+                  ].map((f) => (
+                    <li key={f.tag} className="bg-background px-5 py-6">
+                      <p className="text-[10px] tracking-[0.3em] text-muted-foreground">
+                        {f.tag}
+                      </p>
+                      <p className="mt-3 font-serif text-base font-light italic text-foreground">
+                        {f.body}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-10 text-xs font-light leading-relaxed text-foreground/70">
+                  Vigtig information tilgængelig for de mennesker, du vælger — varmt, værdigt og samlet ét sted.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
