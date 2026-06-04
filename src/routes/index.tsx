@@ -141,7 +141,7 @@ export function Index() {
           </div>
           <div className="col-span-12 md:col-span-5">
             <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-              Tre rolige trin fra fysisk tag til en samlet digital profil — klar til hverdag og uforudsete situationer.
+              Tre enkelte trin fra fysisk tag til en samlet digital profil — klar til hverdag og uforudsete situationer.
             </p>
             <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
           </div>
