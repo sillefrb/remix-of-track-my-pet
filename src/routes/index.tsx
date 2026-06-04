@@ -785,7 +785,7 @@ export function Index() {
               {
                 tag: "REJSE",
                 title: "Rejsedokumentation",
-                body: "Rejserelaterede oplysninger og dokumenter samlet til roligere bevægelse på tværs af europæiske lande.",
+                body: "Rejserelaterede oplysninger og dokumenter samlet til enklere bevægelse på tværs af europæiske lande.",
               },
               {
                 tag: "ADGANG",
