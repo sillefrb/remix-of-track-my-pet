@@ -183,7 +183,7 @@ export function MarketPage() {
         <div className="mx-auto max-w-5xl px-6 py-24 md:py-32">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PARALLELLER</p>
           <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-            Hver gang regulering samler identitet, opstår der et nyt forbrugervendt produkt.
+            Hver gang regulering samler identitet, opstår der et nyt forbrugerhenvendt produkt.
           </h2>
           <ul className="mt-16 border-t border-border">
             {analogies.map((a) => (
