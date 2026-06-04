@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/dogpass-hero.jpg";
-import catImg from "@/assets/dogpass-cat.jpg";
-import catEditorialImg from "@/assets/dogpass-cat-editorial.jpg";
+import catImg from "@/assets/dogpass-cat-editorial.jpg";
+import catEditorialImg from "@/assets/dogpass-cat.jpg";
 import skaterImg from "@/assets/dogpass-aktiv-skater.jpg";
 import documentImg from "@/assets/dogpass-document.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
