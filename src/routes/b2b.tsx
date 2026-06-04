@@ -254,7 +254,7 @@ function B2BPage() {
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
             <a
-              href="mailto:pilot@trackmypet.dk?subject=Pilotsamarbejde%20—%20dyrlæger"
+              href="mailto:pilot@trackmypet.dk?subject=Pilotsamarbejde%20dyrlæger"
               className="rounded-full bg-foreground px-6 py-3 text-background transition hover:bg-accent"
             >
               SKRIV TIL OS

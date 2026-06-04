@@ -109,7 +109,7 @@ export function ProductPage() {
             <div className="col-span-12 flex flex-col justify-end md:col-span-5 md:pb-6 md:pl-6">
               <p className="text-[10px] tracking-[0.4em] text-accent">AKTIV, MANIFEST</p>
               <p className="font-serif mt-6 text-2xl font-light italic leading-snug md:text-3xl lg:text-4xl">
-                Et liv med dyr er fyldt med<br />bevægelse, rejser og hverdage<br />— og dokumenter, der følger<br />med uden besvær.
+                Et liv med dyr er fyldt med<br />bevægelse, rejser og hverdage,<br />og dokumenter, der følger<br />med uden besvær.
               </p>
             </div>
           </div>
