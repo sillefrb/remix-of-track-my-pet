@@ -34,9 +34,8 @@ export function SiteHeader() {
             OM OS
           </Link>
         </nav>
-        <span className="hidden text-[11px] tracking-[0.25em] text-muted-foreground lg:block">
-          OM PRODUKTET
-        </span>
+        <span className="hidden h-px w-10 bg-border lg:block" aria-hidden />
+
       </div>
     </header>
   );
