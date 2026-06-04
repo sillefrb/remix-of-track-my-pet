@@ -510,33 +510,38 @@ export function Index() {
                 HJÆLP, N°05 / NÅR DET ER NØDVENDIGT
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
-                Hjælp, når det <span className="italic text-accent">er nødvendigt.</span>
+                Hjælp, med <span className="italic text-accent">et enkelt klik.</span>
               </h2>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Hvis et dyr bliver væk, kommer til skade eller har brug for akut hjælp, skal vigtig information være let tilgængelig. Identitet, kontaktoplysninger og dokumentation samlet ét sted, udviklet til hurtigere adgang til vigtig information og mere ro i sindet.
+                Hurtig adgang til vigtig information, når det betyder noget. Identitet, kontaktoplysninger og dokumentation samlet ét sted, klar med ét tryk.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                tag: "AKUTPROFIL",
-                title: "Vigtig information, hurtigt fundet",
-                body: "Navn, alder, mikrochip-ID, allergier, medicin og kontaktoplysninger samlet ét sted, synligt med ét scan.",
+                tag: "ONLINE VET",
+                title: "Online dyrlæge",
+                body: "Hurtig adgang til en dyrlæge via video eller chat, med dyrets profil som udgangspunkt.",
+              },
+              {
+                tag: "DYRENES 112",
+                title: "Akut hjælp til dyret",
+                body: "Direkte forbindelse til akut hjælp, når dyret er kommet til skade eller har brug for det med det samme.",
               },
               {
                 tag: "VI FINDER HUND",
                 title: "Når dyret er væk",
-                body: "Et scan på taget åbner direkte kontakt til ejeren. Enkel handling for finderen, hurtig forbindelse for ejeren.",
+                body: "Aktiver eftersøgning og åbn direkte kontakt mellem finder og ejer via tagget.",
               },
               {
-                tag: "HJÆLPETJENESTER",
-                title: "Hjælp og kontaktmuligheder",
-                body: "Udviklet til at kunne forbindes med dyrlæger, akutklinikker og dyreværn, så hjælpen er enkel at finde, når det betyder noget.",
+                tag: "POLITIET",
+                title: "Kontakt til myndigheder",
+                body: "Hurtig adgang til politiet, når situationen kræver det, med dyrets oplysninger klar.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
