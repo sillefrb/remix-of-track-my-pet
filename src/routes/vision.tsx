@@ -82,7 +82,7 @@ export function VisionPage() {
 
       {/* HERO TESE */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
-        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">II, KERNETESEN</p>
+        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">VISION</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
           Et samlet sted for<br /><span className="text-accent not-italic">identitet og dokumentation.</span>
         </h1>
