@@ -129,7 +129,7 @@ export function MarketPage() {
             <span className="italic text-accent">hvordan løsningen kan se ud.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-foreground/75">
-            Et tilsvarende produkt er allerede bygget internationalt under navnet <span className="italic">The Identity Layer for Pets</span>. Samme arkitektur. Samme målgrupper. Samme prisstruktur.
+            Et tilsvarende produkt er allerede bygget internationalt under navnet <span className="italic">The Identity Layer for Pets</span>. Samme arkitektur. Samme europæiske målgruppe. Abonnementsbaseret løsning.
           </p>
 
           <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
