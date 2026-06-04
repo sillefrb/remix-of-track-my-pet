@@ -134,7 +134,7 @@ export function MarketPage() {
 
           <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
             <div className="bg-background p-10">
-              <p className="text-[10px] tracking-[0.35em] text-muted-foreground">HVAD PRODUKTET ER</p>
+              <p className="text-[10px] tracking-[0.35em] text-muted-foreground">PRODUKT</p>
               <h3 className="font-serif mt-6 text-2xl font-light italic leading-snug">En digital løsning til kæledyrsidentitet</h3>
               <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">
                 Ejerskab, journal, dokumenter og historik samlet i ét verificeret system. Ét samlet sted, ejere, dyrlæger, klinikker, internater og relevante funktioner trækker på samme oplysninger.
