@@ -98,11 +98,12 @@ export function Index() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Fra pas til digital identitet.
+            Det naturlige sted at samle identitet, dokumentation og omsorg omkring sit kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Et samlet sted for identitet, dokumentation og omsorg. Et fysisk tag og en digital profil, udviklet til hele dyrets liv, også når livet ændrer sig.
+            Et fysisk tag og en digital profil, udviklet til hele dyrets liv. Hverdag, vaccinationer, rejser, og hvis livet ændrer sig.
           </p>
+
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
             <Link to="/product" className="rounded-full bg-foreground px-6 py-3 text-background transition hover:bg-accent">
               FÅ DIT PET ID
