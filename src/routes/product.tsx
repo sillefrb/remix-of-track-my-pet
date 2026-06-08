@@ -374,6 +374,42 @@ export function ProductPage() {
         </div>
       </section>
 
+      {/* SAMLET ÉT STED */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 gap-10">
+            <div className="col-span-12 md:col-span-5">
+              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">SAMLET ÉT STED</p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl">
+                Syv lag, <span className="italic text-accent">én profil.</span>
+              </h2>
+              <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+                Alt det, der i dag ligger spredt på tværs af registre, klinikker, mails og fysiske dokumenter, samles i én verificeret profil.
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-7">
+              <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
+                {[
+                  ["N°01", "Chipdata"],
+                  ["N°02", "Vaccinationer"],
+                  ["N°03", "Dyrlægejournaler"],
+                  ["N°04", "Forsikringsoplysninger"],
+                  ["N°05", "Rejsedokumentation"],
+                  ["N°06", "Ejerhistorik"],
+                  ["N°07", "QR-verifikation ved grænsekontrol"],
+                ].map(([no, label]) => (
+                  <li key={no} className="flex items-baseline justify-between bg-background p-8">
+                    <span className="font-serif text-3xl font-light leading-none">{label}</span>
+                    <span className="ml-6 text-[10px] tracking-[0.35em] text-muted-foreground">{no}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* CTA */}
       <section className="bg-card">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center">
