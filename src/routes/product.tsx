@@ -409,6 +409,208 @@ export function ProductPage() {
         </div>
       </section>
 
+      {/* ØKOSYSTEM, DYR I MIDTEN */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="text-center">
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">ØKOSYSTEMET</p>
+            <h2 className="font-serif mx-auto mt-6 max-w-2xl text-4xl font-light leading-tight md:text-5xl">
+              Dyret i midten. <span className="italic text-accent">Track My Pet er forbindelsen.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              Ejer, familie, dyrlæge, forsikring, rejser, pasning og nødkontakter. Alle relationer omkring dyret er forbundet ét sted.
+            </p>
+          </div>
+
+          <div className="relative mx-auto mt-24 aspect-square w-full max-w-[640px]">
+            {/* center */}
+            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+              <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full border border-foreground bg-background text-center md:h-40 md:w-40">
+                <span className="text-[9px] tracking-[0.35em] text-muted-foreground">CENTRUM</span>
+                <span className="font-serif mt-1 text-xl font-light italic md:text-2xl">Dyret</span>
+              </div>
+            </div>
+
+            {/* orbit ring */}
+            <div className="absolute left-1/2 top-1/2 h-[78%] w-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-border" />
+
+            {/* satellites */}
+            {[
+              { label: "Ejer", angle: -90 },
+              { label: "Familie", angle: -38 },
+              { label: "Dyrlæge", angle: 14 },
+              { label: "Forsikring", angle: 65 },
+              { label: "Rejser", angle: 116 },
+              { label: "Pasning", angle: 168 },
+              { label: "Nødkontakter", angle: 220 },
+            ].map(({ label, angle }, i) => {
+              const r = 39; // % radius from center
+              const rad = (angle * Math.PI) / 180;
+              const x = 50 + r * Math.cos(rad);
+              const y = 50 + r * Math.sin(rad);
+              return (
+                <div
+                  key={label}
+                  className="absolute z-20 -translate-x-1/2 -translate-y-1/2"
+                  style={{ left: `${x}%`, top: `${y}%` }}
+                >
+                  <div className="flex h-20 w-20 flex-col items-center justify-center rounded-full border border-border bg-card text-center md:h-24 md:w-24">
+                    <span className="text-[9px] tracking-[0.3em] text-accent">N°0{i + 1}</span>
+                    <span className="font-serif mt-1 text-xs font-light leading-tight md:text-sm">{label}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <p className="mx-auto mt-16 max-w-md text-center font-serif text-lg font-light italic leading-snug text-foreground/85">
+            Syv relationer, ét sted. Ejeren beholder kontrollen.
+          </p>
+        </div>
+      </section>
+
+      {/* REJSER, EUROPA */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 items-end gap-6 pb-16">
+            <div className="col-span-12 md:col-span-7">
+              <p className="text-[10px] tracking-[0.45em] text-muted-foreground">REJSER, N°05</p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] md:text-6xl">
+                Udviklet til rejser <span className="italic text-accent">i Europa.</span>
+              </h2>
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
+                Vaccinationer, mikrochip, pas og dokumentation samlet ét sted. Klar ved grænse, tog, færge og hotel.
+              </p>
+              <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-4">
+            {[
+              ["Mikrochip", "ISO-verificeret ID, læsbar i hele EU."],
+              ["Vaccinationer", "Rabies og opdaterede datoer, validerede af klinik."],
+              ["Pet Passport", "Digital kopi af pas, klar til scanning."],
+              ["Sundhedsattest", "Rejseattest gyldig på tværs af lande."],
+            ].map(([k, v], i) => (
+              <div key={k} className="bg-background p-8">
+                <span className="text-[10px] tracking-[0.35em] text-accent">N°0{i + 1}</span>
+                <h3 className="font-serif mt-4 text-2xl font-light leading-tight">{k}</h3>
+                <p className="mt-4 text-xs font-light leading-relaxed text-foreground/70">{v}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[10px] tracking-[0.35em] text-muted-foreground">
+            <span>DK</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>SE</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>DE</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>FR</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>IT</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>ES</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>NL</span><span aria-hidden className="h-px w-6 bg-border" />
+            <span>+20</span>
+          </div>
+        </div>
+      </section>
+
+      {/* OMSORGSPROFIL, LIVSSITUATIONER */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 gap-10">
+            <div className="col-span-12 md:col-span-5">
+              <p className="text-[10px] tracking-[0.4em] text-accent">OMSORGSPROFIL</p>
+              <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] md:text-5xl">
+                Hvis livet <span className="italic text-accent">ændrer sig.</span>
+              </h2>
+              <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
+                En udvidet nødprofil, der dækker mere end blot et bortløbet dyr. Kontaktpersoner, pasningsønsker, rutiner og vigtig information, klar når der er brug for det.
+              </p>
+              <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
+                Her begynder omsorgsprofilen og testamentedelen at blive konkret.
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-7">
+              <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
+                {[
+                  ["Dyret bliver væk", "QR forbinder finder og ejer direkte. Hurtigt, enkelt."],
+                  ["Dyret kommer til skade", "Allergier, medicin og dyrlæge tilgængelig for hjælperen straks."],
+                  ["Ejer bliver syg", "Nødkontakt og pasningsønsker aktiveres af pårørende."],
+                  ["Ejer bliver indlagt", "Pasning, rutiner og foder klart for den, der træder til."],
+                  ["Ejer går bort", "Testamentedel, ny ejer, kontaktpersoner. Dyret er ikke alene."],
+                  ["Pasning og rejse", "Rutiner, foder, vaner og dyrlæge i én delbar profil."],
+                ].map(([k, v]) => (
+                  <li key={k} className="bg-background p-7">
+                    <p className="font-serif text-lg font-light italic leading-snug">{k}</p>
+                    <p className="mt-3 text-xs font-light leading-relaxed text-foreground/70">{v}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VI FINDER HUND */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
+          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">VI FINDER HUND</p>
+          <h2 className="font-serif mx-auto mt-8 max-w-3xl text-4xl font-light leading-[1.0] md:text-6xl">
+            Et scan forbinder <span className="italic text-accent">finder og ejer.</span>
+          </h2>
+          <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+            Hurtigt. Enkelt. Direkte. Når et fremmed menneske finder dyret, kræver det ét scan. Ingen app, ingen login, ingen forsinkelse.
+          </p>
+
+          <div className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-px bg-border md:grid-cols-3">
+            {[
+              ["01", "Scan", "Finderen scanner tag eller chip med telefonen."],
+              ["02", "Forbind", "Ejeren får besked med det samme. Lokation deles efter samtykke."],
+              ["03", "Hjem", "Direkte kontakt, uden mellemled, uden registre i flere lag."],
+            ].map(([n, k, v]) => (
+              <div key={n} className="bg-background p-8 text-left">
+                <span className="font-serif text-sm italic text-muted-foreground">{n}</span>
+                <h3 className="font-serif mt-6 text-2xl font-light">{k}</h3>
+                <p className="mt-4 text-xs font-light leading-relaxed text-foreground/70">{v}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEKS SITUATIONER */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="text-center">
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">SEKS SITUATIONER</p>
+            <h2 className="font-serif mx-auto mt-6 max-w-3xl text-4xl font-light leading-tight md:text-5xl">
+              Bygget op omkring <span className="italic text-accent">livet med dyret.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              Ikke en platform. Ikke et dashboard. Et samlet sted for de seks situationer, hver kæledyrsejer møder.
+            </p>
+          </div>
+
+          <ol className="mt-20 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["Hverdag", "Rutiner, foder, motion og vaner samlet ét sted."],
+              ["Vaccinationer", "Datoer, klinik og dokumentation altid opdateret."],
+              ["Rejser", "Pas, vaccination og grænseklar profil i Europa."],
+              ["Hvis dyret bliver væk", "Scan-baseret forbindelse mellem finder og ejer."],
+              ["Hvis dyret kommer til skade", "Akutinfo, allergier og dyrlæge klar for hjælperen."],
+              ["Hvis livet ændrer sig", "Omsorgsprofil, kontaktpersoner og pasningsønsker."],
+            ].map(([k, v], i) => (
+              <li key={k} className="bg-background p-10">
+                <span className="font-serif text-sm italic text-muted-foreground">0{i + 1}</span>
+                <h3 className="font-serif mt-6 text-2xl font-light leading-tight md:text-3xl">{k}</h3>
+                <p className="mt-6 text-sm font-light leading-relaxed text-foreground/75">{v}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
 
       {/* CTA */}
       <section className="bg-card">
