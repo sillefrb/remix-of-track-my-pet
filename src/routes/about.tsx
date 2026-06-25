@@ -59,7 +59,7 @@ export function AboutPage() {
             Europas AI- og datainfrastruktur for kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            EU's nye regler om obligatorisk mikrochipmærkning og registrering af hunde og katte danner fundamentet for en fælles europæisk identitet for kæledyr. Det skal stoppe ulovlig handel og mishandling. Track My Pet bygger ovenpå denne standard og skaber en kritisk AI- og datainfrastruktur, der forbinder ejere, dyrlæger, forsikringer og myndigheder i et europæisk økosystem. Med 198 millioner potentielle profiler er værdien netværkseffekter, AI-baseret indsigt og en samlet identitet, der styrker sporbarhed, sundhed og tryghed for kæledyr og deres ejere på tværs af EU.
+            EU's nye regler om obligatorisk mikrochipmærkning og registrering af hunde og katte lægger fundamentet for en fælles europæisk digital identitet. Track My Pet bygger det AI- og databaserede infrastrukturlag oven på denne udvikling og forbinder ejere, dyrlæger, forsikringsselskaber, myndigheder og teknologipartnere i ét samlet økosystem. Med et adresserbart marked på 198 millioner hunde, katte og deres ejere, har platformen potentiale til at blive Europas førende datalag for kæledyrs
           </p>
           <a
             href="https://www.europarl.europa.eu/topics/da/article/20250618STO29003/kan-nye-eu-regler-gore-en-ende-pa-mishandlingen-af-kaeledyr"
