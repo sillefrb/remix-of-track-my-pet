@@ -55,10 +55,10 @@ export function ProductPage() {
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">I, PRODUKTET</p>
           <h1 className="font-serif mt-8 text-4xl font-light leading-tight md:text-6xl lg:text-7xl">
-            Adgangspunktet til <span className="italic text-accent">infrastrukturen.</span>
+            Det første <span className="italic text-accent">kontaktpunkt.</span>
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Premium tag, kort og folder koblet til en verificeret digital profil. Den fysiske side er, hvor ejeren møder infrastrukturen, ikke hvor værdien stopper.
+            Premium tag, kort og folder er det første kontaktpunkt med en AI- og databaseret infrastruktur, der samler identitet, dokumentation, sundhedsdata og services gennem hele kæledyrets liv.
           </p>
         </div>
       </section>
