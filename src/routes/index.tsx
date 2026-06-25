@@ -102,7 +102,7 @@ export function Index() {
             Europas <span className="not-italic text-accent">AI- og datainfrastruktur</span> for kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Identitet, dokumentation og data samlet i ét verificeret lag. Ejere, dyrlæger, forsikring, internater, myndigheder, rejser og tracking arbejder på den samme profil.
+            Én verificeret identitet forbinder hunde, katte, deres ejere og de aktører, der følger dem gennem livet. Dyrlæger, forsikringsselskaber, internater, myndigheder, rejseaktører, forskere og teknologipartnere arbejder ud fra den samme profil.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
@@ -128,7 +128,10 @@ export function Index() {
               ))}
             </ul>
             <p className="mt-10 text-sm font-light leading-relaxed text-foreground/70">
-              Alt sammen gennem én verificeret identitet. Hver ny integration gør alle andre integrationer mere værdifulde.
+              Én verificeret identitet skaber fælles adgang til data, dokumentation og AI-baserede services. Hver ny profil, integration og samarbejdspartner styrker platformen og øger værdien for hele økosystemet.
+            </p>
+            <p className="mt-6 text-sm font-light leading-relaxed text-foreground/70">
+              198 millioner potentielle digitale identiteter danner fundamentet for Europas førende AI- og datainfrastruktur for hunde, katte og deres ejere.
             </p>
           </div>
         </div>
@@ -159,7 +162,7 @@ export function Index() {
                 Intet taler <span className="italic text-accent">sammen.</span>
               </h2>
               <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/70">
-                Ejerskab af et kæledyr er fordelt over et væld af systemer, abonnementer og indbakker, uden et samlet sted for det vigtige.
+                Identitet, sundhedsoplysninger, forsikring, rejser og dokumentation ligger spredt på tværs af registre, klinikker, mails og fysiske dokumenter. Hver aktør arbejder med sit eget datasæt, selv om oplysningerne handler om det samme dyr.
               </p>
             </div>
 
@@ -187,7 +190,7 @@ export function Index() {
                 ))}
               </ul>
               <p className="mt-8 font-serif text-lg font-light italic leading-snug text-foreground/85 md:text-xl">
-                Ni systemer. Én ejer. Ingen sammenhæng.
+                Ni systemer. Én identitet. Ét fælles datalag.
               </p>
             </div>
           </div>
