@@ -115,33 +115,21 @@ export function Index() {
           </div>
         </div>
 
-        {/* ER / ER IKKE */}
+        {/* DET ER */}
         <div className="border-t border-border bg-background">
           <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-            <div className="grid grid-cols-12 gap-10">
-              <div className="col-span-12 md:col-span-5">
-                <p className="text-[10px] tracking-[0.45em] text-muted-foreground">DET ER IKKE</p>
-                <ul className="mt-8 space-y-3">
-                  {["Et tag.", "En app.", "Tracking."].map((t) => (
-                    <li key={t} className="font-serif text-2xl font-light text-foreground/55 line-through decoration-1 underline-offset-4 md:text-3xl">{t}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="col-span-12 md:col-span-7">
-                <p className="text-[10px] tracking-[0.45em] text-accent">DET ER</p>
-                <p className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-4xl">
-                  Det lag, som forbinder alle aktører omkring kæledyret.
-                </p>
-                <ul className="mt-10 grid grid-cols-2 gap-x-8 gap-y-2 text-sm font-light text-foreground/75 sm:grid-cols-3">
-                  {["Ejeren","Dyrlægen","Forsikringen","Internatet","Myndigheder","Rejser","Tracking","Online veterinær","Forskning"].map((t) => (
-                    <li key={t} className="border-t border-border pt-3 font-serif italic">{t}</li>
-                  ))}
-                </ul>
-                <p className="mt-10 text-sm font-light leading-relaxed text-foreground/70">
-                  Alt sammen gennem én verificeret identitet. Hver ny integration gør alle andre integrationer mere værdifulde.
-                </p>
-              </div>
-            </div>
+            <p className="text-[10px] tracking-[0.45em] text-accent">DET ER</p>
+            <p className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-4xl">
+              Det lag, som forbinder alle aktører omkring kæledyret.
+            </p>
+            <ul className="mt-10 grid grid-cols-2 gap-x-8 gap-y-2 text-sm font-light text-foreground/75 sm:grid-cols-3">
+              {["Ejeren","Dyrlægen","Forsikringen","Internatet","Myndigheder","Rejser","Tracking","Online veterinær","Forskning"].map((t) => (
+                <li key={t} className="border-t border-border pt-3 font-serif italic">{t}</li>
+              ))}
+            </ul>
+            <p className="mt-10 text-sm font-light leading-relaxed text-foreground/70">
+              Alt sammen gennem én verificeret identitet. Hver ny integration gør alle andre integrationer mere værdifulde.
+            </p>
           </div>
         </div>
 
