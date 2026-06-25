@@ -56,10 +56,10 @@ export function AboutPage() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Vi kender hunde og katte, med omtanke.
+            Vi bygger Europas AI- og datainfrastruktur for kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og funktion, bygget til at gøre hverdagen enklere for både dyret og det menneske, det deler den med.
+            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og infrastruktur, der gør hverdagen enklere for både dyret og det menneske, det deler den med.
           </p>
         </div>
       </section>

@@ -50,12 +50,12 @@ export function MarketPage() {
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">III, MARKET · EUROPA 2023</p>
               <h1 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-                198 millioner <span className="italic text-accent">hunde og katte</span> i Europa.
+                198 millioner <span className="italic text-accent">digitale identiteter</span> i Europa.
               </h1>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Europæisk bestand af hunde og katte. Målgruppen for en samlet løsning til kæledyrsidentitet. Kilde: FEDIAF 2025.
+                Ikke 198 millioner hunde og katte. 198 millioner profiler. Hver profil et datapunkt i Europas største longitudinelle datasæt om kæledyr. Kilde: FEDIAF 2025.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>

@@ -55,10 +55,10 @@ export function ProductPage() {
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">I, PRODUKTET</p>
           <h1 className="font-serif mt-8 text-4xl font-light leading-tight md:text-6xl lg:text-7xl">
-            Et produkt, <span className="italic text-accent">flere relationer.</span>
+            Adgangspunktet til <span className="italic text-accent">infrastrukturen.</span>
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Premium tag, kort og folder koblet til en verificeret digital profil. Enkel opsætning, høj praktisk værdi, ét samlet produkt.
+            Premium tag, kort og folder koblet til en verificeret digital profil. Den fysiske side er, hvor ejeren møder infrastrukturen, ikke hvor værdien stopper.
           </p>
         </div>
       </section>
@@ -612,12 +612,85 @@ export function ProductPage() {
       </section>
 
 
+      {/* TRACTIVE — IKKE KONKURRENT */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="text-center">
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">KOMPLEMENTÆRT, IKKE KONKURRENT</p>
+            <h2 className="font-serif mx-auto mt-6 max-w-3xl text-4xl font-light leading-tight md:text-5xl">
+              Tractive ved <span className="italic text-accent">hvor.</span><br />
+              Track My Pet ved <span className="italic text-accent">hvem.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              De to datasæt overlapper næsten ikke. De komplementerer hinanden.
+            </p>
+          </div>
+
+          <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
+            <div className="bg-background p-10 md:p-14">
+              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">TRACTIVE VED</p>
+              <h3 className="font-serif mt-6 text-2xl font-light italic">Hvor dyret er</h3>
+              <ul className="mt-8 grid grid-cols-1 gap-2 text-sm font-light text-foreground/75 sm:grid-cols-2">
+                {["Position","Hastighed","Søvn","Aktivitet","GPS","Geofencing"].map((t) => (
+                  <li key={t} className="flex items-baseline gap-3"><span className="h-px w-3 translate-y-[-4px] bg-border" />{t}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-background p-10 md:p-14">
+              <p className="text-[10px] tracking-[0.4em] text-accent">TRACK MY PET VED</p>
+              <h3 className="font-serif mt-6 text-2xl font-light italic">Hvem dyret er</h3>
+              <ul className="mt-8 grid grid-cols-1 gap-2 text-sm font-light text-foreground/75 sm:grid-cols-2">
+                {["Identitet","Ejerskab","Medicin","Vaccinationer","Journal","Forsikring","Rejser","Ejerskifte","Dokumentation"].map((t) => (
+                  <li key={t} className="flex items-baseline gap-3"><span className="h-px w-3 translate-y-[-4px] bg-border" />{t}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <p className="mx-auto mt-16 max-w-3xl text-center font-serif text-2xl font-light italic leading-snug text-foreground/90 md:text-3xl">
+            GPS + identitet + sundhedsjournal + forsikring + AI.<br />
+            <span className="text-accent">Markant stærkere end hver virksomhed alene.</span>
+          </p>
+        </div>
+      </section>
+
+      {/* AI SOM MOTOR */}
+      <section className="border-t border-border bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="text-center">
+            <p className="text-[10px] tracking-[0.4em] text-muted-foreground">AI SOM MOTOR</p>
+            <h2 className="font-serif mx-auto mt-6 max-w-3xl text-4xl font-light leading-tight md:text-5xl">
+              Fem moduler bygget <span className="italic text-accent">oven på datasættet.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+              Når identitet, journal og adfærd ligger ét sted, bliver AI det lag, som omsætter data til handling.
+            </p>
+          </div>
+
+          <ol className="mt-20 grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-5">
+            {[
+              ["AI Health Timeline", "Opdager ændringer i aktivitet, medicin, vægt og sygdomshistorik."],
+              ["AI Travel Assistant", "‘Din hund kan ikke rejse til Italien i morgen. Rabiesvaccinen udløber om 11 dage.’"],
+              ["AI Emergency", "Finderen scanner QR. AI viser kun det relevante: allergier, medicin, kontakt, nærmeste dyrlæge."],
+              ["AI Insurance", "Forsikringen får adgang til verificerede oplysninger. Skader behandles hurtigere."],
+              ["AI Population Health", "Millioner af profiler opdager sygdomsudbrud, bivirkninger, raceproblemer, vaccinedækning og levetid."],
+            ].map(([k, v], i) => (
+              <li key={k} className="bg-background p-8">
+                <span className="font-serif text-sm italic text-muted-foreground">0{i + 1}</span>
+                <h3 className="font-serif mt-6 text-xl font-light leading-tight md:text-2xl">{k}</h3>
+                <p className="mt-4 text-xs font-light leading-relaxed text-foreground/70">{v}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-card">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center">
           <p className="text-[10px] tracking-[0.4em] text-muted-foreground">NÆSTE</p>
           <h2 className="font-serif mt-6 text-3xl font-light italic leading-snug md:text-4xl">
-            Hvorfor er det her nødvendigt?
+            Hvorfor er infrastrukturen nødvendig nu?
           </h2>
           <Link to="/vision" className="mt-10 inline-block rounded-full bg-foreground px-8 py-3 text-[11px] tracking-[0.25em] text-background hover:bg-accent">
             LÆS VISIONEN

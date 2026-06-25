@@ -97,11 +97,12 @@ export function Index() {
         </div>
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
-          <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Det naturlige sted at samle identitet, dokumentation og omsorg omkring sit kæledyr.
+          <p className="text-[10px] tracking-[0.45em] text-muted-foreground">TESEN</p>
+          <p className="font-serif mt-8 text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
+            Europas <span className="not-italic text-accent">AI- og datainfrastruktur</span> for kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Et fysisk tag og en digital profil, udviklet til hele dyrets liv. Hverdag, vaccinationer, rejser, og hvis livet ændrer sig.
+            Identitet, dokumentation og data samlet i ét verificeret lag. Ejere, dyrlæger, forsikring, internater, myndigheder, rejser og tracking arbejder på den samme profil.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3 text-[11px] tracking-[0.25em]">
@@ -111,6 +112,36 @@ export function Index() {
             <Link to="/pricing" className="rounded-full border border-border px-6 py-3 text-foreground transition hover:border-accent hover:text-accent">
               FOR KLINIKKER OG ORGANISATIONER
             </Link>
+          </div>
+        </div>
+
+        {/* ER / ER IKKE */}
+        <div className="border-t border-border bg-background">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+            <div className="grid grid-cols-12 gap-10">
+              <div className="col-span-12 md:col-span-5">
+                <p className="text-[10px] tracking-[0.45em] text-muted-foreground">DET ER IKKE</p>
+                <ul className="mt-8 space-y-3">
+                  {["Et tag.", "En app.", "Tracking."].map((t) => (
+                    <li key={t} className="font-serif text-2xl font-light text-foreground/55 line-through decoration-1 underline-offset-4 md:text-3xl">{t}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-span-12 md:col-span-7">
+                <p className="text-[10px] tracking-[0.45em] text-accent">DET ER</p>
+                <p className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-4xl">
+                  Det lag, som forbinder alle aktører omkring kæledyret.
+                </p>
+                <ul className="mt-10 grid grid-cols-2 gap-x-8 gap-y-2 text-sm font-light text-foreground/75 sm:grid-cols-3">
+                  {["Ejeren","Dyrlægen","Forsikringen","Internatet","Myndigheder","Rejser","Tracking","Online veterinær","Forskning"].map((t) => (
+                    <li key={t} className="border-t border-border pt-3 font-serif italic">{t}</li>
+                  ))}
+                </ul>
+                <p className="mt-10 text-sm font-light leading-relaxed text-foreground/70">
+                  Alt sammen gennem én verificeret identitet. Hver ny integration gør alle andre integrationer mere værdifulde.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

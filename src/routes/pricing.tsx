@@ -177,7 +177,7 @@ export function PricingPage() {
           <span className="italic text-accent">gennemsigtige</span> medlemskaber.
         </h1>
         <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-          Start enkelt, udvid når dyret, husstanden, klinikken eller organisationen vokser. Et samlet produkt udviklet til hele dyrets liv.
+          Abonnementet er adgangsbilletten til infrastrukturen. Start enkelt, udvid når dyret, husstanden, klinikken eller organisationen vokser.
         </p>
         <div className="mx-auto mt-12 inline-flex items-center gap-2 rounded-full border border-border px-2 py-1 text-[11px] tracking-[0.25em] text-muted-foreground">
           <span className="rounded-full bg-foreground px-4 py-2 text-background">
