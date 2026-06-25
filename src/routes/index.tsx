@@ -670,27 +670,27 @@ export function Index() {
                 FOR EJERE
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
-                Alt en ejer har brug for,{" "}
-                <span className="italic text-accent">i én verificeret profil.</span>
+                Én verificeret identitet samler{" "}
+                <span className="italic text-accent">dokumentation, sundhedsdata og services gennem hele kæledyrets liv.</span>
               </h2>
 
               <ul className="mt-14 space-y-10">
                 {[
                   {
-                    title: "Opbevar dokumenter trygt",
-                    body: "Hold dyrets identitet og vigtige oplysninger organiseret og tilgængelige.",
+                    title: "Verificeret identitet",
+                    body: "Dokumentation, ejerskab og sundhedsoplysninger følger den samme profil.",
                   },
                   {
-                    title: "Følg vaccinationer og helbred",
-                    body: "Hold styr på vaccinationer, journal og vigtige milepæle gennem hele livet.",
+                    title: "Sundhedsprofil",
+                    body: "Vaccinationer, journal, medicin og historik udvikler sig i takt med kæledyrets liv.",
                   },
                   {
-                    title: "Del øjeblikkeligt, når det er nødvendigt",
-                    body: "Sikre links, QR-verificering og eksport til klinik, pasning eller akutte situationer.",
+                    title: "Kontrolleret deling",
+                    body: "Del verificerede oplysninger med klinikker, pasning, rejseaktører og øvrige samarbejdspartnere.",
                   },
                   {
-                    title: "Adgang overalt",
-                    body: "Brug Track My Pet på enhver enhed, dyrets oplysninger samlet ét sted.",
+                    title: "Platform på tværs af enheder",
+                    body: "Profilen følger ejeren på tværs af mobil, tablet og computer.",
                   },
                 ].map((f) => (
                   <li key={f.title} className="flex items-start gap-5">
@@ -825,7 +825,7 @@ export function Index() {
                 <span className="italic text-accent">når livet kalder.</span>
               </h2>
               <p className="mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/75">
-                Et netværk af verificerede hundepassere, dyrepensioner og luftere, alle med adgang til dyrets profil og vigtige oplysninger fra første kontakt.
+                Et netværk af verificerede passere med adgang til relevante oplysninger fra den verificerede profil. Hurtigere onboarding, færre spørgsmål og større tryghed for både ejer og passer.
               </p>
 
               <ul className="mt-12 space-y-10">
@@ -835,16 +835,16 @@ export function Index() {
                     body: "Alle passere er identitetsbekræftet og anmeldt af andre ejere, ingen anonyme profiler.",
                   },
                   {
-                    title: "Profilen følger med",
-                    body: "Del vaccinationer, vaner og kontaktoplysninger med ét tryk, så passeren har alt fra start.",
+                    title: "Profilen følger relationen",
+                    body: "Ejeren vælger, hvilke oplysninger passeren får adgang til før første møde.",
                   },
                   {
                     title: "Hverdag og rejse",
                     body: "Dagpasning, luftetur, weekendophold eller længere ferier, find det match, der passer dit dyr.",
                   },
                   {
-                    title: "Tryg kommunikation",
-                    body: "Aftal direkte i appen, modtag opdateringer undervejs og hold alt samlet ét sted.",
+                    title: "Fælles udgangspunkt",
+                    body: "Kommunikation, dokumentation og relevante oplysninger følger den samme profil gennem hele pasningsforløbet.",
                   },
                 ].map((f) => (
                   <li key={f.title} className="flex items-start gap-5">
