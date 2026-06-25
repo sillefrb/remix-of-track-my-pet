@@ -969,16 +969,16 @@ export function Index() {
               En digital identitet, der <span className="italic text-accent">følger dyret</span> gennem livet.
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Interaktiv, verificerbar og altid opdateret. Et enkelt sted at vende tilbage til, fra første scan til sidste rejse.
+              Den verificerede identitet udvikler sig med kæledyret. Hver opdatering styrker platformens datagrundlag og åbner for nye services.
             </p>
           </div>
 
           <div className="col-span-12 md:col-span-7">
             <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-1">
               {[
-                ["Samlet profilvisning", "Identitet, journal, verificering og dokumenter set i ét roligt overblik."],
+                ["Verificeret profil", "Identitet, sundhedsdata, dokumentation og relationer samles i ét fælles overblik."],
                 ["Enkel navigation", "Bevæg dig mellem helbred, dokumenter, services og aktivitet uden friktion."],
-                ["Bygget til at vokse", "Udviklet til at følge den europæiske udvikling og udvide sig over tid."],
+                ["Udviklet til Europa", "Platformen udvides i takt med nye standarder, partnerskaber og AI-services."],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-8 md:p-10">
                   <p className="font-serif text-xl font-light italic text-foreground">
