@@ -477,7 +477,7 @@ export function Index() {
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">STRATEGIEN</p>
               <h2 className="font-serif mt-8 text-4xl font-light italic leading-[1.0] md:text-5xl lg:text-6xl">
                 Vi begynder ét sted.<br />
-                Med ét objekt, folk føler de burde have.
+                Med én verificeret identitet, der samler alt omkring hunden eller katten.
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
