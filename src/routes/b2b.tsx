@@ -35,13 +35,10 @@ function B2BPage() {
             B2B, PILOTPROJEKT MED DYRLÆGER
           </p>
           <h1 className="font-serif mt-8 text-4xl font-light leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            Et samarbejde om{" "}
-            <span className="italic text-accent">moderne kæledyrsejerskab.</span>
+            Klinikkerne er <span className="italic text-accent">første lag</span> i infrastrukturen.
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Vi inviterer udvalgte dyrlæger og klinikker til at udvikle og afprøve
-            en samlet løsning til identitet, dokumentation og tryghed omkring
-            kæledyr, sammen med os, i klinisk hverdag.
+            Vi inviterer udvalgte dyrlæger og klinikker til at udvikle og afprøve infrastrukturen, identitet, journal og dokumentation, sammen med os, i klinisk hverdag.
           </p>
         </div>
       </section>

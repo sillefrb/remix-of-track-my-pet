@@ -84,15 +84,76 @@ export function VisionPage() {
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <p className="text-[10px] tracking-[0.4em] text-muted-foreground">VISION</p>
         <h1 className="font-serif mt-8 text-3xl font-light italic leading-snug md:text-5xl lg:text-6xl">
-          Et samlet sted for<br /><span className="text-accent not-italic">identitet og dokumentation.</span>
+          Europas kritiske<br /><span className="text-accent not-italic">AI- og datainfrastruktur for kæledyr.</span>
         </h1>
         <div className="mx-auto mt-12 h-px w-12 bg-border" />
         <p className="mt-12 text-base font-light leading-relaxed text-foreground/80">
-          Mikrochippen er et udgangspunkt. Det egentlige behov er adgang, dokumentation, registrering, sammenhæng på tværs af europæiske lande og hurtig hjælp, når det er nødvendigt. En fælles europæisk udvikling skaber behov for ét samlet sted at samle det hele.
+          Track My Pet er forbindelseslaget mellem dyreejere, dyrlæger, forsikring, internater, myndigheder, rejseaktører, GPS-trackere og forskere. Alle arbejder på samme verificerede identitet.
         </p>
         <p className="mt-8 font-serif text-lg font-light italic leading-relaxed text-foreground/90 md:text-xl">
-          Tillid, omsorg og langsigtede relationer er det, der bærer et produkt som dette gennem hele dyrets liv.
+          Tagget, kortet og QR-koden er adgangspunkter til infrastrukturen, ikke forretningen.
         </p>
+      </section>
+
+      {/* 198M PROFILER */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid grid-cols-12 gap-10">
+            <div className="col-span-12 md:col-span-5">
+              <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DATASÆTTET</p>
+              <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
+                198 millioner <span className="italic text-accent">digitale identiteter.</span>
+              </h2>
+              <p className="mt-8 text-sm font-light leading-relaxed text-foreground/75">
+                Ikke 198 millioner hunde og katte. 198 millioner profiler. Hver profil bliver et datapunkt og over tid Europas største longitudinelle datasæt om kæledyrs sundhed, adfærd og levetid.
+              </p>
+              <p className="mt-6 text-sm font-light leading-relaxed text-muted-foreground">
+                Aggregeret, anonymiseret og samtykke-baseret. Ejeren beholder kontrollen.
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-7">
+              <ul className="grid grid-cols-2 gap-px bg-border sm:grid-cols-3">
+                {["Identitet","Ejerhistorik","Chip","Vaccinationer","Sygdomshistorik","Medicin","Adfærd","Vægt","Forsikring","Rejser","Geografi","Alder","Dødsårsag","Race","Aktivitet","GPS-data"].map((d, i) => (
+                  <li key={d} className="bg-background p-5">
+                    <span className="text-[10px] tracking-[0.3em] text-muted-foreground">N°{String(i+1).padStart(2,"0")}</span>
+                    <p className="font-serif mt-3 text-base font-light italic text-foreground/85">{d}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-8 text-[11px] tracking-[0.25em] text-muted-foreground">
+                GDPR-compliant · ejer-samtykke · anonymiseret aggregering
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DET VIGTIGSTE AKTIV — MOATS */}
+      <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+        <div className="text-center">
+          <p className="text-[10px] tracking-[0.4em] text-muted-foreground">DET VIGTIGSTE AKTIV</p>
+          <h2 className="font-serif mx-auto mt-6 max-w-3xl text-4xl font-light leading-tight md:text-5xl">
+            Hvad bliver <span className="italic text-accent">svært at kopiere?</span>
+          </h2>
+          <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
+            Ikke tagget. Ikke abonnementet. Værdien ligger i fem aktiver, der forstærker hinanden.
+          </p>
+        </div>
+        <ol className="mt-20 grid grid-cols-1 gap-px bg-border md:grid-cols-5">
+          {[
+            ["198M potentielle profiler", "En adresserbar europæisk profilbase."],
+            ["Verificeret identitetsdatabase", "Europas største verificerede kæledyrsidentitet."],
+            ["AI-trænet veterinært datasæt", "Longitudinel sundhed, adfærd og levetid."],
+            ["Integrationsnetværk", "Hver ny integration gør alle andre mere værdifulde."],
+            ["Netværkseffekter", "Data, identitet og tillid forstærker hinanden."],
+          ].map(([k, v], i) => (
+            <li key={k} className="bg-background p-8">
+              <span className="font-serif text-sm italic text-muted-foreground">0{i + 1}</span>
+              <h3 className="font-serif mt-6 text-xl font-light leading-tight md:text-2xl">{k}</h3>
+              <p className="mt-4 text-xs font-light leading-relaxed text-foreground/70">{v}</p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       {/* VALUE LAYERS */}
