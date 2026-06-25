@@ -61,6 +61,14 @@ export function AboutPage() {
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
             EU's nye regler om obligatorisk mikrochipmærkning og registrering af hunde og katte danner fundamentet for en fælles europæisk identitet for kæledyr. Det skal stoppe ulovlig handel og mishandling. Track My Pet bygger ovenpå denne standard og skaber en kritisk AI- og datainfrastruktur, der forbinder ejere, dyrlæger, forsikringer og myndigheder i et europæisk økosystem. Med 198 millioner potentielle profiler er værdien netværkseffekter, AI-baseret indsigt og en samlet identitet, der styrker sporbarhed, sundhed og tryghed for kæledyr og deres ejere på tværs af EU.
           </p>
+          <a
+            href="https://www.europarl.europa.eu/topics/da/article/20250618STO29003/kan-nye-eu-regler-gore-en-ende-pa-mishandlingen-af-kaeledyr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block text-sm font-light italic text-accent underline underline-offset-4 transition hover:text-foreground"
+          >
+            Læs mere om EU's nye regler på Europa-Parlamentet
+          </a>
         </div>
       </section>
 
