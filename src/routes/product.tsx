@@ -58,7 +58,7 @@ export function ProductPage() {
             Det første <span className="italic text-accent">kontaktpunkt.</span>
           </h1>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Premium tag, kort og folder er det første kontaktpunkt med en AI- og databaseret infrastruktur, der samler identitet, dokumentation, sundhedsdata og services gennem hele kæledyrets liv.
+            Premium tag, kort og folder etablerer den verificerede identitet. Herfra udvikler platformen sig med dokumentation, sundhedsdata, AI og nye services gennem hele kæledyrets liv.
           </p>
         </div>
       </section>
@@ -123,13 +123,13 @@ export function ProductPage() {
             ÉT SAMLET STED, TRE MÅLGRUPPER
           </p>
           <h2 className="font-serif mx-auto mt-8 max-w-3xl text-center text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-            Produktet <span className="italic text-accent">samler</span> ejer, klinikker og relevante funktioner ét sted.
+            Platformen forbinder ejere, klinikker og samarbejdspartnere gennem den samme verificerede identitet.
           </h2>
           <div className="mt-20 grid gap-px bg-border md:grid-cols-3">
             {[
-              ["Ejere", "Premium tag og digital profil. Ét sted til vaccination, dokumenter, rejse og nødprofil."],
-              ["Klinikker & dyrlæger", "Verificerede profiler, mindre papirarbejde, hurtigere opsætning."],
-              ["Rejser og relevante funktioner", "Forsikring, grænse, pension, groomer. Deling af oplysninger via QR."],
+              ["Ejere", "Én verificeret identitet med dokumentation, sundhedsdata og services gennem hele kæledyrets liv."],
+              ["Klinikker & dyrlæger", "Adgang til verificerede oplysninger giver hurtigere arbejdsgange, bedre datakvalitet og mindre administration."],
+              ["Rejser og relevante funktioner", "Forsikring, rejser, pasning og øvrige samarbejdspartnere arbejder ud fra den samme verificerede profil."],
             ].map(([k, v], i) => (
               <div key={k} className="bg-card p-10">
                 <p className="text-[10px] tracking-[0.35em] text-muted-foreground">N°0{i + 1}</p>
@@ -213,12 +213,9 @@ export function ProductPage() {
           </figure>
           <div className="flex flex-col justify-center bg-background p-10 md:col-span-5 md:p-14">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">FRA PAS TIL DIGITAL IDENTITET</p>
-            <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
-              Et samlet produkt til identitet, dokumentation og <span className="italic text-accent">tryghed gennem hele dyrets liv.</span>
-            </h2>
-            <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Vaccinationer, mikrochip-ID, forsikring, ejerskab og dokumentation samles ét sted. Udviklet til at skabe mere sammenhæng mellem ejer, klinikker og vigtige oplysninger omkring dyret.
-            </p>
+          <h2 className="font-serif mt-6 text-3xl font-light leading-tight md:text-4xl">
+            Den verificerede identitet samler dokumentation, sundhedsdata, ejerskab og historik i én profil. Samme datagrundlag følger ejeren, dyrlægen og øvrige samarbejdspartnere gennem hele kæledyrets liv.
+          </h2>
           </div>
         </div>
       </section>
@@ -242,7 +239,7 @@ export function ProductPage() {
               Grænse, tog, hotel, <span className="italic text-accent">klar på få sekunder.</span>
             </h2>
             <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Track My Pet samler vaccination, mikrochip og rejsedokumentation i én profil, ejeren kan dele med et enkelt scan.
+              Vaccinationer, mikrochip, sundhedsoplysninger og rejsedokumentation følger den samme verificerede identitet og kan deles på få sekunder ved rejser i Europa.
             </p>
           </div>
           <figure className="bg-card md:col-span-7">
@@ -269,10 +266,10 @@ export function ProductPage() {
           <div className="mb-16 text-center">
             <p className="text-[10px] tracking-[0.4em] text-muted-foreground">EMERGENCY PET CARD, N°03</p>
             <h2 className="font-serif mx-auto mt-6 max-w-2xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl">
-              Ét scan, og hjælperen ved <span className="italic text-accent">præcis hvad de skal gøre.</span>
+              Ét scan giver adgang til de oplysninger, der skaber hurtige og sikre beslutninger.
             </h2>
             <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-              En nødvisning åbnes direkte i browseren, når QR scannes. Ingen app, ingen login. Nødkontakt, instruktioner og medicininformation er tilgængelige med det samme.
+              QR åbner en sikker nødvisning med de oplysninger, ejeren har gjort tilgængelige for netop denne situation.
             </p>
           </div>
 
