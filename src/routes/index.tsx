@@ -481,20 +481,20 @@ export function Index() {
               </h2>
               <div className="mt-10 h-px w-12 bg-border" />
               <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/80">
-                Vi begynder med ét gennemtænkt fysisk produkt, der forklarer sig selv, og lader resten vokse enkelt ud af relationen mellem ejer og dyr.
+                Vi begynder med en verificeret identitet og bygger løbende nye services oven på den samme profil. Hver ny funktion styrker værdien for ejeren og hele økosystemet.
               </p>
               <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-                Et enkelt fysisk produkt, som er let at forstå, og som åbner for løbende adgang, dokumentation og en samlet løsning, der følger den europæiske udvikling inden for kæledyrsidentitet.
+                Det fysiske produkt etablerer den første relation til platformen. Herfra udvikler profilen sig med dokumentation, AI, partnerskaber og services i takt med kæledyrets liv.
               </p>
             </div>
 
             <div className="col-span-12 md:col-span-7">
               <ol className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
                 {[
-                  { step: "01", tag: "OBJEKT", title: "Det fysiske tag", body: "Smukt, taktilt, gaveværdigt. Sælges som et objekt, ejes som et arvestykke. Kunden forstår det med det samme." },
-                  { step: "02", tag: "RELATION", title: "Den digitale profil", body: "Tagget aktiverer en konto. Dokumenter, vaccination, påmindelser, familieadgang. Her samles dokumentation og adgang." },
-                  { step: "03", tag: "INDSIGT", title: "Samlet indsigt", body: "Anonymiseret og samtykke-baseret indsigt om sundhed og hverdag. Værdifuldt for forsikring, dyrlæger og forskning, uden at ejeren mister kontrollen." },
-                  { step: "04", tag: "EUROPÆISK UDVIKLING", title: "Et samlet produkt til kæledyrsidentitet", body: "I takt med den europæiske udvikling inden for kæledyrsidentitet samler vi adgang og dokumentation mellem ejer, dyrlæge, myndigheder og relevante funktioner." },
+                  { step: "01", tag: "IDENTITET", title: "Det fysiske tag", body: "Premium tag med QR og NFC, udviklet som det første kontaktpunkt til en verificeret digital identitet. Aktiveres på få sekunder og følger kæledyret gennem hele livet." },
+                  { step: "02", tag: "PLATFORM", title: "Den digitale profil", body: "Den verificerede profil samler identitet, dokumentation, sundhedsdata og ejerskab. Platformen udvikler sig løbende med nye AI-services og integrationer." },
+                  { step: "03", tag: "DATA", title: "Samlet indsigt", body: "Aggregerede og samtykkebaserede data skaber indsigt i sundhed, sygdomsmønstre og adfærd. Det styrker AI-modeller, forskning, forsikring og veterinærsektoren, mens ejeren bevarer kontrollen over egne oplysninger." },
+                  { step: "04", tag: "EUROPA", title: "Et samlet produkt til kæledyrsidentitet", body: "EU skaber fælles rammer for identitet og registrering. Track My Pet forbinder dokumentation, sundhedsdata og digitale services på tværs af ejere, dyrlæger, myndigheder og samarbejdspartnere." },
                 ].map((s) => (
                   <li key={s.step} className="bg-background p-8 md:p-10">
                     <div className="flex items-baseline justify-between">
