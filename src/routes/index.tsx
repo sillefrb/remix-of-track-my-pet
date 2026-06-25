@@ -315,19 +315,19 @@ export function Index() {
               Teknologien skal gøre <span className="italic text-accent">hverdagen enklere.</span>
             </h2>
             <p className="mt-10 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-              Et produkt der er enkelt at forstå. Enkelt at bruge. Enkelheden er en del af værdien.
+              En enkel oplevelse skaber høj aktivering. Platformen vokser gennem relationen mellem ejeren, kæledyret og de aktører, der bruger den.
             </p>
           </div>
 
           <div className="col-span-12 md:col-span-7">
             <ul className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2">
               {[
-                ["Et simpelt fysisk produkt", "Forklarer sig selv på 3 sekunder."],
-                ["Høj følelsesmæssig relevans", "Tryghed for det dyr man elsker."],
-                ["Ekstremt lav friktion", "Scan → aktivér → forbundet."],
-                ["Løbende funktioner og adgang", "Adgang der udvikler sig sammen med dyret."],
-                ["Langsigtet adgang og dokumentation", "Ejeren ejer profilen. Relationen følger dyret gennem livet."],
-                ["Løbende kunderelationer", "Hele dyrets liv, fra første scan til sidste rejse."],
+                ["Et simpelt fysisk produkt", "Skaber den første relation til platformen på få sekunder."],
+                ["Høj følelsesmæssig relevans", "Tryghed, overblik og dokumentation gennem hele kæledyrets liv."],
+                ["Ekstremt lav friktion", "Scan → opret profil → forbind identitet, dokumentation og services."],
+                ["Løbende funktioner og adgang", "Platformen udvikler sig med nye services, data og samarbejdspartnere."],
+                ["Langsigtet adgang og dokumentation", "Den verificerede profil følger dyret gennem hele livet og danner grundlag for dokumentation, AI og fremtidige services."],
+                ["Løbende kunderelationer", "Hver ny service styrker relationen mellem ejeren og platformen."],
               ].map(([k, v]) => (
                 <li key={k} className="bg-background p-6 md:p-7">
                   <p className="font-serif text-lg font-light italic text-foreground">
@@ -353,7 +353,7 @@ export function Index() {
             Det handler om tryghed.
           </h2>
           <p className="mx-auto mt-8 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Ro i sindet gennem hele dyrets liv. Samlet ét sted, når det betyder noget.
+            Verificeret identitet, dokumentation og AI skaber tryghed i hverdagen, på rejsen og når situationen kræver hurtig adgang til vigtige oplysninger.
           </p>
           <ul className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 font-serif text-2xl font-light md:text-4xl">
             {["Tryghed", "Sikkerhed", "Overblik", "Ansvar", "Omsorg", "Enklere hverdag"].map(
@@ -370,8 +370,7 @@ export function Index() {
             )}
           </ul>
           <p className="mx-auto mt-16 max-w-xl text-sm font-light leading-relaxed text-foreground/75">
-            Den følelsesmæssige tilknytning og betalingsvilligheden er allerede
-            høj i kæledyrsmarkedet. Vores rolle er at samle det i et produkt, der skaber tryghed og overblik.
+            Kæledyr er en del af familien. Derfor investerer ejere allerede i sundhed, forsikring, sikkerhed og pleje. Track My Pet forbinder disse områder i én verificeret platform, hvor identitet, dokumentation og data skaber værdi for både ejere og samarbejdspartnere.
           </p>
         </div>
       </section>
