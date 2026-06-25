@@ -825,7 +825,7 @@ export function Index() {
                 <span className="italic text-accent">når livet kalder.</span>
               </h2>
               <p className="mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/75">
-                Et netværk af verificerede hundepassere, dyrepensioner og luftere, alle med adgang til dyrets profil og vigtige oplysninger fra første kontakt.
+                Et netværk af verificerede passere med adgang til relevante oplysninger fra den verificerede profil. Hurtigere onboarding, færre spørgsmål og større tryghed for både ejer og passer.
               </p>
 
               <ul className="mt-12 space-y-10">
@@ -835,16 +835,16 @@ export function Index() {
                     body: "Alle passere er identitetsbekræftet og anmeldt af andre ejere, ingen anonyme profiler.",
                   },
                   {
-                    title: "Profilen følger med",
-                    body: "Del vaccinationer, vaner og kontaktoplysninger med ét tryk, så passeren har alt fra start.",
+                    title: "Profilen følger relationen",
+                    body: "Ejeren vælger, hvilke oplysninger passeren får adgang til før første møde.",
                   },
                   {
                     title: "Hverdag og rejse",
                     body: "Dagpasning, luftetur, weekendophold eller længere ferier, find det match, der passer dit dyr.",
                   },
                   {
-                    title: "Tryg kommunikation",
-                    body: "Aftal direkte i appen, modtag opdateringer undervejs og hold alt samlet ét sted.",
+                    title: "Fælles udgangspunkt",
+                    body: "Kommunikation, dokumentation og relevante oplysninger følger den samme profil gennem hele pasningsforløbet.",
                   },
                 ].map((f) => (
                   <li key={f.title} className="flex items-start gap-5">
