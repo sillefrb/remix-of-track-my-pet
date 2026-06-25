@@ -537,7 +537,7 @@ export function Index() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Hurtig adgang til vigtig information, når det betyder noget. Identitet, kontaktoplysninger og dokumentation samlet ét sted, klar med ét tryk.
+                Vigtige oplysninger bliver tilgængelige på få sekunder. Identitet, kontaktpersoner, sundhedsoplysninger og dokumentation følger den verificerede profil og kan deles med de rette personer, når situationen kræver det.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -548,22 +548,22 @@ export function Index() {
               {
                 tag: "ONLINE VET",
                 title: "Online dyrlæge",
-                body: "Hurtig adgang til en dyrlæge via video eller chat, med dyrets profil som udgangspunkt.",
+                body: "Dyrlægen får adgang til den verificerede profil med journal, medicin og historik før konsultationen begynder.",
               },
               {
                 tag: "DYRENES 112",
                 title: "Akut hjælp til dyret",
-                body: "Direkte forbindelse til akut hjælp, når dyret er kommet til skade eller har brug for det med det samme.",
+                body: "Akutpersonale får adgang til de oplysninger, der skaber hurtigere og mere sikre beslutninger.",
               },
               {
                 tag: "VI FINDER HUND",
                 title: "Når dyret er væk",
-                body: "Aktiver eftersøgning og åbn direkte kontakt mellem finder og ejer via tagget.",
+                body: "QR eller NFC forbinder finder og ejer på få sekunder. Den verificerede profil giver adgang til de oplysninger, ejeren har valgt at dele.",
               },
               {
                 tag: "POLITIET",
                 title: "Kontakt til myndigheder",
-                body: "Hurtig adgang til politiet, når situationen kræver det, med dyrets oplysninger klar.",
+                body: "Verificerede oplysninger kan deles med relevante myndigheder, når situationen kræver dokumentation eller identifikation.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
@@ -610,14 +610,8 @@ export function Index() {
                 Et kæledyr er en del af{" "}
                 <span className="italic text-accent">familien.</span>
               </h2>
-              <p className="mt-8 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                Alligevel findes der sjældent et samlet sted for de oplysninger og ønsker, der bliver vigtige, hvis ejeren bliver alvorligt syg eller går bort.
-              </p>
               <p className="mt-6 max-w-md text-sm font-light leading-relaxed text-foreground/75">
-                Track My Pet samler kontaktpersoner, nødinformation og ønsker omkring dyrets videre omsorg ét sted, tilgængeligt, når det betyder noget.
-              </p>
-              <p className="mt-10 font-serif text-lg font-light italic leading-snug text-foreground/85">
-                Udviklet til hele dyrets liv, også når livet ændrer sig.
+                Derfor følger omsorgsprofilen også de situationer, hvor andre skal tage over. Kontaktpersoner, rutiner, medicin og ønsker ligger på den verificerede profil og bliver tilgængelige for de mennesker, ejeren har udpeget.
               </p>
             </div>
 
@@ -645,7 +639,7 @@ export function Index() {
                     { tag: "ØNSKER", body: "Dine ønsker for dyrets omsorg." },
                     { tag: "MEDICIN OG RUTINER", body: "Det daglige, der gør hverdagen tryg." },
                     { tag: "FAMILIE OG NÆRE", body: "Kontakt til de mennesker, der står dyret nær." },
-                    { tag: "ADGANG", body: "Dokumentation og adgang samlet ét sted." },
+                    { tag: "ADGANG", body: "Kontrolleret adgang til dokumentation, kontaktpersoner og omsorgsprofil." },
                   ].map((f) => (
                     <li key={f.tag} className="bg-background px-5 py-6">
                       <p className="text-[10px] tracking-[0.3em] text-muted-foreground">
