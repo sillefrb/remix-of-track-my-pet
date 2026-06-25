@@ -884,21 +884,21 @@ export function Index() {
 
 
 
-      {/* FUNKTIONER, 6 KERNEEGENSKABER */}
+      {/* PLATFORMEN, 6 KERNEEGENSKABER */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32">
           <div className="grid grid-cols-12 items-end gap-6 pb-16">
             <div className="col-span-12 md:col-span-7">
               <p className="text-[10px] tracking-[0.45em] text-muted-foreground">
-                FUNKTIONER, N°06 / KERNEN
+                PLATFORMEN, N°06 / KERNEN
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[0.95] tracking-tight md:text-6xl">
-                Alt det vigtige <span className="italic text-accent">samlet ét sted.</span>
+                Én identitet. <span className="italic text-accent">Seks centrale områder.</span>
               </h2>
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Seks gennemtænkte funktioner udviklet til identitet, dokumentation og tryghed gennem hele dyrets liv.
+                Den verificerede profil samler identitet, dokumentation og data i en platform, der udvikler sig gennem hele kæledyrets liv.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -909,37 +909,37 @@ export function Index() {
               {
                 tag: "IDENTITET",
                 title: "Verificeret profil",
-                body: "En sikker digital profil med identitet, ejerskab og vigtige oplysninger, dyrets digitale pas.",
+                body: "Den verificerede identitet forbinder ejerskab, dokumentation og alle platformens services.",
               },
               {
                 tag: "JOURNAL",
                 title: "Sundhedstidslinje",
-                body: "Vaccinationer, behandlinger og vigtige helbredshændelser samlet i én enkel tidslinje med påmindelser.",
+                body: "Vaccinationer, behandlinger og sundhedsdata udvikler sig i én samlet tidslinje, som danner grundlag for AI-baserede services og fremtidige integrationer.",
               },
               {
                 tag: "DOKUMENTER",
                 title: "Samlet dokumentation",
-                body: "Attester, rejsedokumenter, indtagsskemaer og bilag opbevaret ét sted.",
+                body: "Dokumentation følger den verificerede identitet og er tilgængelig, når ejeren vælger at dele den.",
               },
               {
                 tag: "DELING",
                 title: "QR- og linkverificering",
-                body: "Del adgang til vigtige oplysninger med klinik, pasning eller hjælper, enkelt og kontrolleret.",
+                body: "Verificerede oplysninger deles med de rette personer på det rette tidspunkt gennem QR, link eller integration.",
               },
               {
                 tag: "REJSE",
                 title: "Rejsedokumentation",
-                body: "Rejserelaterede oplysninger og dokumenter samlet til enklere bevægelse på tværs af europæiske lande.",
+                body: "Rejsedokumentation følger den samme profil og gør identitet, vaccinationer og sundhedsoplysninger klar til brug på tværs af Europa.",
               },
               {
                 tag: "ADGANG",
                 title: "Adgangskontrol",
-                body: "Samtykke-baseret deling, historik og rolleadgang, ejeren bestemmer, hvem der ser hvad.",
+                body: "Ejeren styrer adgang til alle oplysninger. Hver deling registreres og kan tilpasses den konkrete situation.",
               },
               {
                 tag: "ONLINE VET",
                 title: "Online dyrlæge",
-                body: "Hurtig adgang til en dyrlæge via video eller chat, med dyrets profil og journal som udgangspunkt for samtalen.",
+                body: "Dyrlægen møder en komplet og opdateret profil fra første minut. Det giver bedre beslutningsgrundlag og mindre administration.",
               },
             ].map((f) => (
               <article key={f.tag} className="bg-background p-10 md:p-12">
