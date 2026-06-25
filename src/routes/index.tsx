@@ -223,19 +223,19 @@ export function Index() {
               step: "01",
               tag: "OPRET",
               title: "Opret en verificeret profil",
-              body: "Tilføj billede, identitet og ejeroplysninger. Profilen er udgangspunktet for dyrets digitale identitet.",
+              body: "Tilføj billede, identitet og ejeroplysninger. Den verificerede profil bliver fundamentet for identitet, dokumentation og fremtidige services.",
             },
             {
               step: "02",
               tag: "SAMLE",
               title: "Saml dokumenter og journal",
-              body: "Vaccinationer, journal, rejsedokumenter og vigtige oplysninger samlet ét sted, enkelt og struktureret.",
+              body: "Vaccinationer, journal, rejsedokumenter og øvrig dokumentation forbindes til én verificeret profil, som følger dyret gennem hele livet.",
             },
             {
               step: "03",
               tag: "DEL",
               title: "Del sikkert, når det er nødvendigt",
-              body: "Giv dyrlæge, klinik, pasning eller rejseudbyder adgang via QR, link eller eksport, kun når du vælger det.",
+              body: "Del verificerede oplysninger med dyrlæger, pasning, rejseaktører og øvrige samarbejdspartnere via QR, link eller eksport. Ejeren styrer adgangen.",
             },
           ].map((s) => (
             <li key={s.step} className="bg-background p-10 md:p-12">
@@ -269,7 +269,7 @@ export function Index() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                En fælles europæisk udvikling inden for identitet, registrering og dokumentation er i gang, og skaber rum for en samlet løsning.
+                EU bevæger sig mod fælles standarder for identitet, registrering og dokumentation. Udviklingen skaber fundamentet for en digital infrastruktur, der forbinder data på tværs af Europa.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
@@ -285,7 +285,7 @@ export function Index() {
               {
                 tag: "BEHOVET",
                 title: "Behov for en enklere adgang",
-                body: "Kæledyrsidentitet bevæger sig fra fysiske dokumenter til sammenhængende digitale løsninger, samlet ét sted.",
+                body: "Ejere, dyrlæger og myndigheder får værdi af en fælles digital identitet, hvor dokumentation, sundhedsdata og ejerskab følger dyret på tværs af hele Europa.",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-background p-10 md:p-12">
