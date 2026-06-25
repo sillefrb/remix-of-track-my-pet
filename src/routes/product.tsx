@@ -75,7 +75,7 @@ export function ProductPage() {
             </div>
             <div className="col-span-12 md:col-span-5">
               <p className="max-w-sm text-sm font-light leading-relaxed text-foreground/75 md:ml-auto">
-                Til byen. Til rejsen. Til hverdagen. Track My Pet følger dyret og ejeren gennem hvert kapitel.
+                Til byen. Til rejsen. Til hverdagen. Track My Pet følger dyret og ejeren gennem hele livet.
               </p>
               <div className="mt-8 h-px w-12 bg-border md:ml-auto" />
             </div>
