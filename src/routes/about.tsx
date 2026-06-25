@@ -56,10 +56,10 @@ export function AboutPage() {
 
         <div className="mx-auto max-w-3xl px-6 pt-20 pb-8 text-center md:pt-28">
           <p className="font-serif text-2xl font-light italic leading-snug text-foreground sm:text-3xl md:text-4xl">
-            Vi bygger Europas AI- og datainfrastruktur for kæledyr.
+            Europas AI- og datainfrastruktur for kæledyr.
           </p>
           <p className="mx-auto mt-10 max-w-xl text-sm font-light leading-relaxed text-foreground/70">
-            Track My Pet er skabt af mennesker med ansvar og omtanke for dyr. Det usædvanlige ligger i, hvordan vi omsætter den omsorg til håndværk, design og infrastruktur, der gør hverdagen enklere for både dyret og det menneske, det deler den med.
+            EU's nye regler om obligatorisk mikrochipmærkning og registrering af hunde og katte danner fundamentet for en fælles europæisk identitet for kæledyr. Det skal stoppe ulovlig handel og mishandling. Track My Pet bygger ovenpå denne standard og skaber en kritisk AI- og datainfrastruktur, der forbinder ejere, dyrlæger, forsikringer og myndigheder i et europæisk økosystem. Med 198 millioner potentielle profiler er værdien netværkseffekter, AI-baseret indsigt og en samlet identitet, der styrker sporbarhed, sundhed og tryghed for kæledyr og deres ejere på tværs af EU.
           </p>
         </div>
       </section>
