@@ -670,27 +670,27 @@ export function Index() {
                 FOR EJERE
               </p>
               <h2 className="font-serif mt-8 text-4xl font-light leading-[1.0] tracking-tight md:text-5xl lg:text-6xl">
-                Alt en ejer har brug for,{" "}
-                <span className="italic text-accent">i én verificeret profil.</span>
+                Én verificeret identitet samler{" "}
+                <span className="italic text-accent">dokumentation, sundhedsdata og services gennem hele kæledyrets liv.</span>
               </h2>
 
               <ul className="mt-14 space-y-10">
                 {[
                   {
-                    title: "Opbevar dokumenter trygt",
-                    body: "Hold dyrets identitet og vigtige oplysninger organiseret og tilgængelige.",
+                    title: "Verificeret identitet",
+                    body: "Dokumentation, ejerskab og sundhedsoplysninger følger den samme profil.",
                   },
                   {
-                    title: "Følg vaccinationer og helbred",
-                    body: "Hold styr på vaccinationer, journal og vigtige milepæle gennem hele livet.",
+                    title: "Sundhedsprofil",
+                    body: "Vaccinationer, journal, medicin og historik udvikler sig i takt med kæledyrets liv.",
                   },
                   {
-                    title: "Del øjeblikkeligt, når det er nødvendigt",
-                    body: "Sikre links, QR-verificering og eksport til klinik, pasning eller akutte situationer.",
+                    title: "Kontrolleret deling",
+                    body: "Del verificerede oplysninger med klinikker, pasning, rejseaktører og øvrige samarbejdspartnere.",
                   },
                   {
-                    title: "Adgang overalt",
-                    body: "Brug Track My Pet på enhver enhed, dyrets oplysninger samlet ét sted.",
+                    title: "Platform på tværs af enheder",
+                    body: "Profilen følger ejeren på tværs af mobil, tablet og computer.",
                   },
                 ].map((f) => (
                   <li key={f.title} className="flex items-start gap-5">
