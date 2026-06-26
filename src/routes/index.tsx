@@ -113,6 +113,15 @@ export function Index() {
               FOR KLINIKKER OG ORGANISATIONER
             </Link>
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link
+              to="/slides"
+              className="text-[11px] tracking-[0.35em] text-muted-foreground underline decoration-border underline-offset-4 transition hover:text-accent"
+            >
+              SE ALLE INVESTOR SLIDES
+            </Link>
+          </div>
         </div>
 
         {/* DET ER */}
