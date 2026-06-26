@@ -200,24 +200,10 @@ function SlideData() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-2xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
-          This creates administration, duplicate registrations and loss of
-          knowledge between the people and organisations working around the
-          same animal.
-        </p>
-</section>
-
-      {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center">
         <div className="mx-auto h-px w-16 bg-border" />
-        <p className="mt-10 text-[10px] tracking-[0.45em] text-muted-foreground">
-          EUROPE, TODAY
-        </p>
-        <p className="font-serif mt-8 text-2xl font-light leading-snug tracking-tight text-foreground md:text-3xl">
-          198 million dogs and cats move between thousands of systems across
-          Europe without a shared digital identity.
+        <p className="font-serif mt-10 text-2xl font-light leading-snug tracking-tight text-foreground md:text-3xl">
+          198 million dogs and cats move between thousands of systems across Europe without a shared digital identity.
         </p>
       </section>
 
