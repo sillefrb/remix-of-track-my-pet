@@ -82,35 +82,117 @@ function ColumnHeader({
   );
 }
 
-function ItemList({
+const PIE_COLORS = [
+  "#e8d5c4",
+  "#d9b896",
+  "#c4a484",
+  "#a8c0a0",
+  "#b8c9b0",
+  "#c9b5d4",
+  "#e8c5d0",
+  "#f0d7a8",
+];
+
+function ProfilePie({
   items,
+  centerImg,
   delay,
 }: {
   items: { label: string; Icon: typeof User }[];
+  centerImg: string;
   delay: number;
 }) {
+  const cx = 250;
+  const cy = 250;
+  const rOuter = 230;
+  const rInner = 95;
+  const rLabel = 168;
+  const n = items.length;
+  const step = (2 * Math.PI) / n;
+  const start = -Math.PI / 2 - step / 2;
+
+  const polar = (r: number, a: number) => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+
   return (
-    <ul className="mt-8 space-y-4">
-      {items.map(({ label, Icon }, i) => (
-        <li
-          key={label}
-          className="tmp-item flex items-center justify-center gap-3 text-center"
-          style={{ animationDelay: `${delay + i * 80}ms` }}
-        >
-          <Icon
-            className="text-foreground/55 shrink-0"
-            strokeWidth={1.2}
-            size={16}
-            aria-hidden
-          />
-          <span className="font-serif text-base font-light leading-snug text-foreground/85 md:text-lg">
-            {label}
-          </span>
-        </li>
-      ))}
-    </ul>
+    <div
+      className="tmp-col relative mx-auto w-full max-w-[500px]"
+      style={{ animationDelay: `${delay}ms` }}
+    >
+      <svg viewBox="0 0 500 500" className="h-auto w-full" aria-hidden>
+        <defs>
+          <clipPath id="pie-center-clip">
+            <circle cx={cx} cy={cy} r={rInner} />
+          </clipPath>
+        </defs>
+        {items.map((item, i) => {
+          const a0 = start + i * step;
+          const a1 = a0 + step;
+          const [x0, y0] = polar(rOuter, a0);
+          const [x1, y1] = polar(rOuter, a1);
+          const largeArc = step > Math.PI ? 1 : 0;
+          const d = `M ${cx} ${cy} L ${x0} ${y0} A ${rOuter} ${rOuter} 0 ${largeArc} 1 ${x1} ${y1} Z`;
+          return (
+            <path
+              key={item.label}
+              d={d}
+              fill={PIE_COLORS[i % PIE_COLORS.length]}
+              stroke="hsl(var(--background))"
+              strokeWidth={3}
+              className="tmp-item"
+              style={{ animationDelay: `${delay + 200 + i * 90}ms`, transformOrigin: `${cx}px ${cy}px` }}
+            />
+          );
+        })}
+        {/* Center photo */}
+        <circle cx={cx} cy={cy} r={rInner + 4} fill="hsl(var(--background))" />
+        <image
+          href={centerImg}
+          x={cx - rInner}
+          y={cy - rInner}
+          width={rInner * 2}
+          height={rInner * 2}
+          clipPath="url(#pie-center-clip)"
+          preserveAspectRatio="xMidYMid slice"
+        />
+        <circle
+          cx={cx}
+          cy={cy}
+          r={rInner}
+          fill="none"
+          stroke="hsl(var(--foreground) / 0.15)"
+          strokeWidth={1}
+        />
+      </svg>
+
+      {/* Slice labels */}
+      {items.map((item, i) => {
+        const a = start + i * step + step / 2;
+        const xPct = ((cx + rLabel * Math.cos(a)) / 500) * 100;
+        const yPct = ((cy + rLabel * Math.sin(a)) / 500) * 100;
+        const Icon = item.Icon;
+        return (
+          <div
+            key={item.label}
+            className="tmp-item absolute flex flex-col items-center text-center"
+            style={{
+              left: `${xPct}%`,
+              top: `${yPct}%`,
+              transform: "translate(-50%, -50%)",
+              animationDelay: `${delay + 400 + i * 90}ms`,
+              width: "92px",
+            }}
+          >
+            <Icon className="text-foreground/70" strokeWidth={1.3} size={18} aria-hidden />
+            <span className="mt-1 font-serif text-[11px] font-light leading-tight text-foreground/85">
+              {item.label}
+            </span>
+          </div>
+        );
+      })}
+    </div>
   );
 }
+
 
 function SlideAI() {
   return (
