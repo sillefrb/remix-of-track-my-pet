@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import packImg from "@/assets/dogpass-pack.jpg";
 
 export const Route = createFileRoute("/slide-hero-closing")({
   head: () => ({
@@ -109,7 +110,13 @@ function SlideHeroClosing() {
       </section>
 
       {/* CENTER VISUAL — Dog + Cat + Identity Halo */}
-      <section className="mx-auto max-w-[1100px] px-6 pt-12 pb-6 md:pt-16">
+      <section className="relative mx-auto max-w-[1100px] px-6 pt-12 pb-6 md:pt-16">
+        <img
+          src={packImg}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          aria-hidden
+        />
         <div className="relative mx-auto w-full" style={{ aspectRatio: `${vbW} / ${vbH}` }}>
           <svg viewBox={`0 0 ${vbW} ${vbH}`} className="h-full w-full" aria-hidden>
             {/* Soft halo circles */}

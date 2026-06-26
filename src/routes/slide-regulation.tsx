@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import travelImg from "@/assets/dogpass-travel.jpg";
 
 export const Route = createFileRoute("/slide-regulation")({
   head: () => ({
@@ -128,6 +129,11 @@ function SlideRegulation() {
           <br />
           INFRASTRUCTURE CREATES THE VALUE.
         </h1>
+      </section>
+
+      <section className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
+        <img src={travelImg} alt="Track My Pet" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/30" />
       </section>
 
       {/* TIMELINE + ECOSYSTEM VISUAL */}
