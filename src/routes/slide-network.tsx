@@ -331,20 +331,8 @@ function SlideNetwork() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-14 pb-6 text-center md:pt-20">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The value of the ecosystem grows every time a new owner, partner or
-          service joins the platform.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The identity layer becomes stronger, smarter and more valuable over
-          time.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-3xl px-6 pt-14 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-14 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Scale creates intelligence.

@@ -283,25 +283,6 @@ function SlideContact() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-16 pb-6 text-center md:pt-20">
-        <p
-          className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "1200ms" }}
-        >
-          The next generation of pet services will be built through collaboration
-          between owners, veterinarians, insurers, researchers, technology companies
-          and strategic partners.
-        </p>
-        <p
-          className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "1400ms" }}
-        >
-          Track My Pet creates the shared identity layer that allows those services
-          to work together around the animal.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
       <section className="mx-auto max-w-4xl px-6 pt-16 pb-6 text-center">
         <div className="mx-auto h-px w-16 bg-border tmp-fade" style={{ animationDelay: "1600ms" }} />

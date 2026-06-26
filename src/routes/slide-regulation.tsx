@@ -324,33 +324,8 @@ function SlideRegulation() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-6 text-center md:pt-24">
-        <p
-          className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "1200ms" }}
-        >
-          Europe is moving towards stronger standards for identification,
-          traceability and animal welfare.
-        </p>
-        <p
-          className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "1400ms" }}
-        >
-          Microchips, registries and documentation already exist across the
-          continent.
-        </p>
-        <p
-          className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "1600ms" }}
-        >
-          The next step is the digital identity layer connecting those systems
-          around the animal.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-4xl px-6 pt-16 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-4xl px-6 pt-16 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border tmp-fade" style={{ animationDelay: "1800ms" }} />
         <p
           className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl tmp-fade"

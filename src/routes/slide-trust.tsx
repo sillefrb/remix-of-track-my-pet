@@ -303,36 +303,8 @@ function SlideTrust() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-16 pb-6 text-center md:pt-20">
-        <p
-          className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "2200ms" }}
-        >
-          Identity creates trust.
-        </p>
-        <p
-          className="mt-5 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "2350ms" }}
-        >
-          Verified information creates confidence.
-        </p>
-        <p
-          className="mt-5 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "2500ms" }}
-        >
-          Confidence enables collaboration between owners, veterinarians, insurers and partners.
-        </p>
-        <p
-          className="mt-5 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "2650ms" }}
-        >
-          The strongest ecosystems are built on trusted data flows.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-4xl px-6 pt-16 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-4xl px-6 pt-16 pb-24 text-center md:pb-24">
         <div
           className="mx-auto h-px w-16 bg-border tmp-fade"
           style={{ animationDelay: "2800ms" }}

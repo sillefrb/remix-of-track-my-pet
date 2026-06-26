@@ -203,23 +203,8 @@ function SlideContext() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          GPS tracking creates location data.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Digital identity adds ownership, health information, documentation
-          and relationships.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Together they create context that improves safety, care and decision
-          making throughout the animal's life.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Tracking becomes more powerful when connected

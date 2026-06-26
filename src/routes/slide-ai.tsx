@@ -302,20 +302,8 @@ function SlideAI() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Health information, travel history, ownership records and
-          documentation create value when they remain connected over time.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          AI transforms that continuity into insights, recommendations and better
-          decisions for owners, veterinarians and partners.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           The value of AI grows with every interaction, every document and every
