@@ -96,21 +96,20 @@ const PIE_COLORS = [
 function ProfilePie({
   items,
   centerImg,
-  centerName,
   delay,
 }: {
   items: { label: string; Icon: typeof User }[];
   centerImg: string;
-  centerName: string;
   delay: number;
 }) {
   const cx = 250;
   const cy = 250;
   const rOuter = 240;
   const rInner = 78;
-  const rLabel = 168;
+  const rLabel = 158;
   const n = items.length;
   const step = (2 * Math.PI) / n;
+  // Start so the first slice is centered at the top (12 o'clock)
   const start = -Math.PI / 2 - step / 2;
 
   const polar = (r: number, a: number) => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
@@ -146,7 +145,7 @@ function ProfilePie({
           );
         })}
         {/* Center photo backing */}
-        <circle cx={cx} cy={cy} r={rInner + 5} fill="hsl(var(--background))" />
+        <circle cx={cx} cy={cy} r={rInner + 6} fill="hsl(var(--background))" />
         <image
           href={centerImg}
           x={cx - rInner}
@@ -161,12 +160,12 @@ function ProfilePie({
           cy={cy}
           r={rInner}
           fill="none"
-          stroke="hsl(var(--foreground) / 0.25)"
+          stroke="hsl(var(--foreground) / 0.3)"
           strokeWidth={1.5}
         />
       </svg>
 
-      {/* Slice labels (icon + name) positioned inside each slice */}
+      {/* Slice labels (icon + name) centered inside each slice */}
       {items.map((item, i) => {
         const a = start + i * step + step / 2;
         const xPct = ((cx + rLabel * Math.cos(a)) / 500) * 100;
@@ -175,39 +174,31 @@ function ProfilePie({
         return (
           <div
             key={item.label}
-            className="tmp-item pointer-events-none absolute flex flex-col items-center text-center"
+            className="tmp-item pointer-events-none absolute flex flex-col items-center justify-center text-center"
             style={{
               left: `${xPct}%`,
               top: `${yPct}%`,
               transform: "translate(-50%, -50%)",
               animationDelay: `${delay + 400 + i * 90}ms`,
-              width: "104px",
+              width: "92px",
             }}
           >
-            <Icon className="text-foreground" strokeWidth={1.6} size={26} aria-hidden />
-            <span className="mt-1.5 font-serif text-[13px] font-medium leading-tight text-foreground">
+            <Icon
+              className="text-foreground"
+              strokeWidth={1.8}
+              size={22}
+              aria-hidden
+            />
+            <span className="mt-1 font-serif text-[12px] font-medium leading-tight text-foreground">
               {item.label}
             </span>
           </div>
         );
       })}
-
-      {/* Profile name caption */}
-      <div
-        className="tmp-item absolute left-1/2 flex -translate-x-1/2 flex-col items-center"
-        style={{
-          top: `${((cy + rOuter + 18) / 500) * 100}%`,
-          animationDelay: `${delay + 1200}ms`,
-        }}
-      >
-        <p className="text-[10px] tracking-[0.4em] text-muted-foreground">PROFILE</p>
-        <p className="font-serif mt-1 text-2xl font-light italic text-foreground">
-          {centerName}
-        </p>
-      </div>
     </div>
   );
 }
+
 
 
 
@@ -385,7 +376,7 @@ function SlideAI() {
             <div className="flex flex-col items-center">
               <ColumnHeader kicker="PROFILE DATA" Icon={User} delay={300} />
               <div className="mt-10 w-full">
-                <ProfilePie items={PROFILE_ITEMS} centerImg={dogCenterImg} centerName="Bella" delay={600} />
+                <ProfilePie items={PROFILE_ITEMS} centerImg={dogCenterImg} delay={600} />
               </div>
             </div>
 
