@@ -17,6 +17,7 @@ import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as SlideContextRouteImport } from './routes/slide-context'
+import { Route as SlideAiRouteImport } from './routes/slide-ai'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -65,6 +66,11 @@ const SlideContextRoute = SlideContextRouteImport.update({
   path: '/slide-context',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SlideAiRoute = SlideAiRouteImport.update({
+  id: '/slide-ai',
+  path: '/slide-ai',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductRoute = ProductRouteImport.update({
   id: '/product',
   path: '/product',
@@ -109,6 +115,7 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-ai': typeof SlideAiRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -126,6 +133,7 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-ai': typeof SlideAiRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -144,6 +152,7 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-ai': typeof SlideAiRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -163,6 +172,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-ai'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -180,6 +190,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-ai'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -197,6 +208,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-ai'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -215,6 +227,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
   ProductRoute: typeof ProductRoute
+  SlideAiRoute: typeof SlideAiRoute
   SlideContextRoute: typeof SlideContextRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
@@ -283,6 +296,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SlideContextRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/slide-ai': {
+      id: '/slide-ai'
+      path: '/slide-ai'
+      fullPath: '/slide-ai'
+      preLoaderRoute: typeof SlideAiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/product': {
       id: '/product'
       path: '/product'
@@ -343,6 +363,7 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
   ProductRoute: ProductRoute,
+  SlideAiRoute: SlideAiRoute,
   SlideContextRoute: SlideContextRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
