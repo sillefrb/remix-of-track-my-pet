@@ -70,10 +70,13 @@ function SlideProducts() {
           INVESTOR SLIDE — 05
         </p>
         <h1 className="font-serif mx-auto mt-10 max-w-5xl text-center text-4xl font-light leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          THE FIRST CONTACT POINT
-          <br />
-          WITH THE INFRASTRUCTURE.
+          THE RELATIONSHIP BEGINS HERE.
         </h1>
+      </section>
+
+      {/* PRODUCT PHOTO */}
+      <section className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
+        <img src={productsImg} alt="Track My Pet premium tag, card and welcome folder" className="h-full w-full object-cover object-center" />
       </section>
 
       {/* DIAGRAM */}
