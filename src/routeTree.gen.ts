@@ -20,6 +20,7 @@ import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlidePhysicalDigitalRouteImport } from './routes/slide-physical-digital'
 import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
 import { Route as SlideOpportunityRouteImport } from './routes/slide-opportunity'
+import { Route as SlideNetworkRouteImport } from './routes/slide-network'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideJourneyRouteImport } from './routes/slide-journey'
 import { Route as SlideHeroClosingRouteImport } from './routes/slide-hero-closing'
@@ -94,6 +95,11 @@ const SlidePartnershipsRoute = SlidePartnershipsRouteImport.update({
 const SlideOpportunityRoute = SlideOpportunityRouteImport.update({
   id: '/slide-opportunity',
   path: '/slide-opportunity',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideNetworkRoute = SlideNetworkRouteImport.update({
+  id: '/slide-network',
+  path: '/slide-network',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideLifetimeRoute = SlideLifetimeRouteImport.update({
@@ -218,6 +224,7 @@ export interface FileRoutesByFullPath {
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-journey': typeof SlideJourneyRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-network': typeof SlideNetworkRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
@@ -251,6 +258,7 @@ export interface FileRoutesByTo {
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-journey': typeof SlideJourneyRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-network': typeof SlideNetworkRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
@@ -285,6 +293,7 @@ export interface FileRoutesById {
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-journey': typeof SlideJourneyRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-network': typeof SlideNetworkRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
@@ -320,6 +329,7 @@ export interface FileRouteTypes {
     | '/slide-hero-closing'
     | '/slide-journey'
     | '/slide-lifetime'
+    | '/slide-network'
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-physical-digital'
@@ -353,6 +363,7 @@ export interface FileRouteTypes {
     | '/slide-hero-closing'
     | '/slide-journey'
     | '/slide-lifetime'
+    | '/slide-network'
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-physical-digital'
@@ -386,6 +397,7 @@ export interface FileRouteTypes {
     | '/slide-hero-closing'
     | '/slide-journey'
     | '/slide-lifetime'
+    | '/slide-network'
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-physical-digital'
@@ -420,6 +432,7 @@ export interface RootRouteChildren {
   SlideHeroClosingRoute: typeof SlideHeroClosingRoute
   SlideJourneyRoute: typeof SlideJourneyRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
+  SlideNetworkRoute: typeof SlideNetworkRoute
   SlideOpportunityRoute: typeof SlideOpportunityRoute
   SlidePartnershipsRoute: typeof SlidePartnershipsRoute
   SlidePhysicalDigitalRoute: typeof SlidePhysicalDigitalRoute
@@ -510,6 +523,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-opportunity'
       fullPath: '/slide-opportunity'
       preLoaderRoute: typeof SlideOpportunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-network': {
+      id: '/slide-network'
+      path: '/slide-network'
+      fullPath: '/slide-network'
+      preLoaderRoute: typeof SlideNetworkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-lifetime': {
@@ -676,6 +696,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideHeroClosingRoute: SlideHeroClosingRoute,
   SlideJourneyRoute: SlideJourneyRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
+  SlideNetworkRoute: SlideNetworkRoute,
   SlideOpportunityRoute: SlideOpportunityRoute,
   SlidePartnershipsRoute: SlidePartnershipsRoute,
   SlidePhysicalDigitalRoute: SlidePhysicalDigitalRoute,
