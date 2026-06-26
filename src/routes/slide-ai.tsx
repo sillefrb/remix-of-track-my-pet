@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import sparklesImg from "@/assets/dogpass-clinic.jpg";
+import dogCenterImg from "@/assets/dogpass-walk.jpg";
 import {
   User,
   HeartPulse,
@@ -17,6 +18,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+
 
 export const Route = createFileRoute("/slide-ai")({
   head: () => ({
