@@ -23,6 +23,7 @@ import { Route as SlideEuropeRouteImport } from './routes/slide-europe'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as SlideContextRouteImport } from './routes/slide-context'
+import { Route as SlideContactRouteImport } from './routes/slide-contact'
 import { Route as SlideCapabilitiesRouteImport } from './routes/slide-capabilities'
 import { Route as SlideBusinessModelRouteImport } from './routes/slide-business-model'
 import { Route as SlideAiRouteImport } from './routes/slide-ai'
@@ -104,6 +105,11 @@ const SlideContextRoute = SlideContextRouteImport.update({
   path: '/slide-context',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SlideContactRoute = SlideContactRouteImport.update({
+  id: '/slide-contact',
+  path: '/slide-contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SlideCapabilitiesRoute = SlideCapabilitiesRouteImport.update({
   id: '/slide-capabilities',
   path: '/slide-capabilities',
@@ -166,6 +172,7 @@ export interface FileRoutesByFullPath {
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
   '/slide-capabilities': typeof SlideCapabilitiesRoute
+  '/slide-contact': typeof SlideContactRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -192,6 +199,7 @@ export interface FileRoutesByTo {
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
   '/slide-capabilities': typeof SlideCapabilitiesRoute
+  '/slide-contact': typeof SlideContactRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -219,6 +227,7 @@ export interface FileRoutesById {
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
   '/slide-capabilities': typeof SlideCapabilitiesRoute
+  '/slide-contact': typeof SlideContactRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -247,6 +256,7 @@ export interface FileRouteTypes {
     | '/slide-ai'
     | '/slide-business-model'
     | '/slide-capabilities'
+    | '/slide-contact'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -273,6 +283,7 @@ export interface FileRouteTypes {
     | '/slide-ai'
     | '/slide-business-model'
     | '/slide-capabilities'
+    | '/slide-contact'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -299,6 +310,7 @@ export interface FileRouteTypes {
     | '/slide-ai'
     | '/slide-business-model'
     | '/slide-capabilities'
+    | '/slide-contact'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -326,6 +338,7 @@ export interface RootRouteChildren {
   SlideAiRoute: typeof SlideAiRoute
   SlideBusinessModelRoute: typeof SlideBusinessModelRoute
   SlideCapabilitiesRoute: typeof SlideCapabilitiesRoute
+  SlideContactRoute: typeof SlideContactRoute
   SlideContextRoute: typeof SlideContextRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
@@ -442,6 +455,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SlideContextRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/slide-contact': {
+      id: '/slide-contact'
+      path: '/slide-contact'
+      fullPath: '/slide-contact'
+      preLoaderRoute: typeof SlideContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/slide-capabilities': {
       id: '/slide-capabilities'
       path: '/slide-capabilities'
@@ -526,6 +546,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideAiRoute: SlideAiRoute,
   SlideBusinessModelRoute: SlideBusinessModelRoute,
   SlideCapabilitiesRoute: SlideCapabilitiesRoute,
+  SlideContactRoute: SlideContactRoute,
   SlideContextRoute: SlideContextRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
@@ -544,3 +565,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
