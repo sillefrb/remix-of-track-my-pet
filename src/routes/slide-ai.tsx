@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import sparklesImg from "@/assets/dogpass-clinic.jpg";
 import {
   User,
   HeartPulse,
