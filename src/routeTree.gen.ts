@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTrustRouteImport } from './routes/slide-trust'
+import { Route as SlideTrackingContextRouteImport } from './routes/slide-tracking-context'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideSharingRouteImport } from './routes/slide-sharing'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
@@ -50,6 +51,11 @@ const VisionRoute = VisionRouteImport.update({
 const SlideTrustRoute = SlideTrustRouteImport.update({
   id: '/slide-trust',
   path: '/slide-trust',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideTrackingContextRoute = SlideTrackingContextRouteImport.update({
+  id: '/slide-tracking-context',
+  path: '/slide-tracking-context',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideTimelineRoute = SlideTimelineRouteImport.update({
@@ -234,6 +240,7 @@ export interface FileRoutesByFullPath {
   '/slide-services': typeof SlideServicesRoute
   '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-tracking-context': typeof SlideTrackingContextRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
@@ -268,6 +275,7 @@ export interface FileRoutesByTo {
   '/slide-services': typeof SlideServicesRoute
   '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-tracking-context': typeof SlideTrackingContextRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
@@ -303,6 +311,7 @@ export interface FileRoutesById {
   '/slide-services': typeof SlideServicesRoute
   '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-tracking-context': typeof SlideTrackingContextRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
@@ -339,6 +348,7 @@ export interface FileRouteTypes {
     | '/slide-services'
     | '/slide-sharing'
     | '/slide-timeline'
+    | '/slide-tracking-context'
     | '/slide-trust'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
@@ -373,6 +383,7 @@ export interface FileRouteTypes {
     | '/slide-services'
     | '/slide-sharing'
     | '/slide-timeline'
+    | '/slide-tracking-context'
     | '/slide-trust'
     | '/vision'
   id:
@@ -407,6 +418,7 @@ export interface FileRouteTypes {
     | '/slide-services'
     | '/slide-sharing'
     | '/slide-timeline'
+    | '/slide-tracking-context'
     | '/slide-trust'
     | '/vision'
   fileRoutesById: FileRoutesById
@@ -442,6 +454,7 @@ export interface RootRouteChildren {
   SlideServicesRoute: typeof SlideServicesRoute
   SlideSharingRoute: typeof SlideSharingRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
+  SlideTrackingContextRoute: typeof SlideTrackingContextRoute
   SlideTrustRoute: typeof SlideTrustRoute
   VisionRoute: typeof VisionRoute
 }
@@ -460,6 +473,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-trust'
       fullPath: '/slide-trust'
       preLoaderRoute: typeof SlideTrustRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-tracking-context': {
+      id: '/slide-tracking-context'
+      path: '/slide-tracking-context'
+      fullPath: '/slide-tracking-context'
+      preLoaderRoute: typeof SlideTrackingContextRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-timeline': {
@@ -706,6 +726,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideServicesRoute: SlideServicesRoute,
   SlideSharingRoute: SlideSharingRoute,
   SlideTimelineRoute: SlideTimelineRoute,
+  SlideTrackingContextRoute: SlideTrackingContextRoute,
   SlideTrustRoute: SlideTrustRoute,
   VisionRoute: VisionRoute,
 }
