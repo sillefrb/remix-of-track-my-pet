@@ -10,12 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
-import { Route as SystemsRouteImport } from './routes/systems'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as MarketRouteImport } from './routes/market'
-import { Route as EcosystemRouteImport } from './routes/ecosystem'
 import { Route as B2bRouteImport } from './routes/b2b'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,11 +21,6 @@ import { Route as IndexRouteImport } from './routes/index'
 const VisionRoute = VisionRouteImport.update({
   id: '/vision',
   path: '/vision',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SystemsRoute = SystemsRouteImport.update({
-  id: '/systems',
-  path: '/systems',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductRoute = ProductRouteImport.update({
@@ -50,11 +43,6 @@ const MarketRoute = MarketRouteImport.update({
   path: '/market',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EcosystemRoute = EcosystemRouteImport.update({
-  id: '/ecosystem',
-  path: '/ecosystem',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const B2bRoute = B2bRouteImport.update({
   id: '/b2b',
   path: '/b2b',
@@ -75,24 +63,20 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
-  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
-  '/systems': typeof SystemsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
-  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
-  '/systems': typeof SystemsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesById {
@@ -100,12 +84,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
-  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
-  '/systems': typeof SystemsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
@@ -114,36 +96,30 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/b2b'
-    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
     | '/product'
-    | '/systems'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/b2b'
-    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
     | '/product'
-    | '/systems'
     | '/vision'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/b2b'
-    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
     | '/product'
-    | '/systems'
     | '/vision'
   fileRoutesById: FileRoutesById
 }
@@ -151,12 +127,10 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   B2bRoute: typeof B2bRoute
-  EcosystemRoute: typeof EcosystemRoute
   MarketRoute: typeof MarketRoute
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
   ProductRoute: typeof ProductRoute
-  SystemsRoute: typeof SystemsRoute
   VisionRoute: typeof VisionRoute
 }
 
@@ -167,13 +141,6 @@ declare module '@tanstack/react-router' {
       path: '/vision'
       fullPath: '/vision'
       preLoaderRoute: typeof VisionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/systems': {
-      id: '/systems'
-      path: '/systems'
-      fullPath: '/systems'
-      preLoaderRoute: typeof SystemsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/product': {
@@ -204,13 +171,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ecosystem': {
-      id: '/ecosystem'
-      path: '/ecosystem'
-      fullPath: '/ecosystem'
-      preLoaderRoute: typeof EcosystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/b2b': {
       id: '/b2b'
       path: '/b2b'
@@ -239,12 +199,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   B2bRoute: B2bRoute,
-  EcosystemRoute: EcosystemRoute,
   MarketRoute: MarketRoute,
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
   ProductRoute: ProductRoute,
-  SystemsRoute: SystemsRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
