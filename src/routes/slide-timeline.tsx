@@ -68,7 +68,7 @@ function SlideTimeline() {
           >
             <defs>
               <style>{`
-                @keyframes tmpFadeIn { from { opacity: 0; transform: translateY(8px); } to  to { opacity: 1; transform: translateY(0); } }
+                @keyframes tmpFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
                 @keyframes tmpDrawLine { from { stroke-dashoffset: 960; } to { stroke-dashoffset: 0; } }
                 .tmp-milestone { animation: tmpFadeIn 700ms ease-out both; opacity: 0; }
                 .tmp-timeline {

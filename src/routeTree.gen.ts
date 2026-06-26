@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
+import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as ProductRouteImport } from './routes/product'
@@ -23,6 +24,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const VisionRoute = VisionRouteImport.update({
   id: '/vision',
   path: '/vision',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideTimelineRoute = SlideTimelineRouteImport.update({
+  id: '/slide-timeline',
+  path: '/slide-timeline',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideEcosystemRoute = SlideEcosystemRouteImport.update({
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/product': typeof ProductRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesByTo {
@@ -93,6 +100,7 @@ export interface FileRoutesByTo {
   '/product': typeof ProductRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesById {
@@ -106,6 +114,7 @@ export interface FileRoutesById {
   '/product': typeof ProductRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
@@ -120,6 +129,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-timeline'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -132,6 +142,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-timeline'
     | '/vision'
   id:
     | '__root__'
@@ -144,6 +155,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-timeline'
     | '/vision'
   fileRoutesById: FileRoutesById
 }
@@ -157,6 +169,7 @@ export interface RootRouteChildren {
   ProductRoute: typeof ProductRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
+  SlideTimelineRoute: typeof SlideTimelineRoute
   VisionRoute: typeof VisionRoute
 }
 
@@ -167,6 +180,13 @@ declare module '@tanstack/react-router' {
       path: '/vision'
       fullPath: '/vision'
       preLoaderRoute: typeof VisionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-timeline': {
+      id: '/slide-timeline'
+      path: '/slide-timeline'
+      fullPath: '/slide-timeline'
+      preLoaderRoute: typeof SlideTimelineRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-ecosystem': {
@@ -245,6 +265,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductRoute: ProductRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
+  SlideTimelineRoute: SlideTimelineRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
