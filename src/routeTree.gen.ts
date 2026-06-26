@@ -14,6 +14,7 @@ import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
+import { Route as SlideFlywheelRouteImport } from './routes/slide-flywheel'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as SlideContextRouteImport } from './routes/slide-context'
@@ -49,6 +50,11 @@ const SlideProductsRoute = SlideProductsRouteImport.update({
 const SlideLifetimeRoute = SlideLifetimeRouteImport.update({
   id: '/slide-lifetime',
   path: '/slide-lifetime',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideFlywheelRoute = SlideFlywheelRouteImport.update({
+  id: '/slide-flywheel',
+  path: '/slide-flywheel',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideEcosystemRoute = SlideEcosystemRouteImport.update({
@@ -119,6 +125,7 @@ export interface FileRoutesByFullPath {
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
@@ -137,6 +144,7 @@ export interface FileRoutesByTo {
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
@@ -156,6 +164,7 @@ export interface FileRoutesById {
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
+  '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
@@ -176,6 +185,7 @@ export interface FileRouteTypes {
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-flywheel'
     | '/slide-lifetime'
     | '/slide-products'
     | '/slide-services'
@@ -194,6 +204,7 @@ export interface FileRouteTypes {
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-flywheel'
     | '/slide-lifetime'
     | '/slide-products'
     | '/slide-services'
@@ -212,6 +223,7 @@ export interface FileRouteTypes {
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
+    | '/slide-flywheel'
     | '/slide-lifetime'
     | '/slide-products'
     | '/slide-services'
@@ -231,6 +243,7 @@ export interface RootRouteChildren {
   SlideContextRoute: typeof SlideContextRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
+  SlideFlywheelRoute: typeof SlideFlywheelRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
   SlideProductsRoute: typeof SlideProductsRoute
   SlideServicesRoute: typeof SlideServicesRoute
@@ -273,6 +286,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-lifetime'
       fullPath: '/slide-lifetime'
       preLoaderRoute: typeof SlideLifetimeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-flywheel': {
+      id: '/slide-flywheel'
+      path: '/slide-flywheel'
+      fullPath: '/slide-flywheel'
+      preLoaderRoute: typeof SlideFlywheelRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-ecosystem': {
@@ -367,6 +387,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideContextRoute: SlideContextRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
+  SlideFlywheelRoute: SlideFlywheelRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
   SlideProductsRoute: SlideProductsRoute,
   SlideServicesRoute: SlideServicesRoute,
