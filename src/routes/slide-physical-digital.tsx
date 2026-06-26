@@ -30,7 +30,7 @@ export const Route = createFileRoute("/slide-physical-digital")({
       },
     ],
   }),
-  component: SlidePhysicalDigital;
+  component: SlidePhysicalDigital,
 });
 
 const TODAY = [
