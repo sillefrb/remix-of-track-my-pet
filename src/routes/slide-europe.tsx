@@ -333,9 +333,7 @@ function SlideEurope() {
       <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
-          Track My Pet is building the identity layer
-          <br />
-          for Europe's pet ecosystem.
+          Track My Pet is building the identity layer for Europe's pet ecosystem.
         </p>
       </section>
 
