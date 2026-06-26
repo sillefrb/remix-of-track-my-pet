@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
+import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
@@ -42,6 +43,11 @@ const SlideTimelineRoute = SlideTimelineRouteImport.update({
 const SlideServicesRoute = SlideServicesRouteImport.update({
   id: '/slide-services',
   path: '/slide-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideRelationshipRoute = SlideRelationshipRouteImport.update({
+  id: '/slide-relationship',
+  path: '/slide-relationship',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideProductsRoute = SlideProductsRouteImport.update({
@@ -142,6 +148,7 @@ export interface FileRoutesByFullPath {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
@@ -163,6 +170,7 @@ export interface FileRoutesByTo {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
@@ -185,6 +193,7 @@ export interface FileRoutesById {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
@@ -208,6 +217,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
     | '/vision'
@@ -229,6 +239,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
     | '/vision'
@@ -250,6 +261,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
     | '/vision'
@@ -272,6 +284,7 @@ export interface RootRouteChildren {
   SlideLifetimeRoute: typeof SlideLifetimeRoute
   SlidePartnershipsRoute: typeof SlidePartnershipsRoute
   SlideProductsRoute: typeof SlideProductsRoute
+  SlideRelationshipRoute: typeof SlideRelationshipRoute
   SlideServicesRoute: typeof SlideServicesRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
   VisionRoute: typeof VisionRoute
@@ -298,6 +311,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-services'
       fullPath: '/slide-services'
       preLoaderRoute: typeof SlideServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-relationship': {
+      id: '/slide-relationship'
+      path: '/slide-relationship'
+      fullPath: '/slide-relationship'
+      preLoaderRoute: typeof SlideRelationshipRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-products': {
@@ -432,6 +452,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideLifetimeRoute: SlideLifetimeRoute,
   SlidePartnershipsRoute: SlidePartnershipsRoute,
   SlideProductsRoute: SlideProductsRoute,
+  SlideRelationshipRoute: SlideRelationshipRoute,
   SlideServicesRoute: SlideServicesRoute,
   SlideTimelineRoute: SlideTimelineRoute,
   VisionRoute: VisionRoute,
