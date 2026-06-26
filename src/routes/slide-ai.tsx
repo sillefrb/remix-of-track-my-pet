@@ -153,6 +153,12 @@ function SlideAI() {
         </h1>
       </section>
 
+      {/* HERO IMAGE */}
+      <section className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
+        <img src={sparklesImg} alt="Track My Pet" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/30" />
+      </section>
+
       {/* THREE-COLUMN FLOW */}
       <section className="mx-auto max-w-[1400px] px-6 pt-20 pb-6">
         <div className="relative">
