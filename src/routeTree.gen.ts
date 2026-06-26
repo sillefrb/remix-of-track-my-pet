@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
+import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
@@ -31,6 +32,11 @@ const VisionRoute = VisionRouteImport.update({
 const SlideTimelineRoute = SlideTimelineRouteImport.update({
   id: '/slide-timeline',
   path: '/slide-timeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideServicesRoute = SlideServicesRouteImport.update({
+  id: '/slide-services',
+  path: '/slide-services',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideProductsRoute = SlideProductsRouteImport.update({
@@ -101,6 +107,7 @@ export interface FileRoutesByFullPath {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
@@ -116,6 +123,7 @@ export interface FileRoutesByTo {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
@@ -132,6 +140,7 @@ export interface FileRoutesById {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/vision': typeof VisionRoute
 }
@@ -149,6 +158,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-lifetime'
     | '/slide-products'
+    | '/slide-services'
     | '/slide-timeline'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
@@ -164,6 +174,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-lifetime'
     | '/slide-products'
+    | '/slide-services'
     | '/slide-timeline'
     | '/vision'
   id:
@@ -179,6 +190,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-lifetime'
     | '/slide-products'
+    | '/slide-services'
     | '/slide-timeline'
     | '/vision'
   fileRoutesById: FileRoutesById
@@ -195,6 +207,7 @@ export interface RootRouteChildren {
   SlideEcosystemRoute: typeof SlideEcosystemRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
   SlideProductsRoute: typeof SlideProductsRoute
+  SlideServicesRoute: typeof SlideServicesRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
   VisionRoute: typeof VisionRoute
 }
@@ -213,6 +226,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-timeline'
       fullPath: '/slide-timeline'
       preLoaderRoute: typeof SlideTimelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-services': {
+      id: '/slide-services'
+      path: '/slide-services'
+      fullPath: '/slide-services'
+      preLoaderRoute: typeof SlideServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-products': {
@@ -307,9 +327,20 @@ const rootRouteChildren: RootRouteChildren = {
   SlideEcosystemRoute: SlideEcosystemRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
   SlideProductsRoute: SlideProductsRoute,
+  SlideServicesRoute: SlideServicesRoute,
   SlideTimelineRoute: SlideTimelineRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
