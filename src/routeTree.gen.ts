@@ -13,6 +13,7 @@ import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
+import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideFlywheelRouteImport } from './routes/slide-flywheel'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
@@ -45,6 +46,11 @@ const SlideServicesRoute = SlideServicesRouteImport.update({
 const SlideProductsRoute = SlideProductsRouteImport.update({
   id: '/slide-products',
   path: '/slide-products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlidePartnershipsRoute = SlidePartnershipsRouteImport.update({
+  id: '/slide-partnerships',
+  path: '/slide-partnerships',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideLifetimeRoute = SlideLifetimeRouteImport.update({
@@ -127,6 +133,7 @@ export interface FileRoutesByFullPath {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -146,6 +153,7 @@ export interface FileRoutesByTo {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -187,6 +196,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-flywheel'
     | '/slide-lifetime'
+    | '/slide-partnerships'
     | '/slide-products'
     | '/slide-services'
     | '/slide-timeline'
@@ -206,6 +216,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-flywheel'
     | '/slide-lifetime'
+    | '/slide-partnerships'
     | '/slide-products'
     | '/slide-services'
     | '/slide-timeline'
@@ -225,6 +236,7 @@ export interface FileRouteTypes {
     | '/slide-ecosystem'
     | '/slide-flywheel'
     | '/slide-lifetime'
+    | '/slide-partnerships'
     | '/slide-products'
     | '/slide-services'
     | '/slide-timeline'
@@ -245,6 +257,7 @@ export interface RootRouteChildren {
   SlideEcosystemRoute: typeof SlideEcosystemRoute
   SlideFlywheelRoute: typeof SlideFlywheelRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
+  SlidePartnershipsRoute: typeof SlidePartnershipsRoute
   SlideProductsRoute: typeof SlideProductsRoute
   SlideServicesRoute: typeof SlideServicesRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
@@ -279,6 +292,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-products'
       fullPath: '/slide-products'
       preLoaderRoute: typeof SlideProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-partnerships': {
+      id: '/slide-partnerships'
+      path: '/slide-partnerships'
+      fullPath: '/slide-partnerships'
+      preLoaderRoute: typeof SlidePartnershipsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-lifetime': {
@@ -389,6 +409,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideEcosystemRoute: SlideEcosystemRoute,
   SlideFlywheelRoute: SlideFlywheelRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
+  SlidePartnershipsRoute: SlidePartnershipsRoute,
   SlideProductsRoute: SlideProductsRoute,
   SlideServicesRoute: SlideServicesRoute,
   SlideTimelineRoute: SlideTimelineRoute,
@@ -397,3 +418,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
