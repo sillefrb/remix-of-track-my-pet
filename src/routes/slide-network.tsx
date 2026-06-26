@@ -332,7 +332,7 @@ function SlideNetwork() {
       </section>
 
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-3xl px-6 pt-14 pb-24 text-center md:pb-24">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-20 text-center">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Scale creates intelligence.
