@@ -386,13 +386,25 @@ function SlideAI() {
               <div className="mt-5 h-px w-10 bg-border" />
             </div>
 
-            {/* RIGHT — AI OUTCOMES (pie) */}
+            {/* RIGHT — AI OUTCOMES */}
             <div className="flex flex-col items-center">
               <ColumnHeader kicker="AI OUTCOMES" Icon={Sparkles} delay={1400} />
-              <div className="mt-10 w-full">
-                <ProfilePie items={OUTCOME_ITEMS} centerImg={dogCenterImg} delay={1700} />
-              </div>
+              <ul className="mt-8 space-y-4">
+                {OUTCOME_ITEMS.map(({ label, Icon }, i) => (
+                  <li
+                    key={label}
+                    className="tmp-item flex items-center justify-center gap-3 text-center"
+                    style={{ animationDelay: `${1700 + i * 80}ms` }}
+                  >
+                    <Icon className="text-foreground/55 shrink-0" strokeWidth={1.2} size={16} aria-hidden />
+                    <span className="font-serif text-base font-light leading-snug text-foreground/85 md:text-lg">
+                      {label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
+
 
           </div>
         </div>
