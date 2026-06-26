@@ -3,7 +3,7 @@ import {
   MapPin,
   Activity,
   Hexagon,
-  Route,
+  Route as RouteIcon,
   Fingerprint,
   HeartPulse,
   Umbrella,
