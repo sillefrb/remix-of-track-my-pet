@@ -178,14 +178,19 @@ function SlideLifetime() {
             </g>
           </svg>
 
-          {/* Stage icons + labels, overlaid below the timeline */}
-          <div className="relative flex justify-between items-start mt-[-120px] md:mt-[-140px]">
-            {STAGES.map(({ label, Icon }, i) => (
+          {/* Stage icons + labels, absolutely positioned below the timeline */}
+          {STAGES.map(({ label, Icon }, i) => {
+            const x = startX + i * step;
+            const leftPct = (x / vbW) * 100;
+            const topPct = ((lineY + 48) / vbH) * 100;
+            return (
               <div
                 key={label}
-                className="tmp-stage flex flex-col items-center"
+                className="tmp-stage absolute flex flex-col items-center"
                 style={{
-                  width: `${100 / STAGES.length}%`,
+                  left: `${leftPct}%`,
+                  top: `${topPct}%`,
+                  transform: "translateX(-50%)",
                   animationDelay: `${400 + i * 180}ms`,
                 }}
               >
@@ -195,12 +200,12 @@ function SlideLifetime() {
                   size={28}
                   aria-hidden
                 />
-                <span className="mt-3 text-[9px] tracking-[0.24em] text-foreground/70 text-center uppercase leading-tight">
+                <span className="mt-3 text-[9px] tracking-[0.24em] text-foreground/70 text-center uppercase leading-tight max-w-[120px]">
                   {label}
                 </span>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </section>
 
