@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import heroImg from "@/assets/dogpass-hero.jpg";
 
 export const Route = createFileRoute("/slide-data")({
   head: () => ({
@@ -70,6 +71,11 @@ function SlideData() {
           <br />
           Data rarely follows the animal.
         </h1>
+      </section>
+
+      <section className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
+        <img src={heroImg} alt="Track My Pet" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/30" />
       </section>
 
       {/* DIAGRAM */}
