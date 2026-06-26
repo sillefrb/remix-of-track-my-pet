@@ -22,6 +22,7 @@ import { Route as SlideEuropeRouteImport } from './routes/slide-europe'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as SlideContextRouteImport } from './routes/slide-context'
+import { Route as SlideCapabilitiesRouteImport } from './routes/slide-capabilities'
 import { Route as SlideBusinessModelRouteImport } from './routes/slide-business-model'
 import { Route as SlideAiRouteImport } from './routes/slide-ai'
 import { Route as ProductRouteImport } from './routes/product'
@@ -97,6 +98,11 @@ const SlideContextRoute = SlideContextRouteImport.update({
   path: '/slide-context',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SlideCapabilitiesRoute = SlideCapabilitiesRouteImport.update({
+  id: '/slide-capabilities',
+  path: '/slide-capabilities',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SlideBusinessModelRoute = SlideBusinessModelRouteImport.update({
   id: '/slide-business-model',
   path: '/slide-business-model',
@@ -153,6 +159,7 @@ export interface FileRoutesByFullPath {
   '/product': typeof ProductRoute
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
+  '/slide-capabilities': typeof SlideCapabilitiesRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -177,6 +184,7 @@ export interface FileRoutesByTo {
   '/product': typeof ProductRoute
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
+  '/slide-capabilities': typeof SlideCapabilitiesRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -202,6 +210,7 @@ export interface FileRoutesById {
   '/product': typeof ProductRoute
   '/slide-ai': typeof SlideAiRoute
   '/slide-business-model': typeof SlideBusinessModelRoute
+  '/slide-capabilities': typeof SlideCapabilitiesRoute
   '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
@@ -228,6 +237,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-ai'
     | '/slide-business-model'
+    | '/slide-capabilities'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -252,6 +262,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-ai'
     | '/slide-business-model'
+    | '/slide-capabilities'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -276,6 +287,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/slide-ai'
     | '/slide-business-model'
+    | '/slide-capabilities'
     | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
@@ -301,6 +313,7 @@ export interface RootRouteChildren {
   ProductRoute: typeof ProductRoute
   SlideAiRoute: typeof SlideAiRoute
   SlideBusinessModelRoute: typeof SlideBusinessModelRoute
+  SlideCapabilitiesRoute: typeof SlideCapabilitiesRoute
   SlideContextRoute: typeof SlideContextRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
@@ -409,6 +422,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SlideContextRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/slide-capabilities': {
+      id: '/slide-capabilities'
+      path: '/slide-capabilities'
+      fullPath: '/slide-capabilities'
+      preLoaderRoute: typeof SlideCapabilitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/slide-business-model': {
       id: '/slide-business-model'
       path: '/slide-business-model'
@@ -485,6 +505,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductRoute: ProductRoute,
   SlideAiRoute: SlideAiRoute,
   SlideBusinessModelRoute: SlideBusinessModelRoute,
+  SlideCapabilitiesRoute: SlideCapabilitiesRoute,
   SlideContextRoute: SlideContextRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
