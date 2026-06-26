@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
+import { Route as SlideTrustRouteImport } from './routes/slide-trust'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
@@ -40,6 +41,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const VisionRoute = VisionRouteImport.update({
   id: '/vision',
   path: '/vision',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideTrustRoute = SlideTrustRouteImport.update({
+  id: '/slide-trust',
+  path: '/slide-trust',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideTimelineRoute = SlideTimelineRouteImport.update({
@@ -200,6 +206,7 @@ export interface FileRoutesByFullPath {
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesByTo {
@@ -229,6 +236,7 @@ export interface FileRoutesByTo {
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesById {
@@ -259,6 +267,7 @@ export interface FileRoutesById {
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
+  '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
@@ -290,6 +299,7 @@ export interface FileRouteTypes {
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
+    | '/slide-trust'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -319,6 +329,7 @@ export interface FileRouteTypes {
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
+    | '/slide-trust'
     | '/vision'
   id:
     | '__root__'
@@ -348,6 +359,7 @@ export interface FileRouteTypes {
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
+    | '/slide-trust'
     | '/vision'
   fileRoutesById: FileRoutesById
 }
@@ -378,6 +390,7 @@ export interface RootRouteChildren {
   SlideRelationshipRoute: typeof SlideRelationshipRoute
   SlideServicesRoute: typeof SlideServicesRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
+  SlideTrustRoute: typeof SlideTrustRoute
   VisionRoute: typeof VisionRoute
 }
 
@@ -388,6 +401,13 @@ declare module '@tanstack/react-router' {
       path: '/vision'
       fullPath: '/vision'
       preLoaderRoute: typeof VisionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-trust': {
+      id: '/slide-trust'
+      path: '/slide-trust'
+      fullPath: '/slide-trust'
+      preLoaderRoute: typeof SlideTrustRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-timeline': {
@@ -602,8 +622,19 @@ const rootRouteChildren: RootRouteChildren = {
   SlideRelationshipRoute: SlideRelationshipRoute,
   SlideServicesRoute: SlideServicesRoute,
   SlideTimelineRoute: SlideTimelineRoute,
+  SlideTrustRoute: SlideTrustRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
