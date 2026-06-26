@@ -15,6 +15,7 @@ import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
+import { Route as SlideOpportunityRouteImport } from './routes/slide-opportunity'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideHeroClosingRouteImport } from './routes/slide-hero-closing'
 import { Route as SlideFlywheelRouteImport } from './routes/slide-flywheel'
@@ -63,6 +64,11 @@ const SlideProductsRoute = SlideProductsRouteImport.update({
 const SlidePartnershipsRoute = SlidePartnershipsRouteImport.update({
   id: '/slide-partnerships',
   path: '/slide-partnerships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideOpportunityRoute = SlideOpportunityRouteImport.update({
+  id: '/slide-opportunity',
+  path: '/slide-opportunity',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideLifetimeRoute = SlideLifetimeRouteImport.update({
@@ -181,6 +187,7 @@ export interface FileRoutesByFullPath {
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -208,6 +215,7 @@ export interface FileRoutesByTo {
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -236,6 +244,7 @@ export interface FileRoutesById {
   '/slide-flywheel': typeof SlideFlywheelRoute
   '/slide-hero-closing': typeof SlideHeroClosingRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
+  '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -265,6 +274,7 @@ export interface FileRouteTypes {
     | '/slide-flywheel'
     | '/slide-hero-closing'
     | '/slide-lifetime'
+    | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
     | '/slide-relationship'
@@ -292,6 +302,7 @@ export interface FileRouteTypes {
     | '/slide-flywheel'
     | '/slide-hero-closing'
     | '/slide-lifetime'
+    | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
     | '/slide-relationship'
@@ -319,6 +330,7 @@ export interface FileRouteTypes {
     | '/slide-flywheel'
     | '/slide-hero-closing'
     | '/slide-lifetime'
+    | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
     | '/slide-relationship'
@@ -347,6 +359,7 @@ export interface RootRouteChildren {
   SlideFlywheelRoute: typeof SlideFlywheelRoute
   SlideHeroClosingRoute: typeof SlideHeroClosingRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
+  SlideOpportunityRoute: typeof SlideOpportunityRoute
   SlidePartnershipsRoute: typeof SlidePartnershipsRoute
   SlideProductsRoute: typeof SlideProductsRoute
   SlideRelationshipRoute: typeof SlideRelationshipRoute
@@ -397,6 +410,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-partnerships'
       fullPath: '/slide-partnerships'
       preLoaderRoute: typeof SlidePartnershipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-opportunity': {
+      id: '/slide-opportunity'
+      path: '/slide-opportunity'
+      fullPath: '/slide-opportunity'
+      preLoaderRoute: typeof SlideOpportunityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-lifetime': {
@@ -555,6 +575,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideFlywheelRoute: SlideFlywheelRoute,
   SlideHeroClosingRoute: SlideHeroClosingRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
+  SlideOpportunityRoute: SlideOpportunityRoute,
   SlidePartnershipsRoute: SlidePartnershipsRoute,
   SlideProductsRoute: SlideProductsRoute,
   SlideRelationshipRoute: SlideRelationshipRoute,
