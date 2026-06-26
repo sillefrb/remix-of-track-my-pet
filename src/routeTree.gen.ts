@@ -16,6 +16,7 @@ import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
 import { Route as SlideRegulationRouteImport } from './routes/slide-regulation'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
+import { Route as SlidePhysicalDigitalRouteImport } from './routes/slide-physical-digital'
 import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
 import { Route as SlideOpportunityRouteImport } from './routes/slide-opportunity'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
@@ -71,6 +72,11 @@ const SlideRegulationRoute = SlideRegulationRouteImport.update({
 const SlideProductsRoute = SlideProductsRouteImport.update({
   id: '/slide-products',
   path: '/slide-products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlidePhysicalDigitalRoute = SlidePhysicalDigitalRouteImport.update({
+  id: '/slide-physical-digital',
+  path: '/slide-physical-digital',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlidePartnershipsRoute = SlidePartnershipsRouteImport.update({
@@ -201,6 +207,7 @@ export interface FileRoutesByFullPath {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
+  '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -231,6 +238,7 @@ export interface FileRoutesByTo {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
+  '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -262,6 +270,7 @@ export interface FileRoutesById {
   '/slide-lifetime': typeof SlideLifetimeRoute
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
+  '/slide-physical-digital': typeof SlidePhysicalDigitalRoute
   '/slide-products': typeof SlideProductsRoute
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
@@ -294,6 +303,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-opportunity'
     | '/slide-partnerships'
+    | '/slide-physical-digital'
     | '/slide-products'
     | '/slide-regulation'
     | '/slide-relationship'
@@ -324,6 +334,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-opportunity'
     | '/slide-partnerships'
+    | '/slide-physical-digital'
     | '/slide-products'
     | '/slide-regulation'
     | '/slide-relationship'
@@ -354,6 +365,7 @@ export interface FileRouteTypes {
     | '/slide-lifetime'
     | '/slide-opportunity'
     | '/slide-partnerships'
+    | '/slide-physical-digital'
     | '/slide-products'
     | '/slide-regulation'
     | '/slide-relationship'
@@ -385,6 +397,7 @@ export interface RootRouteChildren {
   SlideLifetimeRoute: typeof SlideLifetimeRoute
   SlideOpportunityRoute: typeof SlideOpportunityRoute
   SlidePartnershipsRoute: typeof SlidePartnershipsRoute
+  SlidePhysicalDigitalRoute: typeof SlidePhysicalDigitalRoute
   SlideProductsRoute: typeof SlideProductsRoute
   SlideRegulationRoute: typeof SlideRegulationRoute
   SlideRelationshipRoute: typeof SlideRelationshipRoute
@@ -443,6 +456,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-products'
       fullPath: '/slide-products'
       preLoaderRoute: typeof SlideProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-physical-digital': {
+      id: '/slide-physical-digital'
+      path: '/slide-physical-digital'
+      fullPath: '/slide-physical-digital'
+      preLoaderRoute: typeof SlidePhysicalDigitalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-partnerships': {
@@ -617,6 +637,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideLifetimeRoute: SlideLifetimeRoute,
   SlideOpportunityRoute: SlideOpportunityRoute,
   SlidePartnershipsRoute: SlidePartnershipsRoute,
+  SlidePhysicalDigitalRoute: SlidePhysicalDigitalRoute,
   SlideProductsRoute: SlideProductsRoute,
   SlideRegulationRoute: SlideRegulationRoute,
   SlideRelationshipRoute: SlideRelationshipRoute,
@@ -628,13 +649,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
