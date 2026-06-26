@@ -376,7 +376,7 @@ function SlideAI() {
             <div className="flex flex-col items-center">
               <ColumnHeader kicker="PROFILE DATA" Icon={User} delay={300} />
               <div className="mt-10 w-full">
-                <ProfilePie items={PROFILE_ITEMS} centerImg={dogCenterImg} centerName="Bella" delay={600} />
+                <ProfilePie items={PROFILE_ITEMS} centerImg={dogCenterImg} delay={600} />
               </div>
             </div>
 
