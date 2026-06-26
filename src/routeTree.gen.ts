@@ -15,6 +15,7 @@ import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as MarketRouteImport } from './routes/market'
+import { Route as EcosystemRouteImport } from './routes/ecosystem'
 import { Route as B2bRouteImport } from './routes/b2b'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -49,6 +50,11 @@ const MarketRoute = MarketRouteImport.update({
   path: '/market',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EcosystemRoute = EcosystemRouteImport.update({
+  id: '/ecosystem',
+  path: '/ecosystem',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const B2bRoute = B2bRouteImport.update({
   id: '/b2b',
   path: '/b2b',
@@ -69,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
+  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
+  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -92,6 +100,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/b2b': typeof B2bRoute
+  '/ecosystem': typeof EcosystemRoute
   '/market': typeof MarketRoute
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/b2b'
+    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/b2b'
+    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/b2b'
+    | '/ecosystem'
     | '/market'
     | '/pricing'
     | '/print'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   B2bRoute: typeof B2bRoute
+  EcosystemRoute: typeof EcosystemRoute
   MarketRoute: typeof MarketRoute
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ecosystem': {
+      id: '/ecosystem'
+      path: '/ecosystem'
+      fullPath: '/ecosystem'
+      preLoaderRoute: typeof EcosystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/b2b': {
       id: '/b2b'
       path: '/b2b'
@@ -219,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   B2bRoute: B2bRoute,
+  EcosystemRoute: EcosystemRoute,
   MarketRoute: MarketRoute,
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
@@ -229,3 +250,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
