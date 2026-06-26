@@ -304,7 +304,7 @@ function SlideTrust() {
       </section>
 
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-4xl px-6 pt-16 pb-24 text-center md:pb-24">
+      <section className="mx-auto max-w-4xl px-6 pt-12 pb-20 text-center">
         <div
           className="mx-auto h-px w-16 bg-border tmp-fade"
           style={{ animationDelay: "2800ms" }}

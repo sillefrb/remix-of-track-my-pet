@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import sparklesImg from "@/assets/dogpass-clinic.jpg";
 import {
   User,
   HeartPulse,
@@ -150,6 +151,12 @@ function SlideAI() {
           <br />
           WHEN DATA STAYS CONNECTED.
         </h1>
+      </section>
+
+      {/* HERO IMAGE */}
+      <section className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
+        <img src={sparklesImg} alt="Track My Pet" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/30" />
       </section>
 
       {/* THREE-COLUMN FLOW */}
