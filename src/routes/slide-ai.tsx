@@ -364,10 +364,12 @@ function SlideAI() {
           </svg>
 
           <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-10">
-            {/* LEFT — PROFILE DATA */}
+            {/* LEFT — PROFILE DATA (pie) */}
             <div className="flex flex-col items-center">
               <ColumnHeader kicker="PROFILE DATA" Icon={User} delay={300} />
-              <ItemList items={PROFILE_ITEMS} delay={600} />
+              <div className="mt-10 w-full">
+                <ProfilePie items={PROFILE_ITEMS} centerImg={dogCenterImg} delay={600} />
+              </div>
             </div>
 
             {/* CENTER — AI LAYER (spacer on desktop, visible element on mobile) */}
@@ -384,11 +386,14 @@ function SlideAI() {
               <div className="mt-5 h-px w-10 bg-border" />
             </div>
 
-            {/* RIGHT — AI OUTCOMES */}
+            {/* RIGHT — AI OUTCOMES (pie) */}
             <div className="flex flex-col items-center">
               <ColumnHeader kicker="AI OUTCOMES" Icon={Sparkles} delay={1400} />
-              <ItemList items={OUTCOME_ITEMS} delay={1700} />
+              <div className="mt-10 w-full">
+                <ProfilePie items={OUTCOME_ITEMS} centerImg={dogCenterImg} delay={1700} />
+              </div>
             </div>
+
           </div>
         </div>
       </section>
