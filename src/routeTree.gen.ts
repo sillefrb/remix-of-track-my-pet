@@ -16,6 +16,7 @@ import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlideLifetimeRouteImport } from './routes/slide-lifetime'
 import { Route as SlideEcosystemRouteImport } from './routes/slide-ecosystem'
 import { Route as SlideDataRouteImport } from './routes/slide-data'
+import { Route as SlideContextRouteImport } from './routes/slide-context'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -57,6 +58,11 @@ const SlideEcosystemRoute = SlideEcosystemRouteImport.update({
 const SlideDataRoute = SlideDataRouteImport.update({
   id: '/slide-data',
   path: '/slide-data',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideContextRoute = SlideContextRouteImport.update({
+  id: '/slide-context',
+  path: '/slide-context',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductRoute = ProductRouteImport.update({
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
@@ -119,6 +126,7 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
@@ -136,6 +144,7 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-context': typeof SlideContextRoute
   '/slide-data': typeof SlideDataRoute
   '/slide-ecosystem': typeof SlideEcosystemRoute
   '/slide-lifetime': typeof SlideLifetimeRoute
@@ -154,6 +163,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
     | '/slide-lifetime'
@@ -170,6 +180,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
     | '/slide-lifetime'
@@ -186,6 +197,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-context'
     | '/slide-data'
     | '/slide-ecosystem'
     | '/slide-lifetime'
@@ -203,6 +215,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
   ProductRoute: typeof ProductRoute
+  SlideContextRoute: typeof SlideContextRoute
   SlideDataRoute: typeof SlideDataRoute
   SlideEcosystemRoute: typeof SlideEcosystemRoute
   SlideLifetimeRoute: typeof SlideLifetimeRoute
@@ -261,6 +274,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-data'
       fullPath: '/slide-data'
       preLoaderRoute: typeof SlideDataRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-context': {
+      id: '/slide-context'
+      path: '/slide-context'
+      fullPath: '/slide-context'
+      preLoaderRoute: typeof SlideContextRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/product': {
@@ -323,6 +343,7 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
   ProductRoute: ProductRoute,
+  SlideContextRoute: SlideContextRoute,
   SlideDataRoute: SlideDataRoute,
   SlideEcosystemRoute: SlideEcosystemRoute,
   SlideLifetimeRoute: SlideLifetimeRoute,
@@ -334,13 +355,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
