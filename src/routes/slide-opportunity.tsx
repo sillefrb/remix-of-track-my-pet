@@ -304,30 +304,8 @@ function SlideOpportunity() {
         </h1>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-16 pb-6 text-center md:pt-20">
-        <p
-          className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "3100ms" }}
-        >
-          Europe already has owners, veterinarians, insurers, registries, travel services and tracking providers.
-        </p>
-        <p
-          className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "3250ms" }}
-        >
-          The identity layer connecting them remains open territory.
-        </p>
-        <p
-          className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl tmp-fade"
-          style={{ animationDelay: "3400ms" }}
-        >
-          Track My Pet is building the infrastructure that allows information to follow the animal throughout life.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-4xl px-6 pt-20 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-4xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border tmp-fade" style={{ animationDelay: "3600ms" }} />
         <p
           className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl tmp-fade"

@@ -329,24 +329,8 @@ function SlideEurope() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Europe has one of the world's largest pet populations.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Health records, ownership information, insurance, travel documents
-          and digital services already exist across thousands of disconnected
-          systems.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The next infrastructure layer connects the information around the
-          animal rather than the organisation storing it.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Track My Pet is building the identity layer

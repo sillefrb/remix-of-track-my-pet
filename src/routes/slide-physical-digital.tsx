@@ -428,23 +428,8 @@ function SlidePhysicalDigital() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-16 pb-10 text-center md:pt-24">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Microchips, passports and documentation already exist.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The next step allows information to follow the animal rather than the
-          organisation storing it.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Track My Pet connects physical identification with digital identity,
-          documentation and services.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Identity becomes more valuable every time the profile is used.

@@ -158,21 +158,8 @@ function SlideTimeline() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          European regulation and digital infrastructure are moving towards
-          stronger standards for identification, ownership, health records and
-          traceability.
-        </p>
-        <p className="mt-8 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The next step is a digital identity layer that allows information to
-          follow the animal throughout life and across borders.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Track My Pet is designed for the ecosystem Europe is building.

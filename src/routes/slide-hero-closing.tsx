@@ -353,7 +353,7 @@ function SlideHeroClosing() {
       </section>
 
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-4xl px-6 pt-20 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-4xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border tmp-fade" style={{ animationDelay: "2400ms" }} />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl tmp-fade" style={{ animationDelay: "2600ms" }}>
           Track My Pet is building the infrastructure that follows the animal throughout life.

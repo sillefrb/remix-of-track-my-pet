@@ -232,21 +232,8 @@ function SlideCapabilities() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Building Europe's pet identity infrastructure requires expertise across
-          technology, data, veterinary services, hardware, partnerships and
-          regulation.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Track My Pet is designed to combine these disciplines into one
-          integrated platform for owners, partners and the wider ecosystem.
-        </p>
-      </section>
-
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           Categories are built by teams capable of connecting industries that

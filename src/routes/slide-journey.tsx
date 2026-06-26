@@ -263,21 +263,8 @@ function SlideJourney() {
         </div>
       </section>
 
-      {/* BODY COPY */}
-      <section className="mx-auto max-w-3xl px-6 pt-14 pb-6 text-center md:pt-20">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          A dog or cat creates new relationships, new information and new needs
-          throughout life.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          The verified identity follows the animal through everyday life, travel,
-          health events and care situations while maintaining continuity across
-          the ecosystem.
-        </p>
-      </section>
-
       {/* CLOSING STATEMENT */}
-      <section className="mx-auto max-w-3xl px-6 pt-14 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-14 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           The value of the identity grows with every interaction and every life

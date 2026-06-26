@@ -202,24 +202,15 @@ function SlideData() {
 
       {/* BODY COPY */}
       <section className="mx-auto max-w-2xl px-6 pt-20 pb-10 text-center md:pt-28">
-        <p className="font-serif text-xl font-light italic leading-relaxed text-foreground/85 md:text-2xl">
-          Dogs and cats move through a lifetime of owners, veterinarians,
-          insurance companies, travel providers, authorities and digital
-          services.
-        </p>
-        <p className="mt-8 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Information remains attached to individual systems rather than the
-          animal itself.
-        </p>
         <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
           This creates administration, duplicate registrations and loss of
           knowledge between the people and organisations working around the
           same animal.
         </p>
-      </section>
+</section>
 
       {/* CLOSING */}
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-24 text-center md:pb-24">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="mt-10 text-[10px] tracking-[0.45em] text-muted-foreground">
           EUROPE, TODAY
