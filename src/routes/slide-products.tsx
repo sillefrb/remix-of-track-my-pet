@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import productsImg from "@/assets/dogpass-products.jpg";
 
 export const Route = createFileRoute("/slide-products")({
   head: () => ({
