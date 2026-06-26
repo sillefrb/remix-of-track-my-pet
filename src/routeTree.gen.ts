@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTrustRouteImport } from './routes/slide-trust'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
+import { Route as SlideSharingRouteImport } from './routes/slide-sharing'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
 import { Route as SlideRegulationRouteImport } from './routes/slide-regulation'
@@ -53,6 +54,11 @@ const SlideTrustRoute = SlideTrustRouteImport.update({
 const SlideTimelineRoute = SlideTimelineRouteImport.update({
   id: '/slide-timeline',
   path: '/slide-timeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideSharingRoute = SlideSharingRouteImport.update({
+  id: '/slide-sharing',
+  path: '/slide-sharing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideServicesRoute = SlideServicesRouteImport.update({
@@ -219,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
+  '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
@@ -251,6 +258,7 @@ export interface FileRoutesByTo {
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
+  '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
@@ -284,6 +292,7 @@ export interface FileRoutesById {
   '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
+  '/slide-sharing': typeof SlideSharingRoute
   '/slide-timeline': typeof SlideTimelineRoute
   '/slide-trust': typeof SlideTrustRoute
   '/vision': typeof VisionRoute
@@ -318,6 +327,7 @@ export interface FileRouteTypes {
     | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
+    | '/slide-sharing'
     | '/slide-timeline'
     | '/slide-trust'
     | '/vision'
@@ -350,6 +360,7 @@ export interface FileRouteTypes {
     | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
+    | '/slide-sharing'
     | '/slide-timeline'
     | '/slide-trust'
     | '/vision'
@@ -382,6 +393,7 @@ export interface FileRouteTypes {
     | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
+    | '/slide-sharing'
     | '/slide-timeline'
     | '/slide-trust'
     | '/vision'
@@ -415,6 +427,7 @@ export interface RootRouteChildren {
   SlideRegulationRoute: typeof SlideRegulationRoute
   SlideRelationshipRoute: typeof SlideRelationshipRoute
   SlideServicesRoute: typeof SlideServicesRoute
+  SlideSharingRoute: typeof SlideSharingRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
   SlideTrustRoute: typeof SlideTrustRoute
   VisionRoute: typeof VisionRoute
@@ -441,6 +454,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-timeline'
       fullPath: '/slide-timeline'
       preLoaderRoute: typeof SlideTimelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-sharing': {
+      id: '/slide-sharing'
+      path: '/slide-sharing'
+      fullPath: '/slide-sharing'
+      preLoaderRoute: typeof SlideSharingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-services': {
@@ -663,6 +683,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideRegulationRoute: SlideRegulationRoute,
   SlideRelationshipRoute: SlideRelationshipRoute,
   SlideServicesRoute: SlideServicesRoute,
+  SlideSharingRoute: SlideSharingRoute,
   SlideTimelineRoute: SlideTimelineRoute,
   SlideTrustRoute: SlideTrustRoute,
   VisionRoute: VisionRoute,
