@@ -13,7 +13,7 @@ export const Route = createFileRoute("/slide-opportunity")({
       },
     ],
   }),
-  component: SlideOpportunity;
+  component: SlideOpportunity,
 });
 
 // --- Visual constants ---
