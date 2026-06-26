@@ -206,18 +206,7 @@ function SlideFlywheel() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 pt-16 pb-10 text-center md:pt-24">
-        <p className="font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          Every new profile contributes information, context and relationships
-          that strengthen the ecosystem.
-        </p>
-        <p className="mt-6 font-serif text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
-          More data improves AI. Better AI improves services. Better services
-          attract more users and partners.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl px-6 pt-12 pb-32 text-center md:pb-40">
+      <section className="mx-auto max-w-3xl px-6 pt-12 pb-20 text-center">
         <div className="mx-auto h-px w-16 bg-border" />
         <p className="font-serif mt-10 text-xl font-light italic leading-snug tracking-tight text-foreground md:text-2xl">
           The platform becomes more valuable
