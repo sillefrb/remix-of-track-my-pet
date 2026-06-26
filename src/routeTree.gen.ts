@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
+import { Route as SlideDataRouteImport } from './routes/slide-data'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrintRouteImport } from './routes/print'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -21,6 +22,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const VisionRoute = VisionRouteImport.update({
   id: '/vision',
   path: '/vision',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideDataRoute = SlideDataRouteImport.update({
+  id: '/slide-data',
+  path: '/slide-data',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductRoute = ProductRouteImport.update({
@@ -67,6 +73,7 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-data': typeof SlideDataRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesByTo {
@@ -77,6 +84,7 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-data': typeof SlideDataRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesById {
@@ -88,6 +96,7 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/print': typeof PrintRoute
   '/product': typeof ProductRoute
+  '/slide-data': typeof SlideDataRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
@@ -100,6 +109,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-data'
     | '/vision'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -110,6 +120,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-data'
     | '/vision'
   id:
     | '__root__'
@@ -120,6 +131,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/print'
     | '/product'
+    | '/slide-data'
     | '/vision'
   fileRoutesById: FileRoutesById
 }
@@ -131,6 +143,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   PrintRoute: typeof PrintRoute
   ProductRoute: typeof ProductRoute
+  SlideDataRoute: typeof SlideDataRoute
   VisionRoute: typeof VisionRoute
 }
 
@@ -141,6 +154,13 @@ declare module '@tanstack/react-router' {
       path: '/vision'
       fullPath: '/vision'
       preLoaderRoute: typeof VisionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-data': {
+      id: '/slide-data'
+      path: '/slide-data'
+      fullPath: '/slide-data'
+      preLoaderRoute: typeof SlideDataRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/product': {
@@ -203,18 +223,9 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   PrintRoute: PrintRoute,
   ProductRoute: ProductRoute,
+  SlideDataRoute: SlideDataRoute,
   VisionRoute: VisionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
