@@ -13,6 +13,7 @@ import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SlideTimelineRouteImport } from './routes/slide-timeline'
 import { Route as SlideServicesRouteImport } from './routes/slide-services'
 import { Route as SlideRelationshipRouteImport } from './routes/slide-relationship'
+import { Route as SlideRegulationRouteImport } from './routes/slide-regulation'
 import { Route as SlideProductsRouteImport } from './routes/slide-products'
 import { Route as SlidePartnershipsRouteImport } from './routes/slide-partnerships'
 import { Route as SlideOpportunityRouteImport } from './routes/slide-opportunity'
@@ -54,6 +55,11 @@ const SlideServicesRoute = SlideServicesRouteImport.update({
 const SlideRelationshipRoute = SlideRelationshipRouteImport.update({
   id: '/slide-relationship',
   path: '/slide-relationship',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideRegulationRoute = SlideRegulationRouteImport.update({
+  id: '/slide-regulation',
+  path: '/slide-regulation',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlideProductsRoute = SlideProductsRouteImport.update({
@@ -190,6 +196,7 @@ export interface FileRoutesByFullPath {
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -218,6 +225,7 @@ export interface FileRoutesByTo {
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -247,6 +255,7 @@ export interface FileRoutesById {
   '/slide-opportunity': typeof SlideOpportunityRoute
   '/slide-partnerships': typeof SlidePartnershipsRoute
   '/slide-products': typeof SlideProductsRoute
+  '/slide-regulation': typeof SlideRegulationRoute
   '/slide-relationship': typeof SlideRelationshipRoute
   '/slide-services': typeof SlideServicesRoute
   '/slide-timeline': typeof SlideTimelineRoute
@@ -277,6 +286,7 @@ export interface FileRouteTypes {
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
@@ -305,6 +315,7 @@ export interface FileRouteTypes {
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
@@ -333,6 +344,7 @@ export interface FileRouteTypes {
     | '/slide-opportunity'
     | '/slide-partnerships'
     | '/slide-products'
+    | '/slide-regulation'
     | '/slide-relationship'
     | '/slide-services'
     | '/slide-timeline'
@@ -362,6 +374,7 @@ export interface RootRouteChildren {
   SlideOpportunityRoute: typeof SlideOpportunityRoute
   SlidePartnershipsRoute: typeof SlidePartnershipsRoute
   SlideProductsRoute: typeof SlideProductsRoute
+  SlideRegulationRoute: typeof SlideRegulationRoute
   SlideRelationshipRoute: typeof SlideRelationshipRoute
   SlideServicesRoute: typeof SlideServicesRoute
   SlideTimelineRoute: typeof SlideTimelineRoute
@@ -396,6 +409,13 @@ declare module '@tanstack/react-router' {
       path: '/slide-relationship'
       fullPath: '/slide-relationship'
       preLoaderRoute: typeof SlideRelationshipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide-regulation': {
+      id: '/slide-regulation'
+      path: '/slide-regulation'
+      fullPath: '/slide-regulation'
+      preLoaderRoute: typeof SlideRegulationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slide-products': {
@@ -578,6 +598,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlideOpportunityRoute: SlideOpportunityRoute,
   SlidePartnershipsRoute: SlidePartnershipsRoute,
   SlideProductsRoute: SlideProductsRoute,
+  SlideRegulationRoute: SlideRegulationRoute,
   SlideRelationshipRoute: SlideRelationshipRoute,
   SlideServicesRoute: SlideServicesRoute,
   SlideTimelineRoute: SlideTimelineRoute,
