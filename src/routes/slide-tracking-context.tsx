@@ -37,7 +37,7 @@ const TRACKING = [
   { label: "LOCATION", Icon: MapPin },
   { label: "ACTIVITY", Icon: Activity },
   { label: "GEOFENCE", Icon: Hexagon },
-  { label: "MOVEMENT HISTORY", Icon: Route },
+  { label: "MOVEMENT HISTORY", Icon: RouteIcon },
 ];
 
 const CONTEXT = [
